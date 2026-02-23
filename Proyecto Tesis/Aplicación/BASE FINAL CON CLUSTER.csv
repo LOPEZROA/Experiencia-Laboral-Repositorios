@@ -1,0 +1,970 @@
+﻿Grupo;cluster_OPTICS;Codigo;Sexo (Desc);lat;lng;tiempo (minutos);km;Comuna;Numero de registros;Mayor;Menor;Moderada;Ultima Edad Registrada;Total_Amputaciones;Ultima registro severidad;AMP_DEDO_MANO;AMP_PULGAR;AMP_DEDO_PIE;AMP_A_NIVEL_PIE;DESART_TOBILLO;AMP_NIVEL_MALEOLO;AMP_DEBAJO_RODILLA;DESART_RODILLA;AMP_ENCIMA_RODILLA;Provincia
+cluster 0;0;bc5d59a5bb47;Hombre;-41.463004;-72.970684;4.866666667;2.393;Puerto Montt;1;0;0;1;59;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;954953fb936d;Hombre;-41.7624005;-73.1360601;47.35;52.079;Calbuco;1;0;0;1;85;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a2442932c256;Mujer;-41.2658792;-72.9981665;18.58333333;22.364;Llanquihue;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;9b8b8accc57d;Hombre;-41.4830308;-72.8459413;17.95;12.804;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;703fbe4ee923;Mujer;-41.4900284;-73.0022169;12.21666667;7.309;Puerto Montt;2;0;0;2;55;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;a2fbbba87d19;Hombre;-41.4693607;-72.9083215;10.61666667;6.122;Puerto Montt;2;1;0;1;53;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;0d8746afa895;Mujer;-41.4679145;-72.9155373;9.75;5.472;Puerto Montt;1;0;1;0;58;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;8875c3df48da;Hombre;-41.379432;-72.921299;20.46666667;13.353;Puerto Montt;1;0;0;1;28;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+ruido;-1;0f733047bf64;Mujer;-41.7552758;-73.1572324;42.68333333;49.543;Calbuco;1;1;0;0;56;2;Mayor;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 3;3;02d1dbb0565e;Hombre;-41.469699;-72.955803;5.766666667;2.94;Puerto Montt;3;1;0;2;63;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 3;3;4af6b647d61a;Mujer;-41.4754903;-72.985437;10.71666667;5.762;Puerto Montt;3;1;0;2;62;3;Moderada;0;0;1;0;0;0;1;0;1;Llanquihue
+cluster 1;1;9a41b0fb31c8;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;82;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;a1084351e8ac;Mujer;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;3;2;0;1;62;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 3;3;92158652fbc9;Hombre;-41.4693607;-72.9083215;10.61666667;6.122;Puerto Montt;4;2;0;2;74;4;Mayor;0;0;2;1;0;0;0;0;1;Llanquihue
+cluster 0;0;a693c1e74091;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;bcfd566f99c8;Hombre;-41.0390927;-73.4118402;53.73333333;72.918;Fresia;1;0;0;1;73;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;373544a7ce8d;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;73;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;471b4bd607fe;Hombre;-41.4854677;-72.978495;12.35;6.368;Puerto Montt;1;0;1;0;79;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;992ff5a41061;Hombre;-41.7822478;-73.1341411;52.11666667;54.272;Calbuco;2;1;0;1;75;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;7da99e6b455f;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;1;0;70;2;Menor;0;0;1;0;0;0;1;0;0;Llanquihue
+ruido;-1;2eb2478a6386;Hombre;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;3;3;0;0;92;5;Mayor;0;0;2;1;1;0;0;0;1;Llanquihue
+cluster 3;3;f4673c8f0e4b;Hombre;-41.6214952;-73.5476149;51.01666667;67.95;Maullin;3;1;1;1;62;3;Menor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;497225cbb83e;Hombre;-41.7565999;-73.1477645;43.75;50.395;Calbuco;1;1;0;0;57;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;e73801223772;Hombre;-41.463771;-72.9308943;8.15;4.479;Puerto Montt;1;0;1;0;54;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;60da220e461f;Mujer;-41.4812284;-72.9760577;10.25;5.332;Puerto Montt;1;0;0;1;79;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;e2bceb878169;Hombre;-41.4727093;-72.9433683;7.966666667;4.073;Puerto Montt;1;0;0;1;81;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;cf8b70312c43;Mujer;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;99b1c79d424b;Mujer;-41.4531586;-72.9609507;2.966666667;0.966;Puerto Montt;1;0;0;1;80;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;7de7a0613a3c;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;61;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;07d2abe24987;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;69;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;e52d92be98ab;Hombre;-41.3952749;-72.9167624;16.33333333;11.525;Puerto Montt;3;1;1;1;70;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 3;3;0127b866534d;Hombre;-41.248392;-73.009056;22.7;25.341;Llanquihue;4;2;0;2;63;4;Mayor;0;0;2;1;0;0;0;0;1;Llanquihue
+cluster 3;3;9125987b622f;Hombre;-41.4549809;-72.9583174;4.566666667;1.132;Puerto Montt;3;3;0;0;71;5;Mayor;0;0;2;1;0;0;2;0;0;Llanquihue
+cluster 0;0;037eff01a7d4;Hombre;-41.2710404;-72.9925059;19.9;22.768;Llanquihue;1;0;1;0;60;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;f6a92b6339e0;Hombre;-41.4559105;-72.9515436;3.1;1.286;Puerto Montt;1;0;0;1;36;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;044fc010aaf6;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;69;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;38288187da84;Mujer;-41.4652378;-72.9505851;7.783333333;4.021;Puerto Montt;1;0;0;1;81;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;98b2a1c207db;Hombre;-41.3952749;-72.9167624;16.55;11.525;Puerto Montt;1;1;0;0;64;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5b76c0795ccd;Mujer;-41.3312557;-72.9655212;19.26666667;17.263;Puerto Varas;1;1;0;0;63;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;1671eb343b46;Hombre;-41.4848299;-73.0046558;9.9;6.426;Puerto Montt;1;1;0;0;54;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;61a60942fbd4;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;1;0;82;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;f617fe3b216f;Hombre;-41.7747316;-73.1340047;50.51666667;53.369;Calbuco;1;0;0;1;61;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;dc2f91d3ad49;Hombre;-41.325318;-73.0022321;14.76666667;17.345;Puerto Varas;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b4197005fb87;Hombre;-41.4777328;-72.9717996;8.683333333;4.768;Puerto Montt;1;0;0;1;62;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;fd9697073b66;Hombre;-41.52106;-73.4067;46;51;Maullin;1;0;0;1;82;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;68d0c338ed9c;Hombre;-41.3944267;-73.4651433;45.53333333;46.825;Los Muermos;3;0;1;2;82;5;Menor;0;0;2;0;0;0;1;0;2;Llanquihue
+ruido;-1;5a9c30d6a6ea;Mujer;-41.4853901;-72.9865477;14.03333333;8.214;Puerto Montt;1;1;0;0;61;2;Mayor;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 2;2;09e51faeaa7e;Hombre;-41.4696597;-72.9483058;5.366666667;3.225;Puerto Montt;2;1;0;1;61;2;Moderada;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 2;2;78a70f17d815;Hombre;-41.4598245;-72.9475618;3.983333333;1.822;Puerto Montt;2;1;1;0;40;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;ca8e0ed146e5;Hombre;-41.7600271;-73.1433064;44.7;50.923;Calbuco;2;1;0;1;54;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;21c3cfa518dd;Hombre;-41.4545346;-72.9420829;5.8;3.042;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+ruido;-1;203100efbb45;Hombre;-41.2524772;-73.0113054;20.85;24.757;Llanquihue;1;0;0;1;60;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;be97cd12b39a;Hombre;-41.3937837;-72.9145635;17.2;11.861;Puerto Montt;2;1;0;1;65;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;cd56f32f2af0;Hombre;-41.4804635;-72.9717409;9.283333333;5.248;Puerto Montt;3;3;0;0;64;4;Mayor;0;0;0;3;0;0;1;0;0;Llanquihue
+cluster 2;2;ba035071d5b8;Hombre;-41.6035753;-72.6919024;40.08333333;35.12;Puerto Montt;2;1;0;1;63;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;31798def074a;Hombre;-41.7619398;-73.1343758;47.65;52.273;Calbuco;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;930d96bf20a7;Hombre;-41.3156462;-73.0008139;14.85;17.09;Puerto Varas;2;0;0;2;68;2;Moderada;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 2;2;7c30d1d57550;Hombre;-41.4700439;-73.0048403;10.58333333;7.499;Puerto Montt;2;1;0;1;50;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;327694a6f2bd;Hombre;-41.1518229;-73.4190313;52.2;63.471;Fresia;2;1;0;1;64;3;Mayor;0;0;0;2;0;0;1;0;0;Llanquihue
+cluster 1;1;7cc72eef14d1;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;80;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;b0c7f964517f;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;2;0;0;2;70;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;ab6c4ca71a9a;Hombre;-41.6030817;-73.5966719;67.51666667;76.418;Maullin;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;8fea99ee0236;Hombre;-41.4598245;-72.9475618;3.983333333;1.822;Puerto Montt;1;0;1;0;61;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;a3b291e0feaf;Mujer;-41.4829079;-72.8432375;18.3;13.029;Puerto Montt;3;1;0;2;71;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;19ab09d7ac52;Mujer;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;1;1;0;0;73;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;eca9614e8c68;Mujer;-41.3315885;-72.9739885;17.55;16.627;Puerto Varas;1;0;0;1;65;2;Moderada;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 1;1;2151a90b4f6f;Hombre;-41.4964761;-73.0171987;12.15;8.835;Puerto Montt;1;0;0;1;83;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;d6a01026a5a9;Hombre;-41.6158392;-73.5961288;56.5;72.143;Maullin;1;0;0;1;71;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;92da10dc74c3;Hombre;-41.4025081;-73.4648869;47.68333333;47.656;Los Muermos;3;2;0;1;78;3;Mayor;0;0;0;2;0;0;1;0;0;Llanquihue
+cluster 0;0;7750cc8e5709;Hombre;-41.4001561;-72.9015123;17.18333333;11.779;Puerto Montt;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;0a9c4f3a9f97;Hombre;-41.6733882;-73.6241872;56.98333333;75.511;Maullin;2;0;0;2;65;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;8c7ba878172f;Hombre;-41.455491;-72.9467046;4.15;1.835;Puerto Montt;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;d4aa3463824a;Mujer;-41.4766813;-72.9786504;10.06666667;5.379;Puerto Montt;1;0;0;1;68;2;Moderada;0;0;0;1;0;0;1;0;0;Llanquihue
+ruido;-1;0e8b17b990fb;Hombre;-41.4483206;-72.9161552;8.183333333;4.413;Puerto Montt;1;1;0;0;51;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;781b7820232f;Hombre;-41.3885553;-73.467293;46.18333333;47.155;Los Muermos;1;0;0;1;78;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 3;3;daa1cc7fa6f6;Hombre;-41.4508333;-72.9033333;11.43333333;6.045;Puerto Montt;3;1;1;1;70;4;Moderada;0;0;2;2;0;0;0;0;0;Llanquihue
+ruido;-1;822ec9acf435;Hombre;-41.4575384;-72.9279641;5.016666667;2.77;Puerto Montt;1;0;0;1;52;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;331cd5a098f1;Hombre;-41.4192191;-72.883068;17.66666667;11.063;Puerto Montt;1;0;0;1;57;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;17bc7ef9ba16;Hombre;-41.7416513;-73.6985944;59.16666667;79.373;Maullin;3;1;1;1;62;4;Mayor;0;0;1;1;0;0;0;0;2;Llanquihue
+cluster 1;1;c75f0647d713;Hombre;-41.4839485;-72.9730226;10.16666667;5.578;Puerto Montt;1;1;0;0;70;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;6dbf565ff416;Hombre;-41.256029;-73.01132;19.3;24.272;Llanquihue;1;0;0;1;67;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;faa3cdf59ca9;Hombre;-41.771904;-73.13249;49.55;53.112;Calbuco;2;1;0;1;67;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;8ad9dc101d41;Hombre;-41.4574306;-72.9431859;5.316666667;2.363;Puerto Montt;2;1;0;1;70;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;7ac58474087c;Hombre;-41.383333;-72.8833329;22.56666667;15.094;Puerto Montt;1;0;0;1;92;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;c00463e79764;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;69;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;fbd3ac3024d9;Mujer;-41.2045178;-73.0301601;25.8;32.273;Llanquihue;1;0;1;0;74;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;dabcfc7e9364;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;67;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;9d04a2d76220;Hombre;-41.3952749;-72.9167624;16.55;11.525;Puerto Montt;2;0;0;2;57;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;d8a2a0071c45;Hombre;-41.463059;-72.9514258;4.4;2.079;Puerto Montt;2;0;0;2;52;3;Moderada;0;0;1;0;1;0;1;0;0;Llanquihue
+cluster 3;3;bddf16d1819d;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;3;1;0;2;69;3;Mayor;0;0;1;2;0;0;0;0;0;Llanquihue
+ruido;-1;85cbca57446f;Hombre;-41.4607574;-72.9296455;6.433333333;3.604;Puerto Montt;2;1;0;1;76;4;Mayor;0;0;2;1;0;0;1;0;0;Llanquihue
+ruido;-1;602dc856daef;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;67;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;8b107372b76c;Hombre;-41.4507325;-72.9232404;6.866666667;3.702;Puerto Montt;1;1;0;0;75;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;4512ce92d5d6;Mujer;-41.2596971;-73.0029279;18.83333333;22.859;Llanquihue;1;1;0;0;64;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;d868888a4cb0;Mujer;-41.4741484;-72.9559645;6.433333333;3.468;Puerto Montt;3;1;0;2;94;3;Mayor;0;0;1;0;0;0;0;0;2;Llanquihue
+cluster 3;3;756f31e8cfb8;Mujer;-41.1524991;-73.4217541;52.95;63.688;Fresia;4;1;0;3;52;4;Mayor;0;0;3;1;0;0;0;0;0;Llanquihue
+ruido;-1;b382401d42ff;Hombre;-41.331966;-72.9733099;17.5;16.748;Puerto Varas;5;4;0;1;65;6;Mayor;0;0;1;2;0;1;0;0;2;Llanquihue
+cluster 3;3;7276cce6b8a3;Hombre;-41.4650251;-72.9197681;7.9;4.193;Puerto Montt;4;2;2;0;63;6;Mayor;0;0;2;1;0;1;2;0;0;Llanquihue
+cluster 0;0;76ed2e3aaf09;Hombre;-41.451875;-72.9570925;2.65;0.59;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;010f6ebb8b2b;Mujer;-41.4564887;-72.9526196;3.433333333;1.227;Puerto Montt;1;1;0;0;73;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e28c48d434a3;Hombre;-41.2540726;-73.0032188;22.53333333;25.336;Llanquihue;1;1;0;0;79;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;dd7fdc17abe9;Mujer;-41.2486233;-73.0112647;22.71666667;25.282;Llanquihue;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a93a3f72d2d2;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;1;0;0;1;82;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d22240030a3f;Hombre;-41.4595299;-72.9405892;5.816666667;2.682;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;40dc6e97dbf4;Hombre;-41.4780473;-72.9743429;8.65;4.826;Puerto Montt;2;1;1;0;60;2;Menor;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 1;1;16d3ddd9969d;Hombre;-41.3335851;-72.9739715;17.88333333;16.811;Puerto Varas;1;1;0;0;80;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;adcbe68b4dc8;Hombre;-41.4734138;-72.913301;10.58333333;6.146;Puerto Montt;1;0;0;1;70;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;75e6b83c5c2b;Hombre;-41.4220567;-72.9094302;12.66666667;8.625;Puerto Montt;1;1;0;0;70;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;2617372425b3;Hombre;-41.3289531;-72.9702661;17.66666667;16.722;Puerto Varas;2;0;0;2;60;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;addb5766a1fa;Hombre;-41.1232144;-73.0555506;30.13333333;41.6;Frutillar;3;0;2;1;80;3;Menor;0;0;2;0;0;0;1;0;0;Llanquihue
+cluster 0;0;3d5de418de46;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;54;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;dc191cc3df43;Mujer;-41.4863179;-72.9640035;10.45;5.062;Puerto Montt;2;1;0;1;58;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;45c0e11de811;Hombre;-41.4612343;-72.9206103;8.05;4.257;Puerto Montt;1;0;0;1;66;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;055e8707def4;Hombre;-41.2487036;-73.0089397;22.45;25.3;Llanquihue;1;1;0;0;51;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;66edfd0bd659;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;2;0;0;2;57;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;13bd134f7ac6;Hombre;-41.3258373;-72.9758231;16.53333333;16.062;Puerto Varas;2;0;1;1;86;2;Menor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 2;2;5199520ab566;Mujer;-41.4741012;-72.9173796;9.1;5.723;Puerto Montt;2;1;0;1;68;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;7d9ce129a041;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;68;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;b263b96ff30e;Hombre;-41.4754903;-72.985437;10.66666667;5.762;Puerto Montt;1;0;1;0;61;2;Menor;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 0;0;44292863a59d;Mujer;-41.3907283;-72.8861508;20.21666667;13.798;Puerto Montt;1;1;0;0;54;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;ff7f665cab9c;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;54;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e6fa48a2444f;Hombre;-41.3952749;-72.9167624;16.33333333;11.525;Puerto Montt;1;0;1;0;68;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a5853aa91218;Mujer;-41.3272778;-72.9691911;17.91666667;16.989;Puerto Varas;1;1;0;0;65;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;bcfefd98b092;Hombre;-41.3991695;-72.9178369;15.4;10.98;Puerto Montt;2;1;0;1;61;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;dc19379ff8b5;Hombre;-41.4783552;-72.9717676;9.05;4.884;Puerto Montt;2;1;0;1;55;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d87c2293d97e;Hombre;-41.1124647;-73.0496621;30.25;41.685;Frutillar;1;1;0;0;65;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;1bd3fbeb7e47;Hombre;-41.3172309;-72.9847342;17.2;18.28;Puerto Varas;1;0;1;0;70;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;e4e7c80fd6e9;Hombre;-41.4545442;-72.9475514;4.6;1.782;Puerto Montt;1;0;0;1;57;2;Moderada;0;0;0;0;0;1;1;0;0;Llanquihue
+cluster 1;1;de3910ba3176;Hombre;-41.7591769;-73.1441613;44.6;50.82;Calbuco;1;0;0;1;87;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;81f6ce7c652d;Hombre;-41.1133201;-73.0513346;30.25;41.586;Frutillar;5;1;0;4;59;5;Moderada;0;0;3;2;0;0;0;0;0;Llanquihue
+ruido;-1;84b89032d5a7;Mujer;-41.273468;-72.9903577;19.98333333;23.184;Llanquihue;3;1;0;2;57;6;Moderada;0;0;2;2;0;0;1;0;1;Llanquihue
+cluster 0;0;8a261745d9a7;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;1;0;0;62;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;5b9f5c7445f5;Hombre;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;e81c0c6c99fe;Hombre;-41.1123596;-73.0531193;30.86666667;41.799;Frutillar;2;1;0;1;70;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;cc5383690203;Mujer;-41.6183881;-73.6016737;57.06666667;72.349;Maullin;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;6288d69f2d23;Mujer;-41.3928624;-72.9058728;18.35;12.476;Puerto Montt;1;0;0;1;80;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;d8f8e4cfe5ec;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;0;0;2;63;2;Moderada;0;0;0;2;0;0;0;0;0;Llanquihue
+cluster 2;2;783e861e659a;Mujer;-41.4755513;-72.9731461;7.883333333;4.434;Puerto Montt;2;1;0;1;57;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;85dcb0f70a0b;Hombre;-41.3297568;-72.9691013;17.88333333;16.862;Puerto Varas;3;1;0;2;72;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;05b853f75784;Hombre;-41.456457;-72.944554;4.783333333;2.123;Puerto Montt;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5cb3974f874d;Mujer;-41.1511945;-73.4257272;53.85;64.183;Fresia;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;266541b94db8;Hombre;-41.1524991;-73.4217541;52.93333333;63.688;Fresia;2;0;0;2;78;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;a004eae5181f;Mujer;-41.6030817;-73.5966719;67.51666667;76.418;Maullin;2;1;0;1;70;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;e281d20bbdbe;Hombre;-41.1124647;-73.0496621;30.25;41.685;Frutillar;1;0;0;1;67;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;ab9828bf2612;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;79;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 3;3;4b4301818915;Hombre;-41.4638503;-72.9512809;4.6;2.17;Puerto Montt;3;0;1;2;69;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;115bab4df744;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;77;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;71efdd988dcb;Mujer;-41.7602842;-73.1469085;46.81666667;51.409;Calbuco;1;1;0;0;50;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;c28e4725aaaf;Mujer;-41.483729;-72.852251;17.33333333;12.271;Puerto Montt;2;0;1;1;63;2;Moderada;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 2;2;a967772e4d86;Mujer;-41.7500103;-73.7059793;61.35;80.506;Maullin;2;0;0;2;55;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;2175680ca7b3;Mujer;-41.4752398;-72.9734781;8.333333333;4.411;Puerto Montt;1;0;1;0;64;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;efa4b3922035;Hombre;-41.47927;-72.99811;8.583333333;5.679;Puerto Montt;1;0;0;1;73;2;Moderada;0;0;0;0;0;1;1;0;0;Llanquihue
+cluster 2;2;83f94f46b564;Hombre;-41.3442756;-72.9428094;23.38333333;20.107;Puerto Varas;2;2;0;0;82;2;Mayor;0;0;1;0;0;0;0;0;1;Llanquihue
+ruido;-1;cd7a728d3530;Hombre;-41.0233888;-73.4646452;61.33333333;79.085;Fresia;1;1;0;0;67;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;1a6f4cd9340f;Hombre;-41.4572876;-72.9083092;9.2;5.205;Puerto Montt;1;0;0;1;70;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;a0e1baabc1d6;Hombre;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;1;0;0;1;67;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;d396e6dfbc1c;Hombre;-41.4632099;-72.92171;7.216666667;4.088;Puerto Montt;2;1;0;1;76;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;20b99029ca99;Hombre;-41.481378;-72.959257;10.06666667;4.973;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;5f1f437144fd;Mujer;-41.7707315;-73.1351564;49.06666667;52.785;Calbuco;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a36bdc81f7a9;Hombre;-41.4666828;-72.9757659;5.7;3.421;Puerto Montt;1;0;0;1;51;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;0f0888d771ab;Hombre;-41.6183881;-73.6016737;57.05;72.349;Maullin;1;1;0;0;68;2;Mayor;0;0;0;0;1;0;0;0;1;Llanquihue
+cluster 3;3;9a78bedd102b;Mujer;-41.4751469;-72.9296334;10.71666667;6.914;Puerto Montt;3;0;0;3;84;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+ruido;-1;d32257d471bf;Hombre;-41.387736;-72.8976878;20.81666667;13.698;Puerto Montt;6;5;0;1;40;6;Mayor;0;0;3;3;0;0;0;0;0;Llanquihue
+cluster 0;0;03ce1af5c0a0;Mujer;-41.6183881;-73.6016737;57.05;72.349;Maullin;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;296e58903441;Hombre;-41.2718752;-72.9952321;19.23333333;22.502;Llanquihue;1;1;0;0;66;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 3;3;dee58dcc5f22;Hombre;-41.4588191;-72.9341759;5.983333333;3.272;Puerto Montt;5;3;1;1;68;5;Moderada;0;0;5;0;0;0;0;0;0;Llanquihue
+cluster 1;1;444ddf7a5b0b;Hombre;-41.6183881;-73.6016737;57;72.349;Maullin;1;0;0;1;69;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;faa5e97e79c2;Hombre;-41.3355334;-72.9693158;19.43333333;17.514;Puerto Varas;3;1;1;1;66;3;Menor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 2;2;42d96a34e6c6;Hombre;-41.1235272;-73.0573036;30.75;41.686;Frutillar;2;1;0;1;65;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;b2d613456260;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;2;1;0;1;57;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;da1b5685cee3;Hombre;-41.1127615;-73.0525219;30.58333333;41.703;Frutillar;1;0;0;1;64;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;b3d51959926b;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;55;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;59f4720ee8df;Hombre;-41.3913855;-73.4668688;46;46.837;Los Muermos;2;1;0;1;74;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;ab737aeedc61;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;3;1;0;2;79;3;Moderada;0;0;2;0;0;0;0;0;1;Llanquihue
+cluster 0;0;298544af61b0;Mujer;-41.3315656;-72.9745259;17.21666667;16.582;Puerto Varas;1;0;0;1;56;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;c415a4ec062b;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;7;4;0;3;56;7;Mayor;0;0;5;2;0;0;0;0;0;Llanquihue
+cluster 0;0;7466b4ffcf5f;Hombre;-41.4652839;-72.9823695;6.433333333;3.714;Puerto Montt;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;a58248fe1e5e;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;3;1;0;2;46;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 0;0;f584d5590834;Hombre;-41.3169056;-72.6939957;44.15;36.4;Puerto Varas;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;d67fbe7b28b8;Mujer;-41.402523;-72.907912;16.46666667;11.388;Puerto Montt;1;0;0;1;78;3;Moderada;0;0;1;1;0;0;1;0;0;Llanquihue
+cluster 2;2;aaa21afb67a7;Hombre;-41.7693098;-73.1286677;49.05;52.746;Calbuco;2;0;0;2;79;2;Moderada;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 1;1;a13a1b3ed6e0;Mujer;-41.782446;-73.1413793;53.58333333;54.637;Calbuco;1;0;0;1;75;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;75483b86bdfc;Hombre;-41.4598245;-72.9475618;3.983333333;1.822;Puerto Montt;1;0;1;0;78;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;ac48ba740809;Hombre;-41.4829079;-72.8432375;18.3;13.029;Puerto Montt;2;1;0;1;51;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;119f1e37b9de;Mujer;-41.4751493;-72.9874645;9.533333333;5.084;Puerto Montt;1;0;0;1;80;2;Moderada;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 2;2;7f704647fce0;Hombre;-41.0280684;-73.1112698;38.18333333;56.079;Frutillar;2;1;0;1;71;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;bc0e09754bc4;Hombre;-41.4508333;-72.9033333;11.43333333;6.045;Puerto Montt;1;1;0;0;57;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;285637d36a9e;Mujer;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;3;1;2;0;81;3;Menor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 1;1;4b222d108d38;Hombre;-41.4939072;-72.8965539;15.53333333;9.473;Puerto Montt;1;0;0;1;70;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;8dba1bb6f1c8;Hombre;-41.511469;-72.784843;24.78333333;19.301;Puerto Montt;1;1;0;0;67;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d749eab0a295;Hombre;-41.462129;-72.916414;7.566666667;4.203;Puerto Montt;1;0;0;1;43;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;1c98a8b9987b;Mujer;-41.3285469;-72.9658721;18.2;17.113;Puerto Varas;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;46c16123ac53;Hombre;-41.4774823;-72.9645039;7.55;4.214;Puerto Montt;2;2;0;0;82;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;3fc8b82d0497;Mujer;-41.4652629;-72.957635;6.7;3.429;Puerto Montt;4;3;0;1;55;5;Mayor;0;0;3;2;0;0;0;0;0;Llanquihue
+ruido;-1;62f5b23b7873;Mujer;-41.782714;-73.1410459;53.7;54.677;Calbuco;1;0;0;1;64;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;c603d7bbb1de;Hombre;-41.3256586;-73.0823718;19.81666667;22.253;Puerto Varas;1;0;0;1;51;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;1338fbea3559;Hombre;-41.2668204;-72.9996575;18.03333333;22.188;Llanquihue;1;0;0;1;69;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;3797cf784dee;Mujer;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;1;0;0;1;78;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;73c88357a18d;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;74;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;07c31bb41a4f;Mujer;-41.4830813;-72.9804997;11.11666667;5.736;Puerto Montt;1;0;0;1;55;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;f107dcaf439e;Hombre;-41.425766;-72.9090755;12.2;8.05;Puerto Montt;1;1;0;0;69;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;886d1c86a5f4;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;57;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;616004f62ba5;Hombre;-41.3910042;-73.4676729;46.35;46.949;Los Muermos;1;0;1;0;70;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;5dc450595af6;Hombre;-41.7335439;-73.6930843;62.73333333;83.69;Maullin;3;2;0;1;67;3;Mayor;0;0;1;1;0;0;1;0;0;Llanquihue
+cluster 1;1;dc61c94248e9;Hombre;-41.4790989;-72.9890524;11.96666667;6.19;Puerto Montt;1;1;0;0;74;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;65a4e7b3a48a;Hombre;-41.4656631;-72.9778232;5.466666667;3.216;Puerto Montt;2;1;0;1;78;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;1d6a0f947229;Mujer;-41.459943;-72.947157;4.066666667;1.857;Puerto Montt;2;2;0;0;61;2;Mayor;0;0;0;2;0;0;0;0;0;Llanquihue
+cluster 2;2;bc80409c1697;Mujer;-41.4040239;-72.909109;16.43333333;10.856;Puerto Montt;2;1;0;1;52;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;f7ec40af41e6;Hombre;-41.468523;-72.946821;6.016666667;3.458;Puerto Montt;1;1;0;0;73;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;bcb93f77f824;Hombre;-41.15275;-73.42426;53.88333333;63.964;Fresia;1;1;0;0;88;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;fce1fa95aa63;Hombre;-41.58023656;-73.58149628;63.78333333;72.01;Maullin;2;0;0;2;73;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;88bfdacc23e6;Mujer;-41.5055641;-72.7542869;33.1;22.441;Puerto Montt;1;0;0;1;60;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;388eb9616d7f;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;4;3;0;1;65;4;Mayor;0;0;4;0;0;0;0;0;0;Llanquihue
+cluster 1;1;2886fe5dbdb1;Hombre;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;c72b1184ee10;Hombre;-41.4588399;-72.9528744;3.15;1.531;Puerto Montt;4;1;1;2;69;5;Mayor;0;0;4;1;0;0;0;0;0;Llanquihue
+cluster 1;1;87c172ce4b83;Hombre;-41.456132;-72.903189;10.71666667;5.8;Puerto Montt;1;0;0;1;83;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;e36a4dfe3fae;Hombre;-41.4723981;-72.920079;10.56666667;6.088;Puerto Montt;2;1;1;0;84;4;Mayor;0;0;0;2;0;0;1;0;1;Llanquihue
+cluster 0;0;6e5a30927a64;Hombre;-41.3827379;-72.9187896;19.51666667;12.953;Puerto Montt;1;1;0;0;61;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;c997cb5e45c4;Hombre;-41.5247077;-73.050317;17.93333333;16.279;Puerto Montt;3;1;0;2;69;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 1;1;65611de9b808;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;77;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;bab963d6009c;Hombre;-41.7685899;-73.1271907;48.45;52.737;Calbuco;2;1;0;1;72;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5449a8f5d28f;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;61;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;b9add61bf51b;Hombre;-41.4653356;-72.9576038;6.75;3.436;Puerto Montt;1;0;0;1;84;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;eb6b0acdd547;Mujer;-41.4637387;-72.9198835;7.216666667;3.989;Puerto Montt;1;0;0;1;93;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;cb9f2d4fdc8b;Mujer;-41.1195805;-73.0477953;31.38333333;42.081;Frutillar;1;1;0;0;67;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;edb50df24989;Hombre;-41.4792241;-72.960624;9.5;4.422;Puerto Montt;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;2eacf6d94cec;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;67;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;956e81c57530;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;3;1;0;2;72;3;Moderada;0;0;0;1;0;0;0;0;2;Llanquihue
+cluster 3;3;e3561884abb5;Hombre;-41.268306;-72.9929566;18.55;22.517;Llanquihue;3;3;0;0;71;3;Mayor;0;0;1;2;0;0;0;0;0;Llanquihue
+cluster 3;3;844b3d70bcc1;Hombre;-41.292323;-73.246267;34.58333333;39.739;Llanquihue;3;2;0;1;64;3;Mayor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;aead425c4840;Hombre;-41.4319264;-72.8792774;16.83333333;10.919;Puerto Montt;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;9685d7b92304;Hombre;-41.4571932;-72.9089794;9;5.153;Puerto Montt;2;1;0;1;73;3;Moderada;1;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;75bde3001282;Mujer;-41.484532;-73.0010483;10.08333333;6.441;Puerto Montt;1;0;0;1;87;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;6837e9c729b8;Hombre;-41.3156797;-72.9914285;17.21666667;18.166;Puerto Varas;1;1;0;0;78;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;1ce480df1f5d;Hombre;-41.461406;-72.9180586;7.2;4.058;Puerto Montt;4;2;0;2;74;4;Mayor;0;0;4;0;0;0;0;0;0;Llanquihue
+cluster 1;1;de2c502085a0;Mujer;-41.4656245;-72.967728;5.1;2.528;Puerto Montt;1;0;0;1;75;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a8090c596e88;Hombre;-41.4717735;-72.9157368;10.06666667;6.09;Puerto Montt;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9470472e02b3;Hombre;-41.4607678;-72.9526317;4;1.915;Puerto Montt;1;0;0;1;81;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a799c3e9e573;Hombre;-41.45818;-72.93591;6;2.8;Puerto Montt;1;0;1;0;83;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;39b5b91e43ca;Hombre;-41.4745652;-72.9847718;9.65;5.425;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;0b8f84f288c2;Hombre;-41.3276733;-72.968733;17.8;16.927;Puerto Varas;1;0;1;0;79;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;cf2054ec5161;Mujer;-41.506967;-73.0147516;20.76666667;13.355;Puerto Montt;1;0;0;1;46;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;a9f18c8598fb;Hombre;-41.453964;-72.9481374;4.233333333;1.678;Puerto Montt;7;2;1;4;47;7;Menor;0;0;5;2;0;0;0;0;0;Llanquihue
+cluster 0;0;4e6cc76a453f;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;61;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;60f7379a537f;Hombre;-41.4313913;-72.9318608;9.35;4.712;Puerto Montt;1;0;0;1;88;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;ddad87af00de;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;73;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;6fe7954be566;Hombre;-41.4560226;-72.9293694;4.966666667;2.641;Puerto Montt;2;2;0;0;89;2;Mayor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 0;0;4255b52279fc;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;1;0;0;60;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;dc319da89a91;Mujer;-41.4726554;-72.9804531;8.933333333;4.901;Puerto Montt;1;1;0;0;52;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;ed3cc6207239;Hombre;-41.3116263;-72.9938458;17.06666667;18.237;Puerto Varas;2;2;0;0;83;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;0cb10ea3c802;Hombre;-41.1191634;-73.050107;30.38333333;41.89;Frutillar;1;1;0;0;83;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;4fe43c4b9b1a;Hombre;-41.476958;-72.9965972;13.08333333;6.668;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;f8ef65b3c1dd;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;59;2;Mayor;0;0;0;0;0;1;1;0;0;Llanquihue
+cluster 2;2;0c6f80115278;Hombre;-41.4523467;-72.9377632;3.666666667;1.913;Puerto Montt;2;1;0;1;56;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;529ce69f50cc;Mujer;-41.771272;-73.1312519;49.75;52.992;Calbuco;1;0;0;1;58;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;31f6befafefc;Mujer;-41.3363245;-72.969159;19.4;17.532;Puerto Varas;1;1;0;0;73;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a7f61a4b3705;Hombre;-41.772366;-73.1387566;50.33333333;53.347;Calbuco;1;1;0;0;69;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;cb344ec338d9;Hombre;-41.3952749;-72.9167624;16.55;11.525;Puerto Montt;2;1;1;0;57;3;Mayor;0;0;1;2;0;0;0;0;0;Llanquihue
+cluster 1;1;5f514adf29ea;Hombre;-41.4725211;-72.9704684;6.866666667;3.87;Puerto Montt;1;1;0;0;75;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;f377e7b566f2;Hombre;-41.7748958;-73.1266816;51.11666667;53.441;Calbuco;1;1;0;0;53;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;1cb865ce62b7;Hombre;-41.462702;-72.91723;7.083333333;4.072;Puerto Montt;1;1;0;0;74;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;1a20b2977dd5;Mujer;-41.4811113;-72.9706532;9.4;5.172;Puerto Montt;4;3;0;1;64;4;Mayor;0;0;3;0;0;0;1;0;0;Llanquihue
+cluster 3;3;646849274ff2;Hombre;-41.1524991;-73.4217541;52.95;63.688;Fresia;3;1;0;2;79;3;Moderada;0;0;1;0;0;0;1;0;1;Llanquihue
+ruido;-1;19c51ad4c60a;Hombre;-41.4727661;-72.9997252;9.116666667;6.951;Puerto Montt;1;1;0;0;64;3;Mayor;0;0;1;0;1;0;1;0;0;Llanquihue
+cluster 0;0;33f643f24a1b;Hombre;-41.4738412;-72.9656067;7.583333333;4.033;Puerto Montt;1;1;0;0;61;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;0ab4b21b0921;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;87;2;Mayor;0;0;0;1;0;0;0;0;1;Llanquihue
+cluster 0;0;9b9a0a77ab32;Hombre;-41.3952749;-72.9167624;16.55;11.525;Puerto Montt;1;1;0;0;60;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;87e2d504cc64;Hombre;-41.388534;-73.4671377;46.2;47.155;Los Muermos;1;1;0;0;60;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;13a886178f1f;Hombre;-41.7135632;-72.9812654;150;69.72;Calbuco;1;0;1;0;61;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;b47382ac2807;Hombre;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;1;0;0;1;76;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;a7fa14840e2b;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;3;1;2;0;65;3;Menor;0;0;1;0;0;0;1;0;1;Llanquihue
+cluster 2;2;9275ce190338;Mujer;-41.5279275;-73.0530676;17.95;17.591;Puerto Montt;2;2;0;0;73;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;eb50daa2aafe;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;59;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;208527ab758c;Hombre;-41.7416513;-73.6985944;59.16666667;79.373;Maullin;1;1;0;0;65;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 2;2;1d33252eb72d;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;2;1;1;0;72;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;66606d13b58a;Hombre;-41.4644177;-72.9203157;7.583333333;4.085;Puerto Montt;3;3;0;0;61;3;Mayor;1;0;0;2;0;0;0;0;0;Llanquihue
+cluster 1;1;7a48590c9ccb;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;1;1;0;0;83;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;3670b1147bb3;Hombre;-41.6183881;-73.6016737;57.05;72.349;Maullin;1;1;0;0;84;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;46d7cc2aca34;Hombre;-41.6065499;-72.6906737;41.75;35.48;Puerto Montt;1;1;0;0;60;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;bcb0c99b0de9;Hombre;-41.4727093;-72.9433683;7.983333333;4.073;Puerto Montt;2;2;0;0;60;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+ruido;-1;5839537655db;Hombre;-41.6654082;-72.2968285;156.1833333;91.55;Cochamo;1;1;0;0;73;2;Mayor;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;e51345b03c21;Hombre;-41.4652895;-72.9609987;5.833333333;3.213;Puerto Montt;2;1;0;1;79;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;0c8fc468c492;Hombre;-41.470973;-72.927648;10.23333333;5.632;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;db8038e0c614;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;70;2;Mayor;0;0;0;0;0;1;1;0;0;Llanquihue
+cluster 0;0;15a916bfbfb0;Mujer;-41.4814322;-72.9707558;9.5;5.209;Puerto Montt;1;0;0;1;63;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;9b5dbdf79962;Hombre;-41.4745652;-72.9847718;9.65;5.425;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d8bb4fa6ac1f;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;8c58845e5a75;Hombre;-41.4653767;-72.9192539;8.116666667;4.249;Puerto Montt;2;2;0;0;84;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;97b20a179649;Hombre;-41.3952749;-72.9167624;16.55;11.525;Puerto Montt;3;1;0;2;68;5;Moderada;0;0;2;1;0;0;1;0;1;Llanquihue
+cluster 2;2;d61793a0ad56;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;63;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;29d7617144b7;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;2;0;1;1;66;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 1;1;8a4ea0b3478f;Mujer;-41.7702726;-73.1352078;48.95;52.787;Calbuco;1;1;0;0;74;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;34c362016d99;Hombre;-41.4592378;-72.9494016;4.066666667;1.813;Puerto Montt;3;3;0;0;68;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 3;3;a2f4946f3282;Hombre;-41.4676;-72.937;7.516666667;4.217;Puerto Montt;4;3;0;1;27;5;Mayor;0;0;3;0;0;1;1;0;0;Llanquihue
+cluster 0;0;2b0664421ecc;Hombre;-41.2539502;-73.0110638;20.28333333;24.551;Llanquihue;1;0;0;1;50;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;269a67915e0c;Hombre;-41.4647478;-72.9181902;8.15;4.223;Puerto Montt;1;1;0;0;59;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;3a2435d58287;Mujer;-41.3172309;-72.9847342;17.2;18.28;Puerto Varas;1;0;0;1;90;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;e7f26132177a;Hombre;-41.4552671;-72.9524405;2.8;1.226;Puerto Montt;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;895d5f0f36c9;Hombre;-41.7416513;-73.6985944;59.18333333;79.373;Maullin;1;1;0;0;45;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;f591e62724d7;Hombre;-41.4571932;-72.9089794;9.033333333;5.153;Puerto Montt;1;0;0;1;73;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 3;3;3d9dc2532a2c;Hombre;-41.1917011;-73.0644733;23.9;32.471;Llanquihue;3;1;1;1;47;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;5c418ca12413;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;1;1;0;0;71;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;0c4a850d6b15;Mujer;-41.4594312;-72.9524233;3.1;1.566;Puerto Montt;1;1;0;0;77;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;aac3c789d2b9;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;69;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;aa7fa0405e3a;Hombre;-41.3931186;-73.4717293;47.66666667;47.6;Los Muermos;2;1;0;1;78;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;afced882dce7;Hombre;-41.4794541;-72.9567043;8.266666667;4.025;Puerto Montt;1;1;0;0;89;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;736608074f76;Hombre;-41.383333;-72.8833329;22.56666667;15.094;Puerto Montt;2;1;1;0;73;2;Mayor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 3;3;ae63fb09125a;Hombre;-41.4814322;-72.9707558;9.483333333;5.209;Puerto Montt;3;3;0;0;68;3;Mayor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;967a388a95d5;Hombre;-41.4814322;-72.9707558;9.483333333;5.209;Puerto Montt;1;0;1;0;61;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;6f2b946d5022;Hombre;-41.4539999;-72.9517888;3.316666667;1.335;Puerto Montt;1;0;0;1;64;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;b7a2bbd9e368;Hombre;-41.4560226;-72.9293694;4.983333333;2.641;Puerto Montt;1;1;0;0;72;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b53909c9f0f1;Hombre;-41.4718448;-72.9160306;10.05;6.059;Puerto Montt;1;0;0;1;51;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;add980de2afe;Hombre;-41.4723632;-72.9193394;10.41666667;5.915;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;ddaecabfc058;Hombre;-41.4579362;-72.9376311;4.333333333;2.485;Puerto Montt;1;1;0;0;76;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;682305873a8e;Hombre;-41.4755606;-72.9719961;7.95;4.507;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d8d1d59010b7;Mujer;-41.2918989;-72.9966173;17.56666667;20.356;Llanquihue;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;76a0461db115;Hombre;-41.3980587;-72.9083498;16.96666667;11.842;Puerto Montt;2;2;0;0;65;2;Mayor;0;0;0;0;0;0;2;0;0;Llanquihue
+ruido;-1;97abb980725d;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;41;3;Moderada;0;0;0;1;0;1;1;0;0;Llanquihue
+cluster 2;2;8e6989daffc5;Hombre;-41.3141174;-72.9949722;16.48333333;17.804;Puerto Varas;2;1;0;1;70;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;5a4a48beef20;Hombre;-41.3952749;-72.9167624;16.5;11.525;Puerto Montt;1;1;0;0;59;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;fc7fed0ef04a;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;94;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;3d53233b4e46;Mujer;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;2;1;0;1;70;2;Mayor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 1;1;a02eb0e1198e;Hombre;-41.6183881;-73.6016737;57.06666667;72.349;Maullin;1;0;0;1;81;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;6249b9184082;Hombre;-41.4697118;-72.9553878;5.8;2.931;Puerto Montt;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;de6bfc126198;Hombre;-41.3908042;-72.8905002;20.5;13.577;Puerto Montt;1;0;0;1;88;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;d181b64e7c4e;Hombre;-41.1463316;-73.0224244;37.05;39.751;Frutillar;1;1;0;0;58;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;fcae8c411c3a;Hombre;-41.4787139;-72.9650069;8.25;4.409;Puerto Montt;1;0;0;1;79;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;c44037b60caf;Mujer;-41.1582755;-73.4002314;50.23333333;62.429;Fresia;1;1;0;0;84;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;37e0a0638360;Mujer;-41.4508333;-72.9033333;11.43333333;6.045;Puerto Montt;1;1;0;0;75;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;f314eb5b4f93;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;0;0;1;61;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;566f99532c86;Hombre;-41.4643799;-72.9646045;5.583333333;3.095;Puerto Montt;1;1;0;0;59;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d021d1682b19;Hombre;-41.3908844;-73.4596512;44.63333333;46.253;Los Muermos;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;7b338641bfa7;Hombre;-41.3322222;-72.9659963;18.51666667;17.121;Puerto Varas;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;72f8d16bbec9;Mujer;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;1;0;1;0;58;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9d027ab3c5b1;Hombre;-41.6183881;-73.6016737;57.06666667;72.349;Maullin;1;1;0;0;71;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;c2e3b8a7a4b2;Hombre;-41.4696383;-72.9481689;5.383333333;3.237;Puerto Montt;2;0;1;1;70;2;Menor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;8e104b82f736;Hombre;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;1;0;0;1;79;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;29f828a537c0;Hombre;-41.475748;-72.9727919;8.433333333;4.454;Puerto Montt;1;0;0;1;56;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;ba483a2cc402;Hombre;-41.6183881;-73.6016737;57.06666667;72.349;Maullin;1;0;0;1;63;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;99c15e32a942;Hombre;-41.473455;-72.9798554;8.85;4.864;Puerto Montt;2;1;0;1;83;2;Moderada;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 0;0;1b8c6166d1da;Mujer;-41.5269917;-72.7518699;28.25;22.779;Puerto Montt;1;0;0;1;63;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;07e20fd482dc;Mujer;-41.771904;-73.13249;49.88333333;53.112;Calbuco;1;0;0;1;64;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;c97284d514d8;Hombre;-41.4634704;-72.919905;7.1;3.963;Puerto Montt;2;0;0;2;65;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;9224ea6b58e5;Mujer;-41.7618234;-73.1415632;45.7;51.261;Calbuco;4;0;1;3;85;4;Moderada;0;0;4;0;0;0;0;0;0;Llanquihue
+ruido;-1;febf7b1be902;Hombre;-41.3172309;-72.9847342;17.28333333;18.28;Puerto Varas;1;1;0;0;55;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;b49f70c9c566;Hombre;-41.4521012;-73.0224486;12.65;7.61;Puerto Montt;3;2;0;1;57;3;Mayor;0;0;1;1;0;0;1;0;0;Llanquihue
+cluster 2;2;d8df0f7da730;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;55;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+ruido;-1;0cde81efb27d;Hombre;-41.1524991;-73.4217541;52.93333333;63.688;Fresia;1;0;0;1;25;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 3;3;591375ba5cd4;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;3;2;0;1;57;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 1;1;88ad30f22aa7;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;94;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;d2a7f9105f8d;Hombre;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;2;1;0;1;72;2;Mayor;0;0;1;0;0;0;0;0;1;Llanquihue
+ruido;-1;cd49b9f64116;Mujer;-41.6654082;-72.2968285;156.1333333;91.55;Cochamo;1;1;0;0;84;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;9a9a2a8c6d6e;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;d8f69730ca72;Mujer;-41.3901888;-72.9023028;19.63333333;13.113;Puerto Montt;1;1;0;0;74;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;410694670f83;Hombre;-41.4714497;-72.9088498;11.48333333;6.702;Puerto Montt;3;2;0;1;63;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 0;0;75ae6b499828;Hombre;-41.4023764;-73.459005;46.66666667;47.357;Los Muermos;1;0;0;1;59;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;e7070f125ef9;Hombre;-41.4578246;-72.9894106;8.6;4.795;Puerto Montt;1;1;0;0;49;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;6ba34c7a2dd7;Hombre;-41.4609827;-72.9461211;4.766666667;2.04;Puerto Montt;2;1;0;1;72;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;8db8f5a97c54;Mujer;-41.4571932;-72.9089794;9;5.153;Puerto Montt;1;0;0;1;82;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;60219abde984;Hombre;-41.4924307;-72.307996;98.05;108.157;Cochamo;2;0;0;2;62;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;5d1d4cf23d65;Mujer;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;0;0;1;86;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;0ce1d5418ab7;Mujer;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;2;0;0;2;80;2;Moderada;0;0;0;0;0;0;2;0;0;Llanquihue
+cluster 3;3;4a3e4bd7b792;Hombre;-41.48061;-72.9667369;8.683333333;4.75;Puerto Montt;3;3;0;0;77;4;Mayor;0;0;3;1;0;0;0;0;0;Llanquihue
+cluster 1;1;9a72ad66c07a;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;1;0;0;84;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;1de14a18438f;Hombre;-41.478896;-72.9930259;11.63333333;6.975;Puerto Montt;1;1;0;0;42;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;582fb721b621;Mujer;-41.4070675;-73.4681838;47.66666667;48.319;Los Muermos;1;0;0;1;75;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;8e81e918dbbb;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;57;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;7c1c3403ac0d;Hombre;-41.3952749;-72.9167624;16.5;11.525;Puerto Montt;1;0;0;1;64;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;b470115e9e7a;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;71;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;a279b829b1a5;Mujer;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;1;0;0;61;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;3f40a01d0170;Mujer;-41.0390927;-73.4118402;53.76666667;72.918;Fresia;1;1;0;0;67;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;a0409e37b239;Mujer;-41.4726525;-72.9116293;10.78333333;6.376;Puerto Montt;2;1;0;1;85;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+ruido;-1;5ae88ea4ac93;Hombre;-41.4614083;-72.9524246;4.083333333;1.951;Puerto Montt;1;1;0;0;58;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;00774b0c28e2;Mujer;-41.456008;-72.939174;5.433333333;2.88;Puerto Montt;1;0;1;0;50;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;8757b545885a;Hombre;-41.4607924;-72.9617357;4.85;2.732;Puerto Montt;3;1;0;2;68;3;Mayor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;492c45f44d81;Hombre;-41.4652807;-72.9195603;8.1;4.221;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;d592d6494caa;Hombre;-41.4605111;-72.9338299;5.766666667;3.237;Puerto Montt;2;1;0;1;79;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;e84e7bd5e036;Hombre;-41.4479351;-72.9208925;8.266666667;4.352;Puerto Montt;2;0;1;1;61;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;c39568244faa;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;2;2;0;0;60;2;Mayor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 1;1;0e1789305b21;Hombre;-41.5528872;-73.1619558;17.13333333;21.444;Puerto Montt;1;0;1;0;81;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;607c7d36ec16;Hombre;-41.6183881;-73.6016737;57;72.349;Maullin;3;3;0;0;75;4;Mayor;0;0;2;2;0;0;0;0;0;Llanquihue
+cluster 0;0;2de6d9e96d0e;Hombre;-41.7592308;-73.1539415;44.66666667;50.53;Calbuco;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;365beaf70b74;Mujer;-41.4745196;-72.9668254;7.75;4.137;Puerto Montt;1;0;0;1;28;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;041463cc1df1;Hombre;-41.3470006;-73.7252362;80.83333333;77.196;Los Muermos;1;0;1;0;95;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;96066abd0ef6;Hombre;-41.1524625;-73.4223038;54;64.115;Fresia;1;0;0;1;72;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;f5fae9b2a7c2;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;83;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;28303126fb99;Hombre;-41.4651439;-72.9471682;7.266666667;3.867;Puerto Montt;2;2;0;0;66;2;Mayor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 1;1;afc2a14ea7d7;Mujer;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;1;0;0;71;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;ce740bc8205b;Mujer;-41.4521929;-72.958443;3.483333333;0.81;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;34f9eac5d7b0;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;59;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;664379ae0339;Hombre;-41.3973758;-72.9144235;16.33333333;11.433;Puerto Montt;1;0;0;1;79;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9596e355ee6b;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;82;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;f259dfc9e8e0;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;1;0;0;1;73;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;ea9c655dfe91;Hombre;-41.4508333;-72.9033333;11.43333333;6.045;Puerto Montt;2;2;0;0;56;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;9c4ba9478d53;Hombre;-41.223341;-73.2213469;33.43333333;43.866;Llanquihue;2;0;1;1;77;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;90e5c75f8393;Hombre;-41.733168;-73.212037;45.23333333;50.339;Calbuco;1;1;0;0;60;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;505cd3a5558c;Hombre;-41.4751366;-72.9170101;9.583333333;5.896;Puerto Montt;2;0;0;2;72;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;3fcceb349867;Hombre;-41.328922;-73.0798248;20.93333333;22.478;Puerto Varas;3;3;0;0;49;3;Mayor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;6c527ab8f0bb;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;57;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;4c12bb3f80e0;Mujer;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;2;0;0;2;76;2;Moderada;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 1;1;f69b1c8f0ab4;Hombre;-41.2672167;-72.9965634;18.85;22.514;Llanquihue;1;0;0;1;69;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 3;3;88346d95c458;Mujer;-41.7666768;-73.2257684;54.88333333;58.918;Calbuco;3;2;0;1;54;3;Mayor;0;0;2;0;0;0;1;0;0;Llanquihue
+cluster 1;1;091b0483b62f;Hombre;-41.4676775;-72.9265212;9.783333333;5.478;Puerto Montt;1;1;0;0;72;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;7af0055f1e0e;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;72;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e4a5026919bf;Hombre;-41.4006381;-73.4652325;47.31666667;47.582;Los Muermos;1;0;0;1;69;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;6f3bcca03fe8;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;78;2;Menor;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 0;0;68a4a1415d9f;Hombre;-41.4085712;-72.9025241;17.23333333;11.427;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;b758e012c471;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;47;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;5a3c1f220c98;Hombre;-41.2903592;-73.4363575;44.08333333;54.355;Los Muermos;1;0;0;1;72;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;10aad82a852c;Hombre;-41.4814322;-72.9707558;9.5;5.209;Puerto Montt;2;0;0;2;56;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;f1a5efb274a2;Mujer;-41.1124647;-73.0496621;30.25;41.685;Frutillar;1;0;0;1;51;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;6b9933b1b527;Mujer;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;0;1;0;74;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;819f8debdee9;Hombre;-41.147244;-73.4177957;54.16666667;64.055;Fresia;1;0;0;1;78;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;0b60cea5cc21;Hombre;-41.399493;-72.911801;16.2;11.304;Puerto Montt;3;0;0;3;89;3;Moderada;0;0;1;0;0;0;1;0;1;Llanquihue
+cluster 2;2;981271486d92;Mujer;-41.4613531;-72.941835;5.216666667;2.524;Puerto Montt;2;1;0;1;74;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;23939650bcd1;Mujer;-41.4033721;-73.4533798;47.6;47.84;Los Muermos;1;0;0;1;86;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;2a654e654fe3;Hombre;-41.1524991;-73.4217541;52.93333333;63.688;Fresia;1;0;0;1;68;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;75b75d2aaa07;Hombre;-41.776339;-73.1384142;51.28333333;53.72;Calbuco;1;0;0;1;56;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;81095885cd82;Mujer;-41.7619398;-73.1343758;47.61666667;52.273;Calbuco;3;1;0;2;77;3;Mayor;0;0;2;0;0;0;0;0;1;Llanquihue
+ruido;-1;fad65f18f0fd;Hombre;-41.4723296;-72.9802307;9.716666667;5.497;Puerto Montt;2;1;0;1;61;5;Mayor;0;0;1;1;0;1;2;0;0;Llanquihue
+cluster 1;1;5925aaa5872f;Hombre;-41.4631354;-72.9175059;6.75;4.019;Puerto Montt;1;1;0;0;85;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;10b8692f8a31;Hombre;-41.4458571;-72.9597406;2.516666667;0.449;Puerto Montt;1;1;0;0;75;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;5ae892bb0a4c;Hombre;-41.4532015;-72.9492296;3.5;1.33;Puerto Montt;1;1;0;0;30;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;fdb0223a3227;Mujer;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;43474ec9a7de;Mujer;-41.4531695;-72.9290869;5.266666667;2.697;Puerto Montt;1;1;0;0;86;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;7f87d20c2b63;Mujer;-41.2658719;-72.9979432;18.61666667;22.377;Llanquihue;1;1;0;0;53;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;bea46b87a346;Hombre;-41.4724417;-72.9194323;10.41666667;5.915;Puerto Montt;1;1;0;0;76;2;Mayor;0;0;0;1;0;0;0;0;1;Llanquihue
+cluster 0;0;2eecbd4e4dfc;Hombre;-41.454814;-72.925311;5.883333333;3.253;Puerto Montt;1;0;0;1;55;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;2f607bca6e0f;Hombre;-41.4634704;-72.919905;7.116666667;3.963;Puerto Montt;1;1;0;0;85;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;74ccde0f9583;Hombre;-41.3991695;-72.9178369;15.46666667;10.98;Puerto Montt;1;1;0;0;71;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;314d6fe75aef;Hombre;-41.3172309;-72.9847342;17.2;18.28;Puerto Varas;2;0;0;2;75;5;Moderada;0;0;1;2;0;1;1;0;0;Llanquihue
+ruido;-1;33c6c327a848;Hombre;-41.4661394;-72.943445;6.95;3.73;Puerto Montt;1;0;1;0;72;2;Menor;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 0;0;dbb7b6f81ba0;Hombre;-41.62386;-73.60157;58;72.9;Maullin;1;0;0;1;62;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;2d9436bcef65;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;55;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;309ba2c7aec0;Hombre;-41.4870038;-72.9698792;11.05;5.607;Puerto Montt;1;0;0;1;73;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;d2cbe64aed3e;Mujer;-41.5619518;-73.6922542;88.4;93.013;Maullin;3;1;1;1;56;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 0;0;d4938326f88e;Hombre;-41.4691925;-72.9559068;5.516666667;2.871;Puerto Montt;1;1;0;0;49;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;60b8969bd182;Hombre;-41.1116981;-73.0542502;31.03333333;41.89;Frutillar;1;1;0;0;86;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;c68b6c981095;Mujer;-41.4713897;-72.9602942;6.583333333;3.382;Puerto Montt;1;0;1;0;90;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;51a848b9c442;Hombre;-41.1524991;-73.4217541;52.95;63.688;Fresia;1;1;0;0;80;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;38be853a6305;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;92;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;500edbaf2971;Hombre;-41.4751469;-72.9296334;10.71666667;6.914;Puerto Montt;2;2;0;0;71;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;6a70d2548efa;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;78;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;7d8772e93876;Hombre;-41.4762421;-72.9158221;10.48333333;6.087;Puerto Montt;1;1;0;0;72;1;Mayor;0;0;0;0;0;1;0;0;0;Llanquihue
+cluster 1;1;d7b0d1467dfe;Hombre;-41.4047544;-72.9038852;17.26666667;11.414;Puerto Montt;1;0;0;1;68;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;6dcce03efa96;Hombre;-41.4635023;-72.9572734;6.333333333;3.261;Puerto Montt;1;0;1;0;57;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b80c11e3b70c;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;3950cdd29d76;Hombre;-41.3172309;-72.9847342;17.2;18.28;Puerto Varas;2;1;0;1;71;2;Mayor;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;c3078bd3e039;Hombre;-41.3172309;-72.9847342;17.35;18.28;Puerto Varas;2;0;1;1;47;2;Menor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 0;0;1616ec5ace7a;Hombre;-41.4751469;-72.9296334;10.71666667;6.914;Puerto Montt;1;0;1;0;61;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;2a4f24729a9b;Mujer;-41.397248;-72.8996833;18.16666667;12.171;Puerto Montt;1;1;0;0;76;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;b215112886a0;Mujer;-41.3172309;-72.9847342;17.35;18.28;Puerto Varas;1;0;0;1;45;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;7efc10c46ac7;Hombre;-41.3908844;-73.4596512;44.71666667;46.253;Los Muermos;2;1;0;1;61;3;Moderada;0;0;2;0;0;0;1;0;0;Llanquihue
+cluster 0;0;6d4f546b0caf;Mujer;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;1;0;0;54;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;673edd323360;Mujer;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;0;0;1;51;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e7e3f768f909;Hombre;-41.4577704;-72.9373506;4.333333333;2.485;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;baaf7c2fb28c;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;3;0;1;2;81;3;Moderada;0;0;1;1;0;0;0;0;1;Llanquihue
+ruido;-1;e37ff3eebbf3;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;68;2;Moderada;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 0;0;c5ef73604714;Hombre;-41.4605556;-72.9646646;4.85;2.711;Puerto Montt;1;0;0;1;62;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;b0bc1ea7dd3a;Hombre;-41.3991695;-72.9178369;15.46666667;10.98;Puerto Montt;1;1;0;0;70;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;de47fd5e1600;Hombre;-41.4499148;-72.909905;10.4;5.47;Puerto Montt;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;70c0922c39e3;Hombre;-41.4728298;-72.9105285;11.41666667;6.769;Puerto Montt;2;1;1;0;82;2;Menor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;1accf6bbf897;Hombre;-41.483329;-72.9588663;9.066666667;4.441;Puerto Montt;4;1;1;2;73;4;Moderada;0;0;2;2;0;0;0;0;0;Llanquihue
+cluster 3;3;7f051520d4ce;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;3;0;1;2;74;3;Moderada;0;0;1;2;0;0;0;0;0;Llanquihue
+cluster 1;1;01ca50d14689;Mujer;-41.3952749;-72.9167624;16.45;11.525;Puerto Montt;1;0;1;0;69;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;13dfb880843c;Mujer;-41.4641175;-72.920091;7.5;4.049;Puerto Montt;2;0;0;2;66;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;8133d4527cd0;Hombre;-41.4523048;-72.9609562;2.55;0.823;Puerto Montt;1;0;1;0;70;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;e09704954e6b;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;56;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;f198d6edea71;Hombre;-41.397492;-73.4597959;45.51666667;46.696;Los Muermos;1;1;0;0;59;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;63c966c32042;Mujer;-41.474677;-72.9661833;8.2;4.148;Puerto Montt;3;0;0;3;46;3;Moderada;0;0;1;2;0;0;0;0;0;Llanquihue
+cluster 0;0;3624634892f9;Hombre;-41.4674043;-72.951893;6.583333333;3.27;Puerto Montt;1;0;0;1;42;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;df91f300c792;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;55;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;eb9be716172f;Mujer;-41.3952749;-72.9167624;16.33333333;11.525;Puerto Montt;1;0;0;1;59;2;Moderada;0;0;0;0;0;0;1;0;1;Llanquihue
+cluster 0;0;2c782ce47e11;Hombre;-41.3952749;-72.9167624;16.45;11.525;Puerto Montt;1;1;0;0;51;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b2d943adb478;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;64;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;c3d5feacd4b0;Hombre;-41.7829307;-73.139327;53.05;54.545;Calbuco;3;1;2;0;68;3;Menor;0;0;0;1;0;0;1;0;1;Llanquihue
+cluster 0;0;be473fd58908;Hombre;-41.4607924;-72.9617357;4.85;2.732;Puerto Montt;1;0;0;1;58;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;5c136f690249;Mujer;-41.3879091;-72.9179336;18.28333333;12.367;Puerto Montt;2;1;0;1;51;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;bef686a6487a;Hombre;-41.3139176;-72.9953618;16.13333333;17.737;Puerto Varas;1;1;0;0;53;2;Mayor;0;0;0;0;0;1;0;0;1;Llanquihue
+cluster 1;1;73be201a8a31;Hombre;-41.3949915;-73.4633658;46.01666667;46.745;Los Muermos;1;1;0;0;78;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;1e35ed869fe3;Hombre;-41.4560259;-72.9501854;3.316666667;1.437;Puerto Montt;1;0;0;1;71;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;98d4a3b3adc2;Hombre;-41.4592851;-72.9177068;9.133333333;5.434;Puerto Montt;1;1;0;0;60;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;f12a8c825f47;Hombre;-41.1124647;-73.0496621;30.25;41.685;Frutillar;2;1;0;1;60;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 3;3;6fa341281b79;Hombre;-41.4567159;-72.8976581;12.26666667;6.21;Puerto Montt;3;1;1;1;80;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;f393dde98712;Hombre;-41.3225198;-72.9855741;14.81666667;15.427;Puerto Varas;1;0;0;1;81;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;f6a2b47a0bae;Mujer;-41.4605521;-72.9191118;7.133333333;3.96;Puerto Montt;1;0;0;1;76;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;4069c9d336b0;Hombre;-41.4728298;-72.9105285;11.41666667;6.769;Puerto Montt;3;1;1;1;73;3;Mayor;0;0;2;0;0;0;1;0;0;Llanquihue
+cluster 1;1;cfa43a5a2345;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;0;0;1;73;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;b92d331abcee;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;70;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;5a5887938e75;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;ecfeb3b9fe3c;Hombre;-41.3944267;-73.4651433;45.55;46.825;Los Muermos;1;0;0;1;85;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;38819e4290a9;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;2;1;0;1;64;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;17622b89f601;Hombre;-41.8462298;-73.0425405;102.7666667;68.369;Calbuco;1;1;0;0;83;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;ab427aac00ec;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;4;0;0;4;56;5;Moderada;0;0;3;0;0;0;2;0;0;Llanquihue
+cluster 2;2;538a91d4dcff;Hombre;-41.2679858;-72.9963843;18.28333333;22.282;Llanquihue;2;0;0;2;59;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;e29899f113bd;Hombre;-41.3922379;-72.8996988;19.48333333;12.949;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;7c1d491b1ae1;Mujer;-41.3944267;-73.4651433;45.53333333;46.825;Los Muermos;1;1;0;0;83;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;47ab97bf396d;Hombre;-41.4633073;-72.9368171;6.483333333;3.436;Puerto Montt;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;a4d46c99fb72;Mujer;-41.4693699;-72.9424301;6.433333333;3.788;Puerto Montt;2;1;0;1;76;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;0441b4326437;Mujer;-41.7416513;-73.6985944;59.16666667;79.373;Maullin;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;17f24ce00e5a;Hombre;-41.5055641;-72.7542869;33.15;22.441;Puerto Montt;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;b10bcfcf025b;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;3;2;0;1;60;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+ruido;-1;ac5d21142828;Mujer;-41.4623018;-72.9283621;7.366666667;3.954;Puerto Montt;1;0;0;1;53;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;5fcec895354d;Hombre;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;2;0;1;1;64;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;35424dfac69a;Hombre;-41.0390927;-73.4118402;53.76666667;72.918;Fresia;3;0;2;1;71;3;Menor;0;0;1;1;0;0;1;0;0;Llanquihue
+cluster 1;1;effdc3e5dc84;Mujer;-41.3945185;-73.4592884;44.81666667;46.362;Los Muermos;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;3b2a4fc4758a;Mujer;-41.332347;-72.9644072;18.8;17.279;Puerto Varas;1;0;0;1;75;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;cba8bae9b8c5;Mujer;-41.4594733;-72.9451454;4.866666667;2.006;Puerto Montt;2;1;0;1;59;3;Mayor;0;0;1;0;0;0;0;0;2;Llanquihue
+cluster 1;1;db96dee7ec82;Hombre;-41.3172309;-72.9847342;17.35;18.28;Puerto Varas;1;0;0;1;83;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;05a5d003c4a4;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;68;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;3ff4910329f0;Mujer;-41.4827773;-72.9803114;10.98333333;5.702;Puerto Montt;2;0;1;1;50;2;Menor;0;0;0;2;0;0;0;0;0;Llanquihue
+cluster 1;1;6652ab369c55;Hombre;-41.4692589;-72.9494341;7.1;3.783;Puerto Montt;1;0;0;1;78;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9851e95e39b6;Hombre;-41.1285079;-73.0551008;31.71666667;42.225;Frutillar;1;0;1;0;69;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;8669798455e5;Mujer;-41.3944267;-73.4651433;45.53333333;46.825;Los Muermos;1;1;0;0;79;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;39118a4bac10;Hombre;-41.4686336;-72.919443;10.33333333;5.809;Puerto Montt;1;0;0;1;64;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;864fe01e6e67;Hombre;-41.326533;-72.97407;17.01666667;16.326;Puerto Varas;3;2;0;1;65;3;Mayor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;fdc172d11fb3;Hombre;-41.3944267;-73.4651433;45.55;46.825;Los Muermos;1;1;0;0;57;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;6fe04880c820;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;42;2;Menor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;874eace70fac;Mujer;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;1;1;0;0;64;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;8d301ec69e20;Hombre;-41.4001561;-72.9015123;17.18333333;11.779;Puerto Montt;1;0;0;1;48;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9effadf1b05c;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;1;0;0;68;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;dc64cc1ebb08;Mujer;-41.0390927;-73.4118402;53.73333333;72.918;Fresia;2;1;0;1;63;2;Mayor;0;0;0;0;0;1;1;0;0;Llanquihue
+ruido;-1;e722d0e592fe;Hombre;-41.4727313;-72.9126933;10.35;6.261;Puerto Montt;1;0;0;1;53;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 0;0;1a173173760f;Mujer;-41.5331962;-73.6375329;72.25;72.743;Los Muermos;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;9dbd24d006bd;Hombre;-41.4725411;-72.9806228;9.483333333;5.457;Puerto Montt;2;0;0;2;61;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;0ae1175169dd;Hombre;-41.771904;-73.13249;49.88333333;53.112;Calbuco;1;0;1;0;79;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;a024107d9c27;Hombre;-41.3882961;-72.9106477;20.03333333;13.163;Puerto Montt;2;2;0;0;58;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;1703ec2a6b1d;Hombre;-41.4592851;-72.9177068;9.133333333;5.434;Puerto Montt;1;0;1;0;83;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;e3362ec6e700;Hombre;-41.117398;-73.0512974;30.16666667;41.35;Frutillar;1;1;0;0;67;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;f39432300ea0;Mujer;-41.1546105;-73.4211262;52.3;63.451;Fresia;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;b5df1a3f61e4;Hombre;-41.4553997;-72.940001;5.116666667;2.785;Puerto Montt;4;3;0;1;62;5;Mayor;0;0;3;2;0;0;0;0;0;Llanquihue
+cluster 0;0;3bffa8c0a729;Hombre;-41.3928624;-72.9058728;18.35;12.476;Puerto Montt;1;1;0;0;64;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;e3707dfc122a;Hombre;-41.4664814;-72.9630853;6.116666667;2.702;Puerto Montt;2;2;0;0;56;4;Mayor;0;0;1;1;0;0;1;0;1;Llanquihue
+cluster 0;0;5cfef97bb472;Mujer;-41.4572325;-72.9541998;2.783333333;1.225;Puerto Montt;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;f1c9938ab908;Hombre;-41.771904;-73.13249;49.55;53.112;Calbuco;1;0;0;1;71;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;7d6b72251d73;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;71;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 3;3;417c636c0540;Hombre;-41.1472105;-73.4123631;54.4;64.261;Fresia;3;2;0;1;57;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 2;2;0304b75d0c8c;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;1;0;1;53;2;Mayor;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;fba262c01e9a;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;2;1;1;0;81;2;Menor;0;0;0;1;0;0;0;0;1;Llanquihue
+cluster 0;0;a336f07e0e92;Hombre;-41.4001561;-72.9015123;17.18333333;11.779;Puerto Montt;1;0;1;0;53;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;2f51b46ecca5;Hombre;-41.478762;-72.9792024;10.65;5.706;Puerto Montt;1;0;1;0;62;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;d36e28e3582b;Hombre;-41.5634662;-72.7302416;33.83333333;28.538;Puerto Montt;2;0;0;2;58;2;Moderada;0;0;0;0;0;0;1;0;1;Llanquihue
+cluster 1;1;c6fc2c3c4899;Mujer;-41.4547479;-72.9506985;3.316666667;1.449;Puerto Montt;1;0;1;0;71;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;f146368b5652;Hombre;-41.4746534;-72.9666905;8.466666667;4.181;Puerto Montt;1;0;1;0;61;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;83bac9ebc4f5;Hombre;-41.4801286;-72.9926094;11.53333333;6.983;Puerto Montt;1;0;0;1;80;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;6305813366d8;Mujer;-41.432497;-72.8746801;16.96666667;11.274;Puerto Montt;2;1;0;1;60;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;cfa8d060c892;Hombre;-41.3333926;-72.9718382;18.18333333;16.993;Puerto Varas;2;0;2;0;57;2;Menor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5b4584d4fe54;Hombre;-41.6030817;-73.5966719;67.95;76.418;Maullin;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9080b4b94de1;Hombre;-41.4673746;-72.9560508;4.766666667;2.604;Puerto Montt;1;0;0;1;72;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;f6990bed848e;Hombre;-41.3258536;-72.9868504;14.55;15.288;Puerto Varas;1;1;0;0;48;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;06216c659b9f;Hombre;-41.4524184;-72.9267059;5.733333333;2.895;Puerto Montt;1;1;0;0;78;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;834452e3d68b;Hombre;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;2;0;0;2;60;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;8bc1f347ed8e;Hombre;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;1;0;0;1;69;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;26b81e7037e2;Mujer;-41.467137;-72.929282;8.783333333;5.121;Puerto Montt;1;1;0;0;53;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;d650239bcd80;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;0;2;0;61;2;Menor;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 1;1;2c4f8aff53f5;Mujer;-41.4652895;-72.9609987;5.783333333;3.213;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;7b05c66c2bed;Mujer;-41.3952749;-72.9167624;16.5;11.525;Puerto Montt;1;0;1;0;68;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;1892741d39c8;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;59;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;946dfeec2885;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;05cee3a7af89;Hombre;-41.4814322;-72.9707558;9.5;5.209;Puerto Montt;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;1508dfcb47e4;Hombre;-41.3172404;-72.9898356;16.28333333;17.867;Puerto Varas;2;0;0;2;66;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;9e1fbbb9ace2;Mujer;-41.6654082;-72.2968285;156.1333333;91.55;Cochamo;2;0;2;0;55;2;Menor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;abc0e7e0eb97;Hombre;-41.4830308;-72.8459413;17.95;12.804;Puerto Montt;1;1;0;0;74;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;caedd6bf0382;Hombre;-41.395068;-73.466607;46.48333333;47.109;Los Muermos;1;0;0;1;57;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 2;2;ee5f70a28757;Hombre;-41.3954227;-72.9052326;18.58333333;12.702;Puerto Montt;2;1;1;0;74;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;72f24f43cfb6;Hombre;-41.58023656;-73.58149628;63.91666667;72.01;Maullin;1;1;0;0;64;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;3c6cf49f362e;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;6f728e2fd211;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;3;1;1;1;67;3;Moderada;0;0;2;0;0;0;1;0;0;Llanquihue
+cluster 0;0;194f5ff1c37f;Mujer;-41.467137;-72.929282;8.783333333;5.121;Puerto Montt;1;0;0;1;56;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;43d2470648db;Mujer;-41.3952749;-72.9167624;16.5;11.525;Puerto Montt;1;0;0;1;57;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;baeff0da7b5d;Mujer;-41.4775383;-72.9791884;10.15;5.517;Puerto Montt;1;1;0;0;74;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;e9109cd4cdb9;Mujer;-41.3837526;-73.8359779;87.06666667;87.637;Los Muermos;1;1;0;0;70;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;c87aee656137;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;0;1;0;74;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;b34d4e6c6629;Hombre;-41.4747294;-72.9580167;6.5;3.599;Puerto Montt;1;0;0;1;81;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;7571cbe109c1;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;0;1;1;67;2;Menor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;d531357f9923;Hombre;-41.3089879;-72.9885128;19.05;18.897;Puerto Varas;1;0;1;0;79;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;200c0ee0d28d;Hombre;-41.6183881;-73.6016737;57.05;72.349;Maullin;1;1;0;0;53;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e8d765d89ba3;Mujer;-41.4701527;-72.9158922;9.15;5.493;Puerto Montt;1;0;0;1;83;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;56c8c8170872;Mujer;-41.6152738;-73.5994033;57.55;72.442;Maullin;1;0;0;1;75;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;bc54c4952d78;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;65;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;beb3f5572651;Mujer;-41.3922122;-72.9019432;19.2;12.876;Puerto Montt;1;1;0;0;52;3;Mayor;0;0;1;0;0;1;1;0;0;Llanquihue
+cluster 1;1;01e99e6f9e8f;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;81;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;964f964e8e36;Hombre;-41.4767864;-72.983813;11.11666667;5.938;Puerto Montt;1;0;1;0;64;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b3e5fb503b30;Hombre;-41.383333;-72.8833329;22.48333333;15.094;Puerto Montt;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a7985646bbb5;Hombre;-41.4771821;-72.9614892;8.333333333;4.368;Puerto Montt;1;1;0;0;58;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;21f3e91a5658;Mujer;-41.4543061;-72.9908708;10.51666667;5.347;Puerto Montt;1;0;0;1;42;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;35e7655d9ba2;Hombre;-41.4655829;-72.9566687;5.416666667;2.9;Puerto Montt;1;0;1;0;66;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;427bedb46ba5;Mujer;-41.4653445;-72.9416043;7.283333333;4.211;Puerto Montt;1;0;1;0;64;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;98585eacae09;Hombre;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;2;1;1;0;72;2;Menor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;5c5853140325;Hombre;-41.7854941;-73.0762438;83.53333333;59.8;Calbuco;1;0;1;0;73;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;681d789a9288;Hombre;-41.2645221;-72.9992458;19.06666667;22.522;Llanquihue;1;0;0;1;61;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;4bd3c8074e84;Hombre;-41.4655829;-72.9566687;5.416666667;2.9;Puerto Montt;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;fc469739f272;Hombre;-41.3204379;-72.9892779;15.76666667;15.548;Puerto Varas;1;1;0;0;53;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;1bc0ced066c4;Hombre;-41.4792765;-72.9979516;8.783333333;5.727;Puerto Montt;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;3deafb5dbcb4;Hombre;-41.771904;-73.13249;49.88333333;53.112;Calbuco;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;70c4aad5d7dc;Hombre;-41.4698814;-72.9570025;5.933333333;2.99;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;fab98fd1b8a4;Mujer;-41.4605284;-72.9432341;5.633333333;2.765;Puerto Montt;1;1;0;0;70;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;7fe54e60ff54;Hombre;-41.47754;-72.9767;10;5.4;Puerto Montt;1;1;0;0;73;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;2785ce61579a;Hombre;-41.4779168;-72.9703815;8.483333333;4.79;Puerto Montt;1;1;0;0;67;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;6a2c1ada1b40;Hombre;-41.459256;-72.9507283;3.416666667;1.702;Puerto Montt;1;0;0;1;80;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;1964449b0677;Hombre;-41.4707466;-72.9214063;10.25;5.957;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;b145a669a4a0;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;1;0;0;1;61;3;Moderada;0;0;1;0;0;1;1;0;0;Llanquihue
+cluster 2;2;608a9f7eb051;Hombre;-41.4318763;-72.8739389;16.56666667;11.187;Puerto Montt;2;1;0;1;60;2;Mayor;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 2;2;26908f63472f;Mujer;-41.4761573;-72.9662186;7.533333333;4.271;Puerto Montt;2;0;2;0;79;2;Menor;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 1;1;4ecc0ae88945;Mujer;-41.3630007;-72.3306859;81.95;90.36;Puerto Varas;1;0;0;1;78;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;b09d799d09ce;Hombre;-41.4722771;-72.9411701;8.683333333;4.173;Puerto Montt;1;1;0;0;54;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;3672d898fe98;Mujer;-41.465695;-72.9154884;9.416666667;4.572;Puerto Montt;1;0;0;1;94;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;20cda718eff5;Hombre;-41.4076642;-72.9049328;16.35;11.05;Puerto Montt;1;1;0;0;51;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;ee1b66361599;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;1;0;1;0;70;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b4d4791b3d77;Hombre;-41.4754903;-72.985437;10.66666667;5.762;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;ce65052f4100;Hombre;-41.4496547;-72.9630624;3.383333333;0.878;Puerto Montt;1;0;0;1;73;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;2956f331295b;Hombre;-41.4814322;-72.9707558;9.5;5.209;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;b310b95877d8;Hombre;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;1;1;0;0;71;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;87979a5edeb7;Hombre;-41.6183881;-73.6016737;57;72.349;Maullin;2;1;1;0;85;3;Mayor;0;0;0;2;0;0;0;0;1;Llanquihue
+cluster 1;1;0b85d5ea2409;Mujer;-41.4668751;-72.9559478;4.65;2.56;Puerto Montt;1;1;0;0;70;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;400725bfc815;Hombre;-41.4521929;-72.958443;3.483333333;0.81;Puerto Montt;1;1;0;0;71;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;e0e702a1fb13;Hombre;-41.4634704;-72.919905;7.133333333;3.963;Puerto Montt;1;0;0;1;64;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;adeab4c10957;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;86;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;47ff58044b7f;Hombre;-41.6030817;-73.5966719;67.95;76.418;Maullin;2;1;0;1;67;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;876f86e40321;Hombre;-41.398569;-72.9031403;17.2;11.788;Puerto Montt;1;0;0;1;73;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;89f3331cc4bd;Hombre;-41.4747739;-72.9734355;7.5;4.245;Puerto Montt;1;0;0;1;79;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;5b162c018281;Hombre;-41.4487016;-72.9303127;5.533333333;2.865;Puerto Montt;3;1;1;1;50;3;Mayor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a381e02d199f;Mujer;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;1;0;0;1;78;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;839db13e80b2;Hombre;-41.39125;-72.90376;19.1;12.775;Puerto Montt;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;38a5f57ecb0d;Hombre;-41.6183881;-73.6016737;57.05;72.349;Maullin;1;1;0;0;76;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;6dbe50104ad1;Mujer;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;0;0;1;71;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;27ea60fd32dd;Hombre;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;1;0;0;1;87;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;dddaf6aab4c5;Hombre;-41.83;-73.1502778;90;60.56;Calbuco;1;0;0;1;79;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;4204c6d3a715;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;1;0;0;1;55;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;155aff156542;Hombre;-41.3244116;-73.0834442;20.48333333;22.471;Puerto Varas;1;0;1;0;63;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;e17f77bcf3b6;Mujer;-41.4666497;-72.9605261;6.233333333;3.374;Puerto Montt;1;0;1;0;84;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;2e8047ed0b69;Mujer;-41.4623054;-72.9146047;8.216666667;4.715;Puerto Montt;1;0;0;1;84;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;5af4af351ea1;Hombre;-41.4724135;-72.9201148;10.55;6.081;Puerto Montt;2;2;0;0;58;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;b7017cfa1043;Hombre;-41.4763568;-72.9161951;10.41666667;6.071;Puerto Montt;2;0;1;1;66;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;d8b0758072bd;Hombre;-41.4612997;-72.9506806;4.15;1.963;Puerto Montt;2;1;0;1;77;2;Moderada;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 1;1;4943c7d06aee;Hombre;-41.3299241;-72.9686286;17.86666667;16.918;Puerto Varas;1;0;0;1;69;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;a88f1dcb3cc5;Mujer;-41.273468;-72.9903577;19.98333333;23.184;Llanquihue;1;1;0;0;62;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;77f7df83e31f;Hombre;-41.3952749;-72.9167624;16.5;11.525;Puerto Montt;1;0;0;1;70;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;1802cb609a32;Hombre;-41.3952749;-72.9167624;16.45;11.525;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;30c2760413de;Hombre;-41.4572507;-72.9362868;4.333333333;2.397;Puerto Montt;2;2;0;0;62;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;814c909b686f;Hombre;-41.4580297;-72.9428604;5.35;2.413;Puerto Montt;1;1;0;0;77;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;dc1e35afef02;Mujer;-41.4769963;-72.9732577;8.85;4.66;Puerto Montt;1;1;0;0;68;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;39d12b916c65;Hombre;-41.1124647;-73.0496621;30.11666667;41.685;Frutillar;1;0;0;1;79;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;3eef2655e853;Hombre;-41.4508333;-72.9033333;11.43333333;6.045;Puerto Montt;1;1;0;0;63;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;421bcd356c84;Mujer;-41.7704881;-73.1316581;49.28333333;52.888;Calbuco;1;1;0;0;73;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;5b8400ae71ec;Hombre;-41.4550766;-72.9249878;5.633333333;3.16;Puerto Montt;1;1;0;0;68;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;f7d0922d3a5e;Hombre;-41.4641568;-72.9176687;8;4.156;Puerto Montt;1;0;0;1;53;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5e167252cb85;Hombre;-41.3944267;-73.4651433;45.53333333;46.825;Los Muermos;1;1;0;0;60;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;704ef3a386c1;Mujer;-41.381391;-72.914725;20.26666667;13.414;Puerto Montt;1;0;0;1;50;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;1e0c538b1b0c;Mujer;-41.3311252;-72.9684542;17.96666667;16.951;Puerto Varas;1;1;0;0;64;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;9b11483d4e72;Hombre;-41.1288504;-73.0588248;31.11666667;41.951;Frutillar;2;1;0;1;73;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;77c1f4097492;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;80;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;da98d7eaed76;Hombre;-41.3299241;-72.9686286;17.83333333;16.918;Puerto Varas;1;1;0;0;60;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;d4234b8fd759;Hombre;-41.4607574;-72.9296455;6.45;3.604;Puerto Montt;2;1;0;1;69;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;6af7a8293b16;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;68;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;f55aa667fbbb;Hombre;-41.4685094;-72.9784786;7.266666667;3.976;Puerto Montt;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;9fe290240382;Hombre;-41.5107139;-73.0386966;19.5;13.195;Puerto Montt;2;1;0;1;67;2;Mayor;0;0;1;0;0;1;0;0;0;Llanquihue
+cluster 3;3;6b82a8bb1583;Hombre;-41.3315885;-72.9739885;17.63333333;16.627;Puerto Varas;4;2;0;2;51;5;Moderada;0;0;1;1;1;1;1;0;0;Llanquihue
+cluster 0;0;da85c1f7efed;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;1;1;0;0;65;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;19f95ca33dc0;Hombre;-41.4565069;-73.0057615;10.58333333;5.952;Puerto Montt;1;0;0;1;68;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;8b6748351dec;Hombre;-41.4598245;-72.9475618;3.983333333;1.822;Puerto Montt;1;0;1;0;61;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;bd638adfb9d3;Hombre;-41.6183881;-73.6016737;57.06666667;72.349;Maullin;1;0;1;0;61;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;a5ed13d46506;Hombre;-41.4783098;-72.9715765;8.983333333;4.871;Puerto Montt;1;0;1;0;46;1;Menor;1;0;0;0;0;0;0;0;0;Llanquihue
+cluster 0;0;7fb3af53a5d1;Hombre;-41.464211;-72.959958;6.25;3.282;Puerto Montt;1;0;1;0;56;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;c4eb088775d5;Hombre;-41.7997222;-73.0363889;86.31666667;62.644;Calbuco;2;0;1;1;89;2;Moderada;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 1;1;6f3aefb9a93a;Hombre;-41.4572836;-72.9506701;3.083333333;1.403;Puerto Montt;1;0;1;0;85;1;Menor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;03a08edcad1c;Hombre;-41.472082;-72.9576404;6.633333333;3.521;Puerto Montt;1;1;0;0;78;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;401392b03a0a;Mujer;-41.4630441;-72.9506074;4.666666667;2.166;Puerto Montt;1;0;1;0;79;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;71dfa871bb39;Hombre;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;ceba7899086f;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;0;0;1;72;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;c7b1bb5fb91f;Mujer;-41.6654082;-72.2968285;156.1333333;91.55;Cochamo;1;0;1;0;78;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;093c316a7e59;Hombre;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;1;0;1;0;84;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;6a84882b47fa;Mujer;-41.1524991;-73.4217541;52.95;63.688;Fresia;1;0;0;1;57;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 1;1;ca9a1d3e6faa;Hombre;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;1;0;0;1;81;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;673239891bec;Hombre;-41.454842;-72.9352999;4.5;2.526;Puerto Montt;2;0;0;2;67;2;Moderada;0;0;0;0;0;0;0;0;2;Llanquihue
+cluster 0;0;3b1c7c7d8fcd;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;50;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;5afb4b31c3a5;Hombre;-41.7864852;-73.1798367;51.16666667;55.814;Calbuco;1;0;0;1;39;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;ecfac7af6ab2;Mujer;-41.4781618;-72.9729303;8.65;4.818;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;374d71fdc8bc;Hombre;-41.6183881;-73.6016737;57.05;72.349;Maullin;1;0;0;1;73;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;e97721c78ea9;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;66;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;3ebf0f28f942;Hombre;-41.4542787;-72.9423829;5.966666667;3.08;Puerto Montt;1;1;0;0;68;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;771d4c12a9d2;Hombre;-41.8462298;-73.0425405;102.7333333;68.369;Calbuco;1;1;0;0;75;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;6062ed51927b;Hombre;-41.4577691;-72.937352;4.316666667;2.485;Puerto Montt;1;0;1;0;71;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;aeafd02421bd;Hombre;-41.4079279;-72.9092882;14.98333333;10.66;Puerto Montt;1;1;0;0;83;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a5248e4e6ece;Hombre;-41.4741012;-72.9173796;9.1;5.723;Puerto Montt;1;1;0;0;82;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;7354919b1cf7;Hombre;-41.4635578;-72.9646033;5.166666667;2.353;Puerto Montt;1;0;1;0;67;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;3278c60632cc;Hombre;-41.1571614;-73.4191873;51.95;63.291;Fresia;1;0;0;1;64;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;b7a23d7f575e;Hombre;-41.462;-72.926941;7.166666667;3.905;Puerto Montt;1;0;0;1;78;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 0;0;c49a008ed2a5;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;59;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;067ad252ce05;Hombre;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;2;0;0;2;76;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;ae3c3c0ec9e6;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;75;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;ffd6382afe7c;Hombre;-41.4025644;-72.9044022;17.15;11.283;Puerto Montt;1;0;0;1;66;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;6edd363db639;Hombre;-41.4666307;-72.9483652;6.583333333;3.646;Puerto Montt;1;1;0;0;72;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5b6efe900b59;Hombre;-41.4775383;-72.9791884;10.11666667;5.517;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;cfce5ec92558;Mujer;-41.4634704;-72.919905;7.1;3.963;Puerto Montt;1;0;0;1;82;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;9d4d245d37bd;Hombre;-41.126629;-73.0602042;30.33333333;41.374;Frutillar;1;0;1;0;60;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;41e225f1631b;Hombre;-41.0390927;-73.4118402;53.76666667;72.918;Fresia;1;1;0;0;80;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;41590ff3c1af;Hombre;-41.4753502;-72.9543151;6.533333333;3.32;Puerto Montt;1;0;0;1;88;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e05cde58f90d;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;1;0;1;0;79;1;Menor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;9c8bc5f885be;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;85;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;5cf85519673e;Hombre;-41.5813889;-73.1144444;23.1;21.495;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;6.52869E+11;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;58;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;e44329ed0e01;Hombre;-41.4924307;-72.307996;98;108.157;Cochamo;1;1;0;0;80;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;89738bcb2c8e;Mujer;-41.1266182;-73.0563327;31.08333333;41.931;Frutillar;1;1;0;0;60;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;40e538977164;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;72;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a6dcd9e09e35;Hombre;-41.4761125;-72.9514335;6.466666667;3.457;Puerto Montt;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;f6f11d99ec89;Mujer;-41.3952749;-72.9167624;16.33333333;11.525;Puerto Montt;1;1;0;0;70;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;029ebe50e258;Hombre;-41.45809;-72.92762;5.566666667;2.925;Puerto Montt;1;0;0;1;63;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;e2e0c6235ed2;Hombre;-41.325243;-72.976696;16.28333333;15.986;Puerto Varas;1;1;0;0;55;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;1e8495e0f3b5;Hombre;-41.4609827;-72.9461211;4.766666667;2.04;Puerto Montt;4;1;0;3;69;5;Mayor;0;0;3;1;0;0;0;0;1;Llanquihue
+cluster 1;1;c416e5a180d9;Hombre;-41.2541257;-73.0076921;20.93333333;24.855;Llanquihue;1;1;0;0;68;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;4fc9fe669b55;Hombre;-41.4542787;-72.9423829;5.966666667;3.08;Puerto Montt;2;0;0;2;68;2;Moderada;0;0;0;1;0;0;1;0;0;Llanquihue
+cluster 1;1;72a4202b6bed;Mujer;-41.8099197;-73.0490985;88.76666667;63.447;Calbuco;1;0;0;1;89;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;d0c846be4335;Hombre;-41.4677107;-72.9127764;9.366666667;5.239;Puerto Montt;2;1;0;1;74;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;487ff6a964dc;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;65;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;3b96c6838211;Hombre;-41.7829307;-73.139327;53.11666667;54.545;Calbuco;2;0;1;1;66;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;3c7ff912118f;Hombre;-41.450239;-72.9314033;5.416666667;2.824;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;513e450c8161;Hombre;-41.3944267;-73.4651433;45.53333333;46.825;Los Muermos;1;1;0;0;60;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;fc8833ef54a5;Mujer;-41.4605521;-72.9191118;7.133333333;3.96;Puerto Montt;1;1;0;0;74;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;231dc6bb070f;Hombre;-41.6211064;-73.6055092;58.28333333;72.723;Maullin;1;1;0;0;73;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;7394dbf6d25b;Hombre;-41.398569;-72.9031403;17.2;11.788;Puerto Montt;1;0;0;1;82;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;2f80c5803f50;Hombre;-41.4741012;-72.9173796;9.1;5.723;Puerto Montt;1;0;0;1;82;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;ff97139dd8ec;Hombre;-41.771904;-73.13249;49.55;53.112;Calbuco;2;1;0;1;57;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 2;2;9fed763e5f07;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;2;0;0;2;75;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;369f953e9d68;Hombre;-41.3255888;-73.0787742;19.41666667;21.949;Puerto Varas;2;1;0;1;45;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;bf1f12e08dbe;Hombre;-41.39091;-72.8926975;20.4;13.462;Puerto Montt;1;0;0;1;70;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;c44cf4c4bcf9;Hombre;-41.83;-73.1502778;90;60.56;Calbuco;1;1;0;0;78;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;837cbffa4131;Hombre;-41.3954227;-72.9052326;18.7;12.702;Puerto Montt;1;1;0;0;72;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;3ba55faf8df0;Hombre;-41.46237;-72.9848645;6.65;4.029;Puerto Montt;1;1;0;0;53;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;c46de7a169dd;Hombre;-41.4742566;-72.9293185;11.48333333;5.284;Puerto Montt;1;1;0;0;54;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;8be74bec0913;Hombre;-41.4655829;-72.9566687;5.416666667;2.9;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;fac161df466f;Hombre;-41.3952749;-72.9167624;16.33333333;11.525;Puerto Montt;2;0;0;2;69;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a304e3d57d60;Mujer;-41.3952749;-72.9167624;16.55;11.525;Puerto Montt;1;0;0;1;53;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;0e0f42ec165c;Hombre;-41.6183881;-73.6016737;57.05;72.349;Maullin;4;2;0;2;79;5;Mayor;0;0;3;0;0;0;1;0;1;Llanquihue
+cluster 3;3;a471a9b1692c;Hombre;-41.5813889;-73.1144444;23.06666667;21.495;Puerto Montt;3;1;0;2;62;3;Mayor;0;1;1;1;0;0;0;0;0;Llanquihue
+cluster 3;3;824fa0eb30be;Hombre;-41.4713985;-72.9193298;10.23333333;5.836;Puerto Montt;3;0;0;3;67;4;Moderada;0;0;3;1;0;0;0;0;0;Llanquihue
+ruido;-1;9d36d5272591;Hombre;-41.4635578;-72.9646033;5.166666667;2.353;Puerto Montt;1;1;0;0;67;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;521defdc22ee;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;84;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;d35c4a1b5ccb;Hombre;-41.4522385;-72.9619951;2.45;0.832;Puerto Montt;3;1;0;2;57;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 0;0;61542d3045fe;Mujer;-41.461364;-72.942695;5.4;2.307;Puerto Montt;1;0;0;1;42;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;710e84976767;Hombre;-41.3908844;-73.4596512;44.71666667;46.253;Los Muermos;1;0;0;1;62;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;259d01ff72f5;Hombre;-41.5002365;-72.9919408;15.8;9.793;Puerto Montt;2;0;0;2;70;3;Moderada;0;0;2;0;0;0;1;0;0;Llanquihue
+cluster 2;2;e97f201ba8e8;Hombre;-41.2552051;-73.0169972;18.56666667;23.94;Llanquihue;2;1;1;0;56;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d132b42403f2;Mujer;-41.4553219;-72.9514203;2.95;1.309;Puerto Montt;1;1;0;0;50;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a0c9fdd02244;Hombre;-41.4665999;-72.9753714;5.933333333;3.46;Puerto Montt;1;0;0;1;60;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;c93fdf30b4d4;Hombre;-41.3944267;-73.4651433;45.51666667;46.825;Los Muermos;1;1;0;0;71;3;Mayor;0;0;1;1;0;0;1;0;0;Llanquihue
+cluster 1;1;3ba1ac59e1ff;Mujer;-41.3838218;-72.9181089;18.83333333;12.881;Puerto Montt;1;0;0;1;76;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;ada1cf197b4a;Hombre;-41.4831162;-73.2767579;28.45;34.231;Puerto Montt;1;0;0;1;62;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;3f87b039c6cb;Hombre;-41.4755606;-72.9719961;7.95;4.507;Puerto Montt;1;1;0;0;58;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;1490d3620c16;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;bef05d55d482;Hombre;-41.4458571;-72.9597406;2.516666667;0.449;Puerto Montt;3;0;0;3;72;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;1b321e512f74;Hombre;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;1;1;0;0;72;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;365df441b65b;Mujer;-41.3814045;-72.898822;23.76666667;14.541;Puerto Montt;2;1;0;1;39;4;Moderada;0;0;2;1;0;0;1;0;0;Llanquihue
+cluster 1;1;06268959d9ba;Hombre;-41.472082;-72.9576404;6.633333333;3.521;Puerto Montt;1;0;0;1;77;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;4173f7556a2f;Mujer;-41.33393;-72.96736;20;17.3;Puerto Varas;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;e77118a6bc3b;Hombre;-41.148334;-73.421357;53.66666667;63.994;Fresia;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;63ec4c569896;Mujer;-41.3311252;-72.9684542;18.18333333;16.951;Puerto Varas;1;0;0;1;63;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;8d64ff43279e;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5326a3f27e2f;Mujer;-41.6183881;-73.6016737;57;72.349;Maullin;1;0;0;1;59;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;db5756c6f1e3;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;3;2;0;1;64;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;f21c28f5ffa9;Hombre;-41.3944267;-73.4651433;45.55;46.825;Los Muermos;1;0;0;1;80;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;0428cb9f2065;Hombre;-41.1252799;-73.055807;30.56666667;41.852;Frutillar;2;0;0;2;61;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;233fc30e5266;Hombre;-41.1103707;-73.0524458;31.36666667;42.052;Frutillar;2;1;1;0;68;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;0acb966c88b3;Mujer;-41.3335832;-72.9743578;17.75;16.806;Puerto Varas;1;0;0;1;57;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;2bc3f07152b2;Mujer;-41.432497;-72.8746801;16.96666667;11.274;Puerto Montt;3;0;0;3;57;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 0;0;f11fc3929308;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;56;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 2;2;ec78efd00341;Mujer;-41.1209044;-73.0529424;31.58333333;41.866;Frutillar;2;0;0;2;52;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;3b512cde50bd;Mujer;-41.4729614;-72.9672376;8.133333333;4.252;Puerto Montt;1;0;0;1;63;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;a22bb2e0fbab;Hombre;-41.4737405;-72.9150657;9.666666667;5.914;Puerto Montt;1;0;0;1;83;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;6b78d22481de;Mujer;-41.4762;-72.91582;10;6.1;Puerto Montt;1;0;0;1;69;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;7956667f0028;Mujer;-41.4714464;-72.9238024;10.5;6.225;Puerto Montt;1;0;1;0;67;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;3c45fd88d042;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;2;0;1;1;65;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 1;1;488861db559e;Hombre;-41.2691425;-72.9987169;17.98333333;22.13;Llanquihue;1;0;0;1;78;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;56efb97ee220;Mujer;-41.4669664;-72.9287711;8.866666667;5.168;Puerto Montt;1;0;0;1;50;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;566e7833c537;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;3;2;0;1;69;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+ruido;-1;0be7faaaa55c;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;76;2;Menor;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 1;1;a7bc8e5760a1;Hombre;-41.4739371;-72.9665016;7.566666667;4.076;Puerto Montt;1;0;0;1;75;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;1b42a005de46;Hombre;-41.2569935;-73.0119767;19.65;24.305;Llanquihue;1;1;0;0;76;2;Mayor;0;0;0;1;0;0;0;0;1;Llanquihue
+cluster 0;0;861e1898c1b4;Hombre;-41.454842;-72.9352999;4.5;2.526;Puerto Montt;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;a0445fe84a18;Hombre;-41.4774318;-72.9741874;8.466666667;4.737;Puerto Montt;2;1;0;1;56;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;92314fc073fd;Hombre;-41.4577704;-72.9373506;4.316666667;2.485;Puerto Montt;2;1;0;1;71;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;defee75ebb80;Mujer;-41.6223134;-73.0865007;31.33333333;31.275;Puerto Montt;1;0;1;0;70;1;Menor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;ecdeb120c4f3;Mujer;-41.3944267;-73.4651433;45.55;46.825;Los Muermos;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;f379e5d35cb2;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;53;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;c220a34d3f6e;Mujer;-41.481951;-72.960989;10.06666667;4.767;Puerto Montt;1;0;0;1;77;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;0372ceef7add;Mujer;-41.1124647;-73.0496621;30.11666667;41.685;Frutillar;1;0;1;0;78;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;b36e7c25b31d;Hombre;-41.4924307;-72.307996;98;108.157;Cochamo;1;0;0;1;79;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;da22ae5ac86c;Hombre;-41.1920605;-73.0675065;23.65;32.293;Llanquihue;1;1;0;0;62;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 2;2;a8cee6157f63;Hombre;-41.3172309;-72.9847342;17.35;18.28;Puerto Varas;2;1;0;1;55;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 2;2;aa4559337125;Hombre;-41.6183881;-73.6016737;57.06666667;72.349;Maullin;2;0;0;2;57;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 2;2;15217d115166;Hombre;-41.1124647;-73.0496621;30.11666667;41.685;Frutillar;2;0;1;1;60;2;Menor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;1d8b24702681;Hombre;-41.3638925;-72.808615;29;21.84;Puerto Montt;1;1;0;0;42;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;3d9d3722c129;Hombre;-41.26063;-73.0042;20;23.1;Llanquihue;1;0;0;1;65;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 1;1;bf077b55d25b;Hombre;-41.3172309;-72.9847342;17.35;18.28;Puerto Varas;1;1;0;0;69;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;5d6d773ab4fb;Hombre;-41.1285859;-73.0574572;31.68333333;42.159;Frutillar;2;1;0;1;54;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 3;3;8c4db63ac841;Hombre;-41.3249167;-72.987848;14.4;15.267;Puerto Varas;3;1;0;2;70;4;Moderada;0;0;2;1;0;0;1;0;0;Llanquihue
+ruido;-1;8.72162E+11;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;52;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;29904a1bf80b;Mujer;-41.5055641;-72.7542869;33.15;22.441;Puerto Montt;1;0;1;0;64;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;de8bf487e4b6;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;1;0;61;2;Menor;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;333ab13e7fc9;Hombre;-41.3952749;-72.9167624;16.45;11.525;Puerto Montt;2;0;0;2;67;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;0789afd42bf4;Hombre;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;1;0;0;1;69;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;317abf489902;Mujer;-41.4610138;-72.952585;4.133333333;1.96;Puerto Montt;1;0;0;1;70;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;787dc0f141dd;Hombre;-41.4605382;-72.9326335;6.1;3.367;Puerto Montt;1;0;0;1;52;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;f04d19c8f814;Hombre;-41.4837516;-72.949489;8.55;4.156;Puerto Montt;1;1;0;0;73;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;1fdb88aca25a;Hombre;-41.4814322;-72.9707558;9.5;5.209;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;800f72a8f96b;Hombre;-41.248392;-73.009056;22.81666667;25.341;Llanquihue;1;0;0;1;57;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;a59479710fb9;Hombre;-41.4767864;-72.983813;11.11666667;5.938;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;cb4dd0f96e67;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;68;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;e2a8ea2a757e;Hombre;-41.4761125;-72.9514335;6.466666667;3.457;Puerto Montt;1;1;0;0;65;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;edac6a9f9b6d;Hombre;-41.4677585;-72.9325148;8.75;5.105;Puerto Montt;1;1;0;0;86;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;b8297026b2f2;Mujer;-41.3901888;-72.9023028;19.63333333;13.113;Puerto Montt;2;1;0;1;70;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;dcabd37d8948;Mujer;-41.5890341;-73.5509426;63.48333333;70.779;Maullin;1;0;0;1;57;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;1bddd2b5f0ab;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;0;0;2;64;4;Moderada;0;0;1;2;0;0;1;0;0;Llanquihue
+cluster 2;2;96ede19ab0be;Hombre;-41.403258;-73.6833021;73.01666667;70.372;Los Muermos;2;1;0;1;54;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;36bd5e3a7d81;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;55;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;d244800e9bda;Mujer;-41.3954072;-72.9174654;16.21666667;11.464;Puerto Montt;1;0;0;1;61;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;ad5bbc944654;Hombre;-41.3952749;-72.9167624;16.55;11.525;Puerto Montt;4;1;1;2;50;4;Mayor;0;0;3;1;0;0;0;0;0;Llanquihue
+cluster 0;0;8f2d5e6c3675;Mujer;-41.3910042;-73.4676729;46.35;46.949;Los Muermos;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a2d927f0f145;Mujer;-41.325085;-72.973737;16.91666667;16.416;Puerto Varas;1;0;0;1;68;1;Moderada;1;0;0;0;0;0;0;0;0;Llanquihue
+cluster 1;1;c80642123e95;Mujer;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;bd817a8f9a6f;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;76;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;0bdda27ed563;Mujer;-41.1266182;-73.0563327;30.88333333;41.931;Frutillar;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;00a110464c38;Hombre;-41.4598245;-72.9475618;3.983333333;1.822;Puerto Montt;1;1;0;0;80;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;db63db8cc458;Hombre;-41.1573537;-73.4168662;51.36666667;62.977;Fresia;1;0;0;1;74;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 3;3;255da1221122;Hombre;-41.4644177;-72.9203157;7.583333333;4.085;Puerto Montt;3;1;0;2;56;3;Mayor;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;35fe184c7fc2;Hombre;-41.455706;-72.9481564;4.083333333;1.784;Puerto Montt;1;1;0;0;63;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;41b883ca0ad9;Mujer;-41.4874721;-72.9832176;12.48333333;7.914;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;f11af4f96c65;Mujer;-41.455525;-72.9148259;8.666666667;5.113;Puerto Montt;1;0;0;1;83;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;10624ca1a7ef;Hombre;-41.4567181;-72.9168381;8.65;4.543;Puerto Montt;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;06604b8ee785;Hombre;-41.4536153;-72.9403097;5.433333333;2.979;Puerto Montt;1;0;0;1;63;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;ca9fbb3c0a20;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;66;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;9638d211ef27;Hombre;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;1;1;0;0;56;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;30ed480cd80b;Hombre;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;1;0;0;1;56;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;4755e7f98320;Mujer;-41.465619;-72.9561375;5.683333333;2.94;Puerto Montt;1;0;0;1;82;2;Moderada;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 0;0;7729340d88a8;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;54;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;bf51c75182ef;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;64;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d7d84a930c3e;Hombre;-41.3910042;-73.4676729;46.28333333;46.949;Los Muermos;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;eb2a83167c2b;Hombre;-41.4592378;-72.9494016;4.066666667;1.813;Puerto Montt;2;1;0;1;64;2;Mayor;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;1ba632df5d40;Hombre;-41.4121613;-73.2844297;33.23333333;31.543;Los Muermos;3;0;0;3;63;3;Moderada;0;0;1;2;0;0;0;0;0;Llanquihue
+cluster 0;0;818d17a480fb;Hombre;-41.2718752;-72.9952321;19.21666667;22.502;Llanquihue;1;0;0;1;56;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;6585afc8aed0;Hombre;-41.4721197;-72.9685861;7.7;4.108;Puerto Montt;1;0;0;1;67;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;f92036addc21;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;1;0;0;69;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;33d17d8ca580;Hombre;-41.4634704;-72.919905;7.116666667;3.963;Puerto Montt;1;0;0;1;75;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;7ec58a9b747f;Hombre;-41.4039671;-72.9083081;16.4;10.989;Puerto Montt;1;1;0;0;55;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;1e9e6f282613;Mujer;-41.3248543;-72.9765092;16.41666667;16.081;Puerto Varas;1;1;0;0;98;1;Mayor;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 3;3;0be3afacca3e;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;4;0;0;4;74;5;Moderada;0;0;3;2;0;0;0;0;0;Llanquihue
+cluster 0;0;afa83f30f496;Mujer;-41.3172309;-72.9847342;17.35;18.28;Puerto Varas;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;ba599bfebb3d;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;3;2;0;1;71;3;Mayor;0;0;0;3;0;0;0;0;0;Llanquihue
+cluster 2;2;284ad08237b3;Hombre;-41.4652895;-72.9609987;5.783333333;3.213;Puerto Montt;2;0;1;1;74;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;b40bbad559c3;Hombre;-41.7693098;-73.1286677;49.05;52.746;Calbuco;1;0;0;1;73;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;224056a14ef4;Mujer;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;2;1;0;1;68;2;Mayor;0;0;0;0;0;0;1;0;1;Llanquihue
+cluster 0;0;58bb3f3bbbc8;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;49;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;c897b788b29d;Hombre;-41.7747547;-73.126162;50.9;53.395;Calbuco;1;1;0;0;65;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;69352bec1a8d;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;1;0;0;83;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;b0c9f83fc58d;Hombre;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;0;0;1;56;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;0b6bdd15e1cb;Hombre;-41.4754858;-72.9828098;9.583333333;5.293;Puerto Montt;3;1;1;1;61;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 2;2;d2b6e8f9d511;Mujer;-41.2019721;-73.3485735;42.56666667;55.223;Fresia;2;1;0;1;81;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;dbb98c782d5c;Hombre;-41.3944267;-73.4651433;45.55;46.825;Los Muermos;1;1;0;0;59;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;35d3f3675ac5;Hombre;-41.8462298;-73.0425405;102.7666667;68.369;Calbuco;2;0;0;2;76;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;ec438a4c1f26;Hombre;-41.4839485;-72.9730226;10.16666667;5.578;Puerto Montt;1;0;0;1;75;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;8f392f4d619f;Hombre;-41.3944267;-73.4651433;45.53333333;46.825;Los Muermos;3;1;0;2;67;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 3;3;26a60fe9a600;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;4;3;1;0;45;4;Menor;0;0;4;0;0;0;0;0;0;Llanquihue
+cluster 2;2;e1a0da380f88;Hombre;-41.259107;-73.0063179;20.5;25.522;Llanquihue;2;2;0;0;72;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;3a994e35a355;Mujer;-41.4317395;-73.0813308;17.98333333;13.206;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;b607b7a34a01;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;1;1;0;0;81;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;1b19eb6c2b0f;Hombre;-41.483329;-72.9588663;9.066666667;4.441;Puerto Montt;1;1;0;0;48;2;Mayor;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 0;0;54cc5c43bd46;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;1;0;0;57;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;264c3af283eb;Hombre;-41.1124647;-73.0496621;30.11666667;41.685;Frutillar;1;1;0;0;86;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;deff55f5de88;Mujer;-41.7619398;-73.1343758;47.4;52.273;Calbuco;2;1;0;1;72;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 3;3;52aa9a30e741;Hombre;-41.2668204;-72.9996575;18.05;22.188;Llanquihue;3;1;1;1;63;3;Moderada;0;0;3;0;0;0;0;0;0;Llanquihue
+cluster 0;0;9caaa9182c16;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;1;1;0;0;60;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;afa03f62fad1;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;89;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;209629d89d17;Hombre;-41.771904;-73.13249;49.88333333;53.112;Calbuco;3;0;0;3;77;3;Moderada;0;0;2;0;0;0;0;0;1;Llanquihue
+cluster 0;0;a959f2931f62;Mujer;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;0;0;1;56;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 3;3;844cfa8aaf7d;Hombre;-41.1524991;-73.4217541;52.95;63.688;Fresia;3;1;0;2;60;3;Moderada;0;0;2;0;0;0;0;0;1;Llanquihue
+ruido;-1;7578d5b605df;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;52;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 2;2;0d23f43e955c;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;0;0;2;68;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;206ad3a93351;Hombre;-41.3952749;-72.9167624;16.45;11.525;Puerto Montt;1;1;0;0;50;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;dd89a0e8d45b;Mujer;-41.3952749;-72.9167624;16.33333333;11.525;Puerto Montt;1;0;0;1;94;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;7760fb61ca4e;Mujer;-41.3215926;-72.9936133;16.58333333;15.743;Puerto Varas;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;05ce69f2080d;Hombre;-41.4646826;-72.9667046;5.933333333;2.645;Puerto Montt;1;0;1;0;66;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;1147d3e1e05c;Hombre;-41.3944267;-73.4651433;45.58333333;46.825;Los Muermos;1;1;0;0;72;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;8286fe295fe5;Hombre;-41.2594629;-73.0087259;19.95;25.26;Llanquihue;1;0;0;1;72;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;c8baadc081f9;Mujer;-41.3172309;-72.9847342;17.35;18.28;Puerto Varas;1;1;0;0;65;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;61b2bc29e0b7;Hombre;-41.4758206;-72.9515126;6.5;3.469;Puerto Montt;1;0;0;1;70;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;b7f5967b8e3f;Hombre;-41.771904;-73.13249;49.85;53.112;Calbuco;2;0;0;2;67;3;Moderada;0;0;1;1;0;0;1;0;0;Llanquihue
+cluster 0;0;b9c0de6a9278;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;46;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;2a55e509f952;Hombre;-41.4635667;-72.9893183;8.05;4.651;Puerto Montt;1;1;0;0;44;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;98a05a90b0c0;Hombre;-41.267248;-72.996033;18.71666667;22.381;Llanquihue;1;0;0;1;50;3;Moderada;0;0;1;1;0;0;0;0;1;Llanquihue
+cluster 3;3;cdb1e924784e;Hombre;-41.4036756;-72.9087525;16.1;10.896;Puerto Montt;3;1;0;2;48;3;Mayor;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 0;0;875e2cc88e9d;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;6dcba7bfe839;Mujer;-41.0390927;-73.4118402;53.76666667;72.918;Fresia;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;a55407a8c302;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;1;0;0;77;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;3f0be42696e8;Hombre;-41.47792;-72.97632;8.983333333;4.992;Puerto Montt;1;1;0;0;61;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;a00e966a8b09;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;2;0;1;1;69;2;Moderada;0;0;1;0;0;0;1;0;0;Llanquihue
+cluster 0;0;5a3983fc7c23;Mujer;-41.2562126;-73.0261814;18.51666667;23.86;Llanquihue;1;1;0;0;61;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;512b81810f0d;Mujer;-41.3256586;-73.0823718;19.83333333;22.253;Puerto Varas;2;0;0;2;83;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 0;0;2ceed9d49caa;Hombre;-41.462328;-72.9238107;8.383333333;5.073;Puerto Montt;1;0;0;1;64;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e9d4213832c4;Hombre;-41.46567;-72.93702;9.333333333;4.657;Puerto Montt;1;0;1;0;85;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;b754a75caf3d;Mujer;-41.4326274;-72.8787121;17.48333333;11.047;Puerto Montt;1;1;0;0;64;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;4004f36aed4a;Hombre;-41.0390927;-73.4118402;53.76666667;72.918;Fresia;1;1;0;0;80;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;c55a1b55bd09;Hombre;-41.1127615;-73.0525219;30.58333333;41.703;Frutillar;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;de811a960853;Hombre;-41.6183881;-73.6016737;56.93333333;72.349;Maullin;1;1;0;0;70;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;61e75de115a3;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;2;0;0;2;46;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;742c2bd9ed50;Hombre;-41.7727127;-73.1321982;50.03333333;53.202;Calbuco;1;0;0;1;76;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d6bb7a473f17;Hombre;-41.3952749;-72.9167624;16.33333333;11.525;Puerto Montt;1;1;0;0;58;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;1292f3278d08;Hombre;-41.4651058;-72.9195952;8.083333333;4.21;Puerto Montt;1;0;1;0;69;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;110e59c8ff95;Hombre;-41.3941017;-72.9098534;17.51666667;12.116;Puerto Montt;1;0;0;1;76;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;19a007ccd2a0;Mujer;-41.1124647;-73.0496621;30.11666667;41.685;Frutillar;2;1;0;1;83;4;Mayor;0;0;2;0;0;1;0;0;1;Llanquihue
+cluster 1;1;4d06d2960cfd;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;69;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;2fc819db8987;Hombre;-41.4634704;-72.919905;7.116666667;3.963;Puerto Montt;1;0;0;1;60;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;ec65e2c9ed0a;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;1;0;1;0;72;1;Menor;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;65df22b3403b;Hombre;-41.1524625;-73.4223038;54;64.115;Fresia;2;0;0;2;67;3;Moderada;0;0;1;2;0;0;0;0;0;Llanquihue
+ruido;-1;73de5d7f2fd0;Hombre;-41.4747294;-72.9580167;6.5;3.599;Puerto Montt;1;1;0;0;75;2;Mayor;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 0;0;d03f35e0aac2;Hombre;-41.2646355;-72.9996925;18.76666667;22.5;Llanquihue;1;0;0;1;47;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 0;0;edc66c5f3ed6;Mujer;-41.1524991;-73.4217541;52.96666667;63.688;Fresia;1;0;0;1;57;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;829fba1483c8;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;49;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 3;3;a88bc1cd087a;Hombre;-41.6183881;-73.6016737;57.06666667;72.349;Maullin;3;1;0;2;57;3;Moderada;0;0;2;1;0;0;0;0;0;Llanquihue
+cluster 1;1;bd9d78be5208;Hombre;-41.4654767;-72.9506173;7.7;3.998;Puerto Montt;1;0;0;1;81;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 2;2;57bea189f235;Hombre;-41.4634704;-72.919905;7.116666667;3.963;Puerto Montt;2;1;0;1;70;2;Moderada;0;0;0;1;0;0;0;0;1;Llanquihue
+ruido;-1;22f4517f93df;Hombre;-41.3259101;-72.9701717;17.36666667;16.771;Puerto Varas;1;0;0;1;67;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9805c2fbd098;Hombre;-41.4578734;-72.9419587;5.9;2.56;Puerto Montt;1;1;0;0;69;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;d11dade0841b;Mujer;-41.771904;-73.13249;49.55;53.112;Calbuco;1;0;1;0;87;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;afa70e511cbb;Mujer;-41.1376336;-73.0325708;35.25;44.813;Frutillar;1;0;0;1;77;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;ff1181d49e07;Hombre;-41.2571702;-73.0053446;20.71666667;24.809;Llanquihue;1;1;0;0;85;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+ruido;-1;cf9863de55ce;Hombre;-41.4697118;-72.9553878;5.816666667;2.931;Puerto Montt;1;0;0;1;55;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;810d4d919c3e;Mujer;-41.1142796;-73.0545152;30.13333333;41.523;Frutillar;1;0;0;1;70;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;5495ecccf198;Mujer;-41.3172309;-72.9847342;17.41666667;18.28;Puerto Varas;1;0;0;1;60;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 2;2;69936aeaa407;Hombre;-41.4674305;-72.9732994;6.583333333;3.151;Puerto Montt;2;0;0;2;73;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+cluster 1;1;96cba1d5bad6;Hombre;-41.4572836;-72.9506701;3.083333333;1.403;Puerto Montt;1;0;0;1;81;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;5c441980f192;Mujer;-41.3292256;-72.9716288;17.21666667;16.572;Puerto Varas;2;1;0;1;77;3;Mayor;0;0;2;0;0;0;1;0;0;Llanquihue
+cluster 2;2;f8171dcf9601;Mujer;-41.3352502;-72.9711295;19.45;17.245;Puerto Varas;2;1;1;0;82;2;Mayor;0;0;1;0;0;0;0;0;1;Llanquihue
+cluster 0;0;074a5eee8e0c;Hombre;-41.3172309;-72.9847342;17.2;18.28;Puerto Varas;1;0;0;1;66;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;145cfb517303;Mujer;-41.47709;-72.97682;10;5.4;Puerto Montt;1;1;0;0;90;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;8d59c8bf7c34;Hombre;-41.4834998;-72.9587799;9.116666667;4.436;Puerto Montt;1;0;1;0;82;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e5dbbdc54a80;Hombre;-41.4569277;-72.9457587;4.716666667;2.014;Puerto Montt;1;0;0;1;72;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;dccef3cafb6e;Hombre;-41.112079;-73.05505;31;41.84;Frutillar;1;0;0;1;72;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b89c708f3213;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;1;0;0;1;56;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b6ac92e4f958;Hombre;-41.463945;-72.9664687;5.916666667;2.492;Puerto Montt;1;0;0;1;62;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;42215c6d1938;Hombre;-41.1124647;-73.0496621;30.21666667;41.685;Frutillar;1;0;0;1;70;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;1c907bef3ca9;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;cd7f57be8a0c;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;58;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;c1fdda3805ec;Hombre;-41.3995629;-72.9007136;17.03333333;11.819;Puerto Montt;1;1;0;0;73;1;Mayor;1;0;0;0;0;0;0;0;0;Llanquihue
+cluster 1;1;e0cde2370a03;Hombre;-41.7812646;-73.1710792;53.81666667;57.064;Calbuco;1;0;0;1;70;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+ruido;-1;d20381a4badf;Hombre;-41.4751469;-72.9296334;10.71666667;6.914;Puerto Montt;1;0;0;1;67;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;8096eed0944f;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;48;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;fe6060f11a7d;Hombre;-41.2672167;-72.9965634;18.85;22.514;Llanquihue;1;0;0;1;76;1;Moderada;0;0;0;1;0;0;0;0;0;Llanquihue
+ruido;-1;364a2ed01898;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;73;2;Moderada;0;0;1;1;0;0;0;0;0;Llanquihue
+cluster 1;1;d423aa3ee124;Hombre;-41.6184699;-73.5957306;56.25;71.866;Maullin;1;1;0;0;68;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;9845a3e14919;Hombre;-41.3327757;-72.9711773;18.16666667;17.018;Puerto Varas;1;1;0;0;66;1;Mayor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 2;2;fccdd96dafcb;Hombre;-41.471471;-72.921487;10.31666667;6.333;Puerto Montt;2;0;1;1;65;2;Moderada;0;0;2;0;0;0;0;0;0;Llanquihue
+ruido;-1;eb05a8c9846e;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;65;2;Mayor;0;0;1;0;0;0;0;1;0;Llanquihue
+cluster 1;1;99b847b4e2e1;Hombre;-41.4615859;-72.919199;6.916666667;3.898;Puerto Montt;1;0;0;1;74;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;3434d1339843;Mujer;-41.3324365;-72.9665423;18.2;17.081;Puerto Varas;1;1;0;0;85;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;80b0ec0404b1;Hombre;-41.1288504;-73.0588248;31.11666667;41.951;Frutillar;1;0;0;1;70;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;8ffe3de6dca5;Hombre;-41.1524991;-73.4217541;52.95;63.688;Fresia;1;0;0;1;73;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;9ec53d2b0d1b;Hombre;-41.3126189;-72.9886852;17.66666667;18.43;Puerto Varas;1;0;1;0;64;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;d4f071afdeef;Hombre;-41.3341195;-72.9711021;18.71666667;17.126;Puerto Varas;1;0;0;1;54;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;4746058bba98;Mujer;-41.3838777;-72.9198769;18.53333333;12.733;Puerto Montt;1;1;0;0;62;1;Mayor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;be3ba2546662;Hombre;-41.2571702;-73.0053446;20.73333333;24.809;Llanquihue;1;0;0;1;51;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;860c26a170ea;Hombre;-41.4239327;-72.9097204;12.9;8.372;Puerto Montt;1;0;0;1;66;1;Moderada;0;0;0;0;0;0;1;0;0;Llanquihue
+cluster 1;1;22ebfb54d62c;Hombre;-41.6183881;-73.6016737;57.05;72.349;Maullin;1;0;0;1;73;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;7406c0939e96;Hombre;-41.40843405;-72.90247589;22;11.4;Puerto Montt;1;0;1;0;78;1;Menor;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 1;1;52fa90244c9d;Hombre;-41.4633624;-72.9601801;6.333333333;3.207;Puerto Montt;1;0;0;1;80;1;Moderada;0;0;0;0;0;0;0;0;1;Llanquihue
+cluster 0;0;b3f4d2a1cafc;Hombre;-41.7416513;-73.6985944;59.18333333;79.373;Maullin;1;0;1;0;59;1;Menor;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;4f7a46a36923;Mujer;-41.771904;-73.13249;49.85;53.112;Calbuco;1;0;0;1;81;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 0;0;b883b6e0a5b7;Mujer;-41.4769963;-72.9732577;8.85;4.66;Puerto Montt;1;0;0;1;65;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
+cluster 1;1;9fbefbc9ec83;Hombre;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;1;0;0;71;1;Mayor;0;0;0;1;0;0;0;0;0;Llanquihue
+cluster 0;0;81df97e7f602;Mujer;-41.4693622;-72.9424405;6.433333333;3.788;Puerto Montt;1;0;0;1;41;1;Moderada;0;0;1;0;0;0;0;0;0;Llanquihue
