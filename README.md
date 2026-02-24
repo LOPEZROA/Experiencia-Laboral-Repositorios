@@ -15,6 +15,7 @@ Repositorio **tipo portafolio** para acompañar mi CV: aquí centralizo proyecto
 |---|---|---|---|
 | **[Proyecto Tesis](./Proyecto%20Tesis/)** | Proyecto integrador (PUCV + HPM): EDA, clustering y **web app geoespacial** para análisis de casos de *pie diabético* en la Provincia de Llanquihue. | Python, pandas, geopandas, folium, scikit-learn, Flask, Docker | Demo (si está disponible): `http://158.251.6.4:8699/` |
 | **[Aplicación Web HCVB](./Aplicaci%C3%B3n%20Web%20HCVB/)** | Aplicación web (Flask) enfocada a procesamiento de archivos, **cálculo de medianas** y **cruces/estadísticas**. Incluye dos versiones: **Python+Excel** y **Python+PostgreSQL**. | Flask, pandas, openpyxl, PostgreSQL (psycopg2), Redis (opcional) | Ver README interno |
+| **[Macros & Dashborads (Datos Simulados)]()** | Archivos Excel & presentaciones en Power BI, implementando Macros y dashboards interactivos. | Excel, Power BI, VBA, Dax, Power Query | Ver README interno |
 
 > Nota: este repositorio reúne proyectos con **contexto sanitario**. El código está orientado a reproducibilidad, pero los datos sensibles no deberían versionarse públicamente.
 
