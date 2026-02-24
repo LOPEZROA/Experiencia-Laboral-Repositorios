@@ -1,0 +1,50 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<div class="subtitle">
+  Selecciona un modulo. Cada modulo te permitira cargar tu Excel y ejecutar filtros segun la opcion.
+</div>
+
+{% set row_top_1 = ["cruces-suddais", "cruce-datos", "traslape-duplicidad"] %}
+{% set row_top_2 = ["verificacion-datos", "vacio", "todos-los-cruces"] %}
+{% set row_bottom = ["estadisticas", "estadisticas-cruces", "cruce-sistema-local", "busqueda-sudais"] %}
+{% set module_descriptions = {
+  "cruces-suddais": "Cruce de datos: base historica minsal y nominas IC/PROC/IQ, origen Sudais.",
+  "cruce-datos": "Cruces de datos: casos CGR, casos defunciones y casos macro red de establecimientos.",
+  "traslape-duplicidad": "Cruce de datos: deteción casos traslape y deteción casos duplicados.",
+  "verificacion-datos": "Valida consistencia de campos existentes en nominas con archivo cargado.",
+  "vacio": "Calculo de mediana y tablas resumen.",
+  "todos-los-cruces": "Eleccion de todos los cruces de datos (no incluye mediana ni estadisticas).",
+  "estadisticas": "Genera indicadores generales y resumenes por variables principales.",
+  "estadisticas-cruces": "Panel grafico y tablas de resultados para cada tipo de cruce.",
+  "cruce-sistema-local": "Cruza archivo de trabajo vs Sistema local e incluye verificacion de diferencias.",
+  "busqueda-sudais": "Busqueda individual por RUT o ID_LOCAL en Nominas e Historico Minsal."
+} %}
+
+<div class="modules-board">
+  <div class="modules-grid">
+    {% for slug in row_top_1 %}
+      <a class="module-tile module-{{ categories[slug].color }}" href="{{ url_for('categoria', slug=slug) }}">
+        <span class="module-title">{{ categories[slug].title }}</span>
+        <span class="module-desc">{{ module_descriptions[slug] }}</span>
+      </a>
+    {% endfor %}
+    {% for slug in row_top_2 %}
+      <a class="module-tile module-{{ categories[slug].color }}" href="{{ url_for('categoria', slug=slug) }}">
+        <span class="module-title">{{ categories[slug].title }}</span>
+        <span class="module-desc">{{ module_descriptions[slug] }}</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="modules-grid modules-grid-bottom">
+    {% for slug in row_bottom %}
+      <a class="module-tile module-{{ categories[slug].color }}" href="{{ url_for('categoria', slug=slug) }}">
+        <span class="module-title">{{ categories[slug].title }}</span>
+        <span class="module-desc">{{ module_descriptions[slug] }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

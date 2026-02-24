@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">← Volver al inicio</a>
+</div>
+
+<h2 class="h2">{{ cat.title }}</h2>
+
+<form class="panel" method="post" enctype="multipart/form-data">
+  <div class="block">
+    <label class="label">Archivo de trabajo</label>
+    <input class="file" type="file" name="workfile" accept=".xlsx,.xlsb" required>
+  </div>
+
+  <div class="block">
+    <label class="label">Archivo Sistema local</label>
+    <input class="file" type="file" name="localfile" accept=".xlsx,.xlsb" required>
+  </div>
+
+  <div class="block">
+    <div class="note">
+      Se ejecutan automaticamente los cruces de los modulos 1, 2, 3 y 4.
+    </div>
+    <div class="note">
+      El resultado agrega CRUCE SISTEMA LOCAL y VERIFICACION SISTEMA LOCAL en la hoja final.
+    </div>
+  </div>
+
+  <button class="btn" type="submit">Ejecutar</button>
+</form>
+
+{% endblock %}

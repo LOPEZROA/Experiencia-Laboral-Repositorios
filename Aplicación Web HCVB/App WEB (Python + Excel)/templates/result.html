@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">← Volver al inicio</a>
+</div>
+
+<h2 class="h2">Resultado</h2>
+
+<div class="panel">
+  <div class="block">
+    <div><b>Tiempo de ejecución:</b> {{ elapsed_display }}</div>
+  </div>
+
+  <div class="block">
+    <a class="btn" href="{{ url_for('download', filename=out_file) }}">Descargar Excel procesado</a>
+  </div>
+
+  <div class="block">
+    <a class="btn" href="{{ repeat_url if repeat_url else url_for('home') }}">Repetir operacion con otro archivo</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">&larr; Volver al inicio</a>
+</div>
+
+<h2 class="h2">Busqueda Sudais</h2>
+
+<form class="panel" method="post" action="{{ url_for('categoria', slug='busqueda-sudais') }}">
+  <div class="block">
+    <label class="label">RUT</label>
+    <input class="file" type="text" name="search_rut" value="{{ search_rut or '' }}" placeholder="Ejemplo: 12345678-9">
+  </div>
+  <div class="block">
+    <label class="label">ID_LOCAL</label>
+    <input class="file" type="text" name="search_id_local" value="{{ search_id_local or '' }}" placeholder="Ejemplo: 00012345">
+    <div class="note">La busqueda se realiza en Nominas e Historico Minsal. Minimo un campo debe tener informacion.</div>
+  </div>
+  <button class="btn" type="submit">Buscar casos</button>
+</form>
+
+{% if search_rut or search_id_local %}
+  <div class="panel">
+    <div class="block">
+      <div><b>RUT buscado:</b> {{ search_rut if search_rut else "-" }}</div>
+      <div><b>ID_LOCAL buscado:</b> {{ search_id_local if search_id_local else "-" }}</div>
+      <div><b>Tipo detectado:</b> {{ search_tipo if search_tipo else "No identificado" }}</div>
+      <div><b>Casos encontrados:</b> {{ rows_total if rows_total is defined else (rows|length) }}</div>
+      {% if elapsed_display %}
+        <div><b>Tiempo de ejecucion:</b> {{ elapsed_display }}</div>
+      {% endif %}
+    </div>
+
+    <div class="block">
+      {% if out_file %}
+        <a class="btn" href="{{ url_for('download', filename=out_file) }}">Descargar resultado (Excel)</a>
+      {% endif %}
+    </div>
+
+    {% if columns and rows %}
+      <div class="block">
+        <div class="label">Casos encontrados</div>
+        {% if rows_total is defined and rows_total > (rows|length) %}
+          <div class="note">Mostrando {{ rows|length }} de {{ rows_total }} registros.</div>
+        {% endif %}
+        <div class="table-scroll">
+          <table class="table stats-table">
+            <thead>
+              <tr>
+                {% for col in columns %}
+                  <th>{{ col }}</th>
+                {% endfor %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in rows %}
+                <tr>
+                  {% for col in columns %}
+                    <td>{{ row.get(col, "") }}</td>
+                  {% endfor %}
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    {% else %}
+      <div class="block">
+        <div class="note">No se encontraron coincidencias para la busqueda ingresada.</div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
+{% endblock %}

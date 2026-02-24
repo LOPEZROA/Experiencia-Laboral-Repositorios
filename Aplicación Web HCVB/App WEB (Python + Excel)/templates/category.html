@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">← Volver al inicio</a>
+</div>
+
+<h2 class="h2">{{ cat.title }}</h2>
+
+<form class="panel" method="post" enctype="multipart/form-data">
+  <div class="block">
+    <label class="label">Cargar archivo Excel de trabajo</label>
+    <input class="file" type="file" name="workfile" accept=".xlsx,.xlsb" required>
+  </div>
+
+  <div class="block">
+    <div class="label">Opciones disponibles</div>
+
+    <div class="checks">
+      {% for key, label in cat.options %}
+        <label class="check">
+          <input type="checkbox" name="{{ key }}">
+          <span>{{ label }}</span>
+        </label>
+      {% endfor %}
+    </div>
+
+    <div class="note">
+      Acciones obligatorias: Concatenación RUT, validación contacto, faltantes ingreso/egreso.
+    </div>
+  </div>
+
+  <button class="btn" type="submit">Ejecutar</button>
+</form>
+
+{% endblock %}
