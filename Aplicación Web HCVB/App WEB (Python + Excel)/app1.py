@@ -85,16 +85,7 @@ UI_BG_FILES = {"img 1.png"}
 # - Opcion de cambiar contraseña
 # - Visualizar contraseña
 USER_PASSWORDS = {
-    "20915266-5": os.getenv("APP_PASSWORD_20915266_5", "lefebrero2026"),  # Nicolas Lopez R.
-    "13995202-2": os.getenv("APP_PASSWORD_13995202_2", "Marzo1981"),  # Paola Navarrete E.
-    "8395882-0": os.getenv("APP_PASSWORD_8395882_0", "Ddh2020"),  # Liliana Fierro C.
-    "19490705-2": os.getenv("APP_PASSWORD_19490705_2", "Dan2801"),  # Camila Rojas V.
-    "10812559-4": os.getenv("APP_PASSWORD_10812559_4", "Pao2007"),  # Paola Flores F.
-    "17219114-2": os.getenv("APP_PASSWORD_17219114_2", "D220523"),  # Camila Gallardo Q.
-    "16200617-7": os.getenv("APP_PASSWORD_16200617_7", "Emma29"),  # Loreto Guzman V.
-    "18567188-7": os.getenv("APP_PASSWORD_18567188_7", "Abril2017le"),  # Angelica Cabrera C.
-    "12849206-2": os.getenv("APP_PASSWORD_12849206_2", "dani10"),  # Danitza Pizarro P.
-    "17119880-1": os.getenv("APP_PASSWORD_17119880_1", "cne.123"),  # Hebbel Matter R.
+    "Rut_usuario": os.getenv("APP_PASSWORD_Rut_usuario", "Contraseña")
 }
 
 VERIFY_FIELDS: Dict[str, List[str]] = {
