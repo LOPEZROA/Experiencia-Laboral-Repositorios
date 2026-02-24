@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="login-shell">
+  <div class="login-hero">
+    <div class="login-card">
+      <div class="login-head">
+        <div class="login-badge">Acceso</div>
+        <h2 class="login-title">Ingreso al sistema</h2>
+        <div class="login-subtitle">Lista de Espera NOGES - Plataforma de cruces y estadisticas</div>
+      </div>
+
+      <form class="login-form" method="post" action="{{ url_for('login') }}">
+        <div class="login-block">
+          <label class="login-label">RUT (sin puntos y con guion)</label>
+          <input
+            class="login-input"
+            type="text"
+            name="rut"
+            required
+            placeholder="12345678-9"
+            pattern="^[0-9]{1,8}-[0-9Kk]$"
+            title="Ingresa el RUT con guiÃ³n y sin puntos. Ej: 12345678-9"
+            autocomplete="username"
+            maxlength="10"
+          >
+        </div>
+
+        <div class="login-block">
+          <label class="login-label">Contraseña</label>
+          <input
+            class="login-input"
+            type="password"
+            name="password"
+            required
+            autocomplete="current-password"
+          >
+        </div>
+
+        <button class="login-btn" type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

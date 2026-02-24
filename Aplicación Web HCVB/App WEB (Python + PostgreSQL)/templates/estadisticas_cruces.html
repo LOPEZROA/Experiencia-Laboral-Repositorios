@@ -1,0 +1,409 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<div class="stats-shell">
+  <div class="navline">
+    <a class="backlink" href="{{ url_for('home') }}">&larr; Volver al inicio</a>
+  </div>
+
+  <div class="stats-header">
+    <div>
+      <div class="stats-eyebrow">Panel grafico</div>
+      <h2 class="stats-title">Estadisticas cruces</h2>
+      <div class="stats-subtitle">Cruces del modulo "Todos los cruces" sobre un archivo cargado</div>
+    </div>
+    <div class="stats-badge">
+      {% if stats and stats.source_label %}
+        Fuente: {{ stats.source_label }}
+      {% else %}
+        Fuente: sin seleccionar
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="stats-card stats-form-card">
+    <form class="stats-form" method="post" action="{{ url_for('categoria', slug='estadisticas-cruces') }}" enctype="multipart/form-data">
+      <div class="stats-form-block">
+        <label class="label">Archivo (.xlsx, .xlsb o .csv)</label>
+        <input class="file" type="file" name="workfile" accept=".xlsx,.xlsb,.csv" required>
+        <div class="note">Se procesaran todos los cruces del modulo "Todos los cruces".</div>
+      </div>
+      <button class="btn" type="submit">Generar estadisticas de cruces</button>
+    </form>
+  </div>
+
+  {% if stats %}
+    {% if stats.error %}
+      <div class="stats-alert error">{{ stats.error }}</div>
+    {% else %}
+      <div class="stats-actions">
+        <a class="btn" href="{{ url_for('categoria', slug='estadisticas-cruces') }}">Repetir operacion con otro archivo</a>
+      </div>
+      <div class="stats-kpi-grid">
+        <div class="stats-kpi">
+          <div class="kpi-label">Registros procesados</div>
+          <div class="kpi-value">{{ stats.total_records }}</div>
+        </div>
+        <div class="stats-kpi">
+          <div class="kpi-label">Historico encontrados</div>
+          <div class="kpi-value">{{ stats.historico.found }}</div>
+        </div>
+        <div class="stats-kpi">
+          <div class="kpi-label">Nominas encontrados</div>
+          <div class="kpi-value">{{ stats.nominas.found }}</div>
+        </div>
+        <div class="stats-kpi">
+          <div class="kpi-label">Defunciones</div>
+          <div class="kpi-value">{{ stats.defunciones.fallecidos }}</div>
+        </div>
+      </div>
+
+      {% set h_total = stats.historico.found + stats.historico.not_found %}
+      {% set h_found_pct = (stats.historico.found / h_total * 100) if h_total else 0 %}
+      {% set h_not_found_pct = (stats.historico.not_found / h_total * 100) if h_total else 0 %}
+
+      {% set n_total = stats.nominas.found + stats.nominas.not_found %}
+      {% set n_found_pct = (stats.nominas.found / n_total * 100) if n_total else 0 %}
+      {% set n_not_found_pct = (stats.nominas.not_found / n_total * 100) if n_total else 0 %}
+
+      {% set origin_total = stats.nominas.origen | sum(attribute='count') %}
+      {% set origin_colors = ["#2563eb", "#22c55e", "#f59e0b", "#ef4444", "#8b5cf6", "#0ea5e9"] %}
+      {% set origin_ns = namespace(start=0, gradient="") %}
+      {% for row in stats.nominas.origen %}
+        {% set pct = (row.count / origin_total * 100) if origin_total else 0 %}
+        {% set end = origin_ns.start + pct %}
+        {% set color = origin_colors[loop.index0 % (origin_colors|length)] %}
+        {% set origin_ns.gradient = origin_ns.gradient + color ~ " " ~ origin_ns.start ~ "% " ~ end ~ "%, " %}
+        {% set origin_ns.start = end %}
+      {% endfor %}
+
+      {% set v_total = stats.verificacion.no_encontrado + stats.verificacion.ok + stats.verificacion.problema %}
+      {% set v_no_pct = (stats.verificacion.no_encontrado / v_total * 100) if v_total else 0 %}
+      {% set v_ok_pct = (stats.verificacion.ok / v_total * 100) if v_total else 0 %}
+      {% set v_prob_pct = (stats.verificacion.problema / v_total * 100) if v_total else 0 %}
+      {% set v_ok_end = v_no_pct + v_ok_pct %}
+
+      {% set td_total = stats.traslape_duplicidad.ok_duplicidad + stats.traslape_duplicidad.duplicidad %}
+      {% set td_dup_pct = (stats.traslape_duplicidad.duplicidad / td_total * 100) if td_total else 0 %}
+
+      {% set a_total = stats.traslape_duplicidad.ok_alerta + stats.traslape_duplicidad.alerta %}
+      {% set a_alert_pct = (stats.traslape_duplicidad.alerta / a_total * 100) if a_total else 0 %}
+
+      {% set m_total = stats.macrored.ok + stats.macrored.macrored %}
+      {% set m_ok_pct = (stats.macrored.ok / m_total * 100) if m_total else 0 %}
+      {% set m_macro_pct = (stats.macrored.macrored / m_total * 100) if m_total else 0 %}
+
+      {% set d_total = stats.defunciones.vivos + stats.defunciones.fallecidos %}
+      {% set d_dead_pct = (stats.defunciones.fallecidos / d_total * 100) if d_total else 0 %}
+      {% set d_alive_pct = (stats.defunciones.vivos / d_total * 100) if d_total else 0 %}
+
+      {% set cgr_ns = namespace(max=0) %}
+      {% for row in stats.cgr.anexos %}
+        {% if row.count > cgr_ns.max %}{% set cgr_ns.max = row.count %}{% endif %}
+      {% endfor %}
+      {% set cgr_total = stats.cgr.anexos | sum(attribute='count') %}
+
+      <div class="stats-grid">
+        <div class="stats-card stats-span-6">
+          <div class="card-title">1) Cruce historico</div>
+          <div class="chart-top">Encontrados {{ stats.historico.found }} ({{ h_found_pct|round(1) }}%) | No encontrados {{ stats.historico.not_found }} ({{ h_not_found_pct|round(1) }}%)</div>
+          <div class="chart-center">
+            <div class="donut donut-sm" style="background: conic-gradient(#22c55e 0 {{ h_found_pct }}%, #ef4444 {{ h_found_pct }}% 100%);"></div>
+            <div class="donut-center">
+              <div class="donut-main">{{ h_total }}</div>
+              <div class="donut-sub">Total</div>
+            </div>
+          </div>
+          <div class="legend">
+            <span class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span> Encontrados {{ stats.historico.found }} ({{ h_found_pct|round(1) }}%)</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#ef4444;"></span> No encontrados {{ stats.historico.not_found }} ({{ h_not_found_pct|round(1) }}%)</span>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">Historico: casos encontrados</div>
+          {% if stats.historico.rows_total > (stats.historico.rows|length) %}
+            <div class="note">Mostrando {{ stats.historico.rows|length }} de {{ stats.historico.rows_total }} registros.</div>
+          {% endif %}
+          <div class="table-scroll">
+            <table class="table stats-table">
+              <thead>
+                <tr>
+                  <th>RUT</th>
+                  <th>ID_LOCAL</th>
+                  <th>SIGTE_ID</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in stats.historico.rows %}
+                  <tr>
+                    <td>{{ row.rut }}</td>
+                    <td>{{ row.id_local }}</td>
+                    <td>{{ row.sigte_id }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">2) Cruce nominas</div>
+          <div class="stacked-list">
+            <div class="stacked-item">
+              <div class="stacked-label">Encontrados</div>
+              <div class="stacked-bar"><span class="stacked-fill open" style="width: {{ n_found_pct }}%;"></span></div>
+              <div class="stacked-meta">{{ stats.nominas.found }} ({{ n_found_pct|round(1) }}%)</div>
+            </div>
+            <div class="stacked-item">
+              <div class="stacked-label">No encontrados</div>
+              <div class="stacked-bar"><span class="stacked-fill closed" style="width: {{ n_not_found_pct }}%;"></span></div>
+              <div class="stacked-meta">{{ stats.nominas.not_found }} ({{ n_not_found_pct|round(1) }}%)</div>
+            </div>
+          </div>
+          <div class="chart-top">Origen de datos (nominas)</div>
+          <div class="chart-center">
+            <div class="pie" style="background: conic-gradient({{ origin_ns.gradient }} #e5e7eb {{ origin_ns.start }}% 100%);"></div>
+          </div>
+          <div class="chart-legend">
+            {% for row in stats.nominas.origen %}
+              {% set color = origin_colors[loop.index0 % (origin_colors|length)] %}
+              {% set row_pct = (row.count / origin_total * 100) if origin_total else 0 %}
+              <div class="legend-item"><span class="legend-dot" style="background: {{ color }};"></span> {{ row.label }}: {{ row.count }} ({{ row_pct|round(1) }}%)</div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">Nominas: casos encontrados</div>
+          {% if stats.nominas.rows_total > (stats.nominas.rows|length) %}
+            <div class="note">Mostrando {{ stats.nominas.rows|length }} de {{ stats.nominas.rows_total }} registros.</div>
+          {% endif %}
+          <div class="table-scroll">
+            <table class="table stats-table">
+              <thead>
+                <tr>
+                  <th>RUT</th>
+                  <th>ID_LOCAL</th>
+                  <th>SIGTE_ID</th>
+                  <th>Origen</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in stats.nominas.rows %}
+                  <tr>
+                    <td>{{ row.rut }}</td>
+                    <td>{{ row.id_local }}</td>
+                    <td>{{ row.sigte_id }}</td>
+                    <td>{{ row.origen }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">3) Verificacion de datos</div>
+          <div class="chart-center">
+            <div class="donut donut-sm" style="background: conic-gradient(#94a3b8 0 {{ v_no_pct }}%, #22c55e {{ v_no_pct }}% {{ v_ok_end }}%, #ef4444 {{ v_ok_end }}% 100%);"></div>
+            <div class="donut-center">
+              <div class="donut-main">{{ v_total }}</div>
+              <div class="donut-sub">Total</div>
+            </div>
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item"><span class="legend-dot" style="background:#94a3b8;"></span> No encontrados: {{ stats.verificacion.no_encontrado }} ({{ v_no_pct|round(1) }}%)</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span> OK: {{ stats.verificacion.ok }} ({{ v_ok_pct|round(1) }}%)</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#ef4444;"></span> Con problema: {{ stats.verificacion.problema }} ({{ v_prob_pct|round(1) }}%)</div>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">Verificacion: casos con problema</div>
+          {% if stats.verificacion.rows_total > (stats.verificacion.rows|length) %}
+            <div class="note">Mostrando {{ stats.verificacion.rows|length }} de {{ stats.verificacion.rows_total }} registros.</div>
+          {% endif %}
+          <div class="table-scroll">
+            <table class="table stats-table">
+              <thead>
+                <tr>
+                  <th>RUT</th>
+                  <th>ID_LOCAL</th>
+                  <th>SIGTE_ID</th>
+                  <th>Detalle</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in stats.verificacion.rows %}
+                  <tr>
+                    <td>{{ row.rut }}</td>
+                    <td>{{ row.id_local }}</td>
+                    <td>{{ row.sigte_id }}</td>
+                    <td>{{ row.detalle }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">4) Traslape y Duplicidad</div>
+          <div class="mini-list">
+            <div class="mini-item">
+              <div class="mini-label">Duplicidad</div>
+              <div class="mini-value">{{ stats.traslape_duplicidad.duplicidad }} / {{ td_total }} ({{ td_dup_pct|round(1) }}%)</div>
+            </div>
+            <div class="mini-item">
+              <div class="mini-label">Alerta caso cercano (&lt; 1 año)</div>
+              <div class="mini-value">{{ stats.traslape_duplicidad.alerta }} / {{ a_total }} ({{ a_alert_pct|round(1) }}%)</div>
+            </div>
+          </div>
+          <div class="stats-grid" style="margin-top: 10px;">
+            <div class="stats-span-6" style="grid-column: span 6;">
+              <div class="chart-top">Duplicidad</div>
+              <div class="chart-center">
+                <div class="donut donut-sm" style="background: conic-gradient(#ef4444 0 {{ td_dup_pct }}%, #22c55e {{ td_dup_pct }}% 100%);"></div>
+              </div>
+            </div>
+            <div class="stats-span-6" style="grid-column: span 6;">
+              <div class="chart-top">Alerta caso cercano</div>
+              <div class="chart-center">
+                <div class="donut donut-sm" style="background: conic-gradient(#f59e0b 0 {{ a_alert_pct }}%, #22c55e {{ a_alert_pct }}% 100%);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">Traslape / Duplicidad: casos detectados</div>
+          {% if stats.traslape_duplicidad.rows_total > (stats.traslape_duplicidad.rows|length) %}
+            <div class="note">Mostrando {{ stats.traslape_duplicidad.rows|length }} de {{ stats.traslape_duplicidad.rows_total }} registros.</div>
+          {% endif %}
+          <div class="table-scroll">
+            <table class="table stats-table">
+              <thead>
+                <tr>
+                  <th>RUT</th>
+                  <th>ID_LOCAL</th>
+                  <th>Traslape</th>
+                  <th>Duplicidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in stats.traslape_duplicidad.rows %}
+                  <tr>
+                    <td>{{ row.rut }}</td>
+                    <td>{{ row.id_local }}</td>
+                    <td>{{ row.traslape }}</td>
+                    <td>{{ row.duplicidad }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">5) Macro red</div>
+          <div class="chart-center">
+            <div class="pie" style="background: conic-gradient(#22c55e 0 {{ m_ok_pct }}%, #ef4444 {{ m_ok_pct }}% 100%);"></div>
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item"><span class="legend-dot sem-green"></span> Corresponde: {{ stats.macrored.ok }} ({{ m_ok_pct|round(1) }}%)</div>
+            <div class="legend-item"><span class="legend-dot sem-red"></span> Macro red: {{ stats.macrored.macrored }} ({{ m_macro_pct|round(1) }}%)</div>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">6) Cruces CGR</div>
+          <div class="csalida-bars">
+            {% for row in stats.cgr.anexos %}
+              {% set cgr_pct = (row.count / cgr_ns.max * 100) if cgr_ns.max else 0 %}
+              <div class="csalida-bar-row">
+                <div class="csalida-bar-label">{{ row.label }}</div>
+                <div class="csalida-bar-track">
+                  <div class="csalida-bar-fill" style="width: {{ cgr_pct }}%; background: #0f766e;"></div>
+                </div>
+                {% set cgr_row_pct = (row.count / cgr_total * 100) if cgr_total else 0 %}
+                <div class="csalida-bar-meta">{{ row.count }} ({{ cgr_row_pct|round(1) }}%)</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-12">
+          <div class="card-title">CGR: casos detectados</div>
+          {% if stats.cgr.rows_total > (stats.cgr.rows|length) %}
+            <div class="note">Mostrando {{ stats.cgr.rows|length }} de {{ stats.cgr.rows_total }} registros.</div>
+          {% endif %}
+          <div class="table-scroll">
+            <table class="table stats-table">
+              <thead>
+                <tr>
+                  <th>RUT</th>
+                  <th>ID_LOCAL</th>
+                  <th>CGR 399</th>
+                  <th>CGR 84</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in stats.cgr.rows %}
+                  <tr>
+                    <td>{{ row.rut }}</td>
+                    <td>{{ row.id_local }}</td>
+                    <td>{{ row.cgr_399 }}</td>
+                    <td>{{ row.cgr_84 }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">7) Defunciones</div>
+          <div class="chart-center">
+            <div class="donut donut-sm" style="background: conic-gradient(#ef4444 0 {{ d_dead_pct }}%, #22c55e {{ d_dead_pct }}% 100%);"></div>
+            <div class="donut-center">
+              <div class="donut-main">{{ d_total }}</div>
+              <div class="donut-sub">Total</div>
+            </div>
+          </div>
+          <div class="legend">
+            <span class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span> Vivos {{ stats.defunciones.vivos }} ({{ d_alive_pct|round(1) }}%)</span>
+            <span class="legend-item"><span class="legend-dot" style="background:#ef4444;"></span> Fallecidos {{ stats.defunciones.fallecidos }} ({{ d_dead_pct|round(1) }}%)</span>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">Defunciones: casos fallecidos</div>
+          {% if stats.defunciones.rows_total > (stats.defunciones.rows|length) %}
+            <div class="note">Mostrando {{ stats.defunciones.rows|length }} de {{ stats.defunciones.rows_total }} registros.</div>
+          {% endif %}
+          <div class="table-scroll">
+            <table class="table stats-table">
+              <thead>
+                <tr>
+                  <th>RUT</th>
+                  <th>Fecha defuncion</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in stats.defunciones.rows %}
+                  <tr>
+                    <td>{{ row.rut }}</td>
+                    <td>{{ row.fecha_def }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+
+{% endblock %}

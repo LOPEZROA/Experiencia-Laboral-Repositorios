@@ -1,0 +1,9 @@
+Flask==2.3.3
+Flask-Session==0.8.0
+pandas==1.5.3
+openpyxl==3.1.5
+numpy==1.24.4
+python-dateutil==2.9.0.post0
+pyxlsb==1.0.10
+redis==5.0.8
+psycopg2-binary==2.9.9

@@ -1,0 +1,126 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">← Volver al inicio</a>
+</div>
+
+<h2 class="h2">Procesando archivo</h2>
+
+<div class="panel">
+  <div class="block">
+    <div id="progress-track" class="progress-wrap">
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+      </div>
+      <div id="progress-cat" class="progress-cat" aria-hidden="true">
+        <svg viewBox="0 0 54 34" class="progress-cat-svg">
+          <ellipse cx="24" cy="16" rx="14" ry="8" class="cat-body"></ellipse>
+          <circle cx="39" cy="14" r="6" class="cat-body"></circle>
+          <polygon points="36,9 38,4 40,9" class="cat-ear"></polygon>
+          <polygon points="41,9 43,4 45,9" class="cat-ear"></polygon>
+          <circle cx="42" cy="14" r="1" class="cat-eye"></circle>
+          <path d="M10 16 Q3 10 8 5" class="cat-tail"></path>
+          <line x1="16" y1="22" x2="15" y2="31" class="cat-leg-a"></line>
+          <line x1="23" y1="22" x2="24" y2="31" class="cat-leg-b"></line>
+          <line x1="30" y1="22" x2="29" y2="31" class="cat-leg-b"></line>
+          <line x1="36" y1="22" x2="37" y2="31" class="cat-leg-a"></line>
+        </svg>
+      </div>
+    </div>
+    <div id="progress-text" class="progress-text">0%</div>
+  </div>
+  <div class="block">
+    <div class="note">Esto puede tardar varios segundos/minutos dependiendo del tamaño del archivo.</div>
+    <div class="note">Espere que culmine la operación.</div>
+  </div>
+</div>
+
+<script>
+  const jobId = "{{ job_id }}";
+  const bar = document.getElementById("progress-bar");
+  const text = document.getElementById("progress-text");
+  const track = document.getElementById("progress-track");
+  const cat = document.getElementById("progress-cat");
+  const backLink = document.querySelector(".navline .backlink");
+
+  const redirectUrl = "{{ redirect_url | default('') }}";
+  let isRedirecting = false;
+  let cancelSent = false;
+
+  function sendCancelIfRunning() {
+    if (cancelSent || isRedirecting) return;
+    cancelSent = true;
+    const url = `/cancel/${jobId}`;
+    try {
+      if (navigator.sendBeacon) {
+        const blob = new Blob([""], { type: "text/plain" });
+        navigator.sendBeacon(url, blob);
+        return;
+      }
+    } catch (_e) {}
+    fetch(url, { method: "POST", keepalive: true }).catch(() => {});
+  }
+
+  if (backLink) {
+    backLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      sendCancelIfRunning();
+      isRedirecting = true;
+      window.location.href = backLink.href;
+    });
+  }
+
+  window.addEventListener("beforeunload", () => {
+    sendCancelIfRunning();
+  });
+
+  window.addEventListener("pagehide", () => {
+    sendCancelIfRunning();
+  });
+
+  async function poll() {
+    try {
+      const res = await fetch(`/progress/${jobId}`);
+      const data = await res.json();
+
+      if (data.status === "error") {
+        text.textContent = "Error: " + (data.error || "desconocido");
+        return;
+      }
+      if (data.status === "canceled") {
+        text.textContent = "Proceso cancelado.";
+        return;
+      }
+
+      const pct = Math.max(0, Math.min(100, Number(data.progress || 0)));
+      bar.style.width = `${pct}%`;
+      text.textContent = `${pct}%`;
+      if (track && cat) {
+        const width = track.clientWidth || 1;
+        const half = 15;
+        const x = (pct / 100) * width;
+        const clamped = Math.max(half, Math.min(width - half, x));
+        cat.style.left = `${clamped}px`;
+      }
+
+      if (data.status === "done") {
+        isRedirecting = true;
+        if (redirectUrl && redirectUrl.length > 0) {
+          window.location.href = redirectUrl;
+        } else {
+          window.location.href = `/result/${jobId}`;
+        }
+        return;
+      }
+    } catch (e) {
+      text.textContent = "Reconectando...";
+    }
+
+    setTimeout(poll, 1500);
+  }
+
+  poll();
+</script>
+
+{% endblock %}

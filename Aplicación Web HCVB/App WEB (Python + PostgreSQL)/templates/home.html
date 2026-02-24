@@ -1,0 +1,38 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<div class="subtitle">
+  Selecciona un modulo. Cada modulo te permitira cargar tu Excel y ejecutar filtros segun la opcion.
+</div>
+
+{% set row_top = ["todos-los-cruces", "verificacion-datos", "vacio"] %}
+{% set row_bottom = ["estadisticas-cruces", "estadisticas"] %}
+{% set module_descriptions = {
+  "todos-los-cruces": "Ejecuta todos los cruces de datos en una sola corrida.",
+  "verificacion-datos": "Valida consistencia de campos existentes en nominas con archivo cargado.",
+  "vacio": "Calculo de mediana y tablas resumen.",
+  "estadisticas-cruces": "Panel grafico y tablas de resultados para cada tipo de cruce.",
+  "estadisticas": "Genera indicadores generales y resumenes por variables principales."
+} %}
+
+<div class="modules-board">
+  <div class="modules-grid">
+    {% for slug in row_top %}
+      <a class="module-tile module-{{ categories[slug].color }}" href="{{ url_for('categoria', slug=slug) }}">
+        <span class="module-title">{{ categories[slug].title }}</span>
+        <span class="module-desc">{{ module_descriptions[slug] }}</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="modules-grid modules-grid-bottom">
+    {% for slug in row_bottom %}
+      <a class="module-tile module-{{ categories[slug].color }}" href="{{ url_for('categoria', slug=slug) }}">
+        <span class="module-title">{{ categories[slug].title }}</span>
+        <span class="module-desc">{{ module_descriptions[slug] }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

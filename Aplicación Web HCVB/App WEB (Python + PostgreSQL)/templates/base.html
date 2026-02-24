@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body
+  class="{% if request.endpoint == 'login' %}page-login{% else %}page-app{% endif %}"
+  style="--login-bg-color: #e8f5e9;"
+>
+
+  <!-- Barra superior azul con el título enmarcado -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="title-box">{{ title }}</div>
+      {% if session.get("logged_in") %}
+        <div class="logout-box">
+          <a class="backlink" href="{{ url_for('logout') }}">Cerrar sesión</a>
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div id="db-update-banner" class="db-update-banner" style="display:none;">
+    Bases actualizadas o modificadas, puede que las operaciones demoren más de lo normal
+  </div>
+
+  <main class="container">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">
+          {% for msg in messages %}
+            <div class="flash-item">{{ msg }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  {% if session.get("logged_in") %}
+    <script>
+      (function(){
+        const banner = document.getElementById("db-update-banner");
+        const pollMs = Number("{{ DB_STATUS_POLL_MS | default(15000, true) }}") || 15000;
+        async function pollDbStatus(){
+          try{
+            const res = await fetch("{{ url_for('db_status') }}", { cache: "no-store" });
+            const data = await res.json();
+            if (data && data.updating){
+              banner.style.display = "block";
+            }else{
+              banner.style.display = "none";
+            }
+          }catch(e){
+            banner.style.display = "none";
+          }
+          setTimeout(pollDbStatus, pollMs);
+        }
+        pollDbStatus();
+      })();
+    </script>
+  {% endif %}
+
+</body>
+</html>

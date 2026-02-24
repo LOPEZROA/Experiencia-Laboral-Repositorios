@@ -1,0 +1,292 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<div class="stats-shell">
+  <div class="navline">
+    <a class="backlink" href="{{ url_for('home') }}">&larr; Volver al inicio</a>
+  </div>
+
+  <div class="stats-header">
+    <div>
+      <div class="stats-eyebrow">Panel Grafico</div>
+      <h2 class="stats-title">Estadisticas Generales</h2>
+      <div class="stats-subtitle">Cruces y Estadisticas sobre la base seleccionada</div>
+    </div>
+    <div class="stats-badge">
+      {% if stats and stats.source_label %}
+        Fuente: {{ stats.source_label }}
+      {% else %}
+        Fuente: sin seleccionar
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="stats-card stats-form-card">
+    <form class="stats-form" method="post" action="{{ url_for('categoria', slug='estadisticas') }}" enctype="multipart/form-data">
+      <div class="stats-form-block">
+        <input type="hidden" name="source" value="archivo">
+        <div class="note">Fuente de datos: archivo cargado.</div>
+      </div>
+
+      <div class="stats-form-block" id="file-block">
+        <label class="label">Archivo (.xlsx, .xlsb o .csv)</label>
+        <input class="file" type="file" name="workfile" accept=".xlsx,.xlsb,.csv" required>
+        <div class="note">Campo obligatorio.</div>
+      </div>
+
+      <button class="btn" type="submit">Generar estadi­sticas</button>
+    </form>
+  </div>
+
+  {% if stats %}
+    {% if stats.missing and stats.missing|length > 0 %}
+      <div class="stats-alert">
+        Faltan columnas clave: {{ stats.missing | join(", ") }}
+      </div>
+    {% endif %}
+
+    {% if stats.error %}
+      <div class="stats-alert error">
+        {{ stats.error }}
+      </div>
+    {% else %}
+      {% if job_id %}
+        <div class="stats-actions">
+          <a class="btn" href="{{ url_for('estadisticas_export', job_id=job_id) }}">Descargar estadi­sticas (Excel)</a>
+          <a class="btn" href="{{ url_for('categoria', slug='estadisticas') }}">Repetir operacion con otro archivo</a>
+        </div>
+      {% else %}
+        <div class="stats-actions">
+          <a class="btn" href="{{ url_for('categoria', slug='estadisticas') }}">Repetir operacion con otro archivo</a>
+        </div>
+      {% endif %}
+      {% set total_open = stats.summary | sum(attribute='open') %}
+      {% set total_closed = stats.summary | sum(attribute='closed') %}
+      {% set total_all = total_open + total_closed %}
+      {% set open_pct = (total_open / total_all * 100) if total_all else 0 %}
+      {% set closed_pct = (total_closed / total_all * 100) if total_all else 0 %}
+
+      <div class="stats-kpi-grid">
+        <div class="stats-kpi">
+          <div class="kpi-label">Total registros</div>
+          <div class="kpi-value">{{ stats.total_records }}</div>
+        </div>
+        <div class="stats-kpi">
+          <div class="kpi-label">Abiertos</div>
+          <div class="kpi-value">{{ total_open }}</div>
+        </div>
+        <div class="stats-kpi">
+          <div class="kpi-label">Cerrados</div>
+          <div class="kpi-value">{{ total_closed }}</div>
+        </div>
+      </div>
+
+      {% set tipo_ns = namespace(ic=0, iq=0, proc=0) %}
+      {% for row in stats.summary %}
+        {% if row.group == "IC" %}{% set tipo_ns.ic = row.total %}{% endif %}
+        {% if row.group == "IQ" %}{% set tipo_ns.iq = row.total %}{% endif %}
+        {% if row.group == "PROC" %}{% set tipo_ns.proc = row.total %}{% endif %}
+      {% endfor %}
+      {% set tipo_total = tipo_ns.ic + tipo_ns.iq + tipo_ns.proc %}
+      {% set ic_pct = (tipo_ns.ic / tipo_total * 100) if tipo_total else 0 %}
+      {% set iq_pct = (tipo_ns.iq / tipo_total * 100) if tipo_total else 0 %}
+      {% set proc_pct = (tipo_ns.proc / tipo_total * 100) if tipo_total else 0 %}
+      {% set ic_end = ic_pct %}
+      {% set iq_end = ic_pct + iq_pct %}
+
+      {% set sexo_total = stats.kpi_sexo | sum(attribute='total') %}
+      {% set sexo_colors = ["#2563eb", "#22c55e", "#f59e0b", "#ef4444", "#8b5cf6", "#0ea5e9"] %}
+      {% set sexo = namespace(start=0, gradient="") %}
+      {% for row in stats.kpi_sexo %}
+        {% set pct = (row.total / sexo_total * 100) if sexo_total else 0 %}
+        {% set end = sexo.start + pct %}
+        {% set color = sexo_colors[loop.index0 % (sexo_colors|length)] %}
+        {% set sexo.gradient = sexo.gradient + color ~ " " ~ sexo.start ~ "% " ~ end ~ "%, " %}
+        {% set sexo.start = end %}
+      {% endfor %}
+
+      {% set age = namespace(a0=0, a1=0, a2=0, missing=0) %}
+      {% for row in stats.kpi_edad %}
+        {% if row.group == "0-17" %}{% set age.a0 = row.total %}{% endif %}
+        {% if row.group == "18-64" %}{% set age.a1 = row.total %}{% endif %}
+        {% if row.group == "65+" %}{% set age.a2 = row.total %}{% endif %}
+        {% if row.group not in ["0-17", "18-64", "65+"] %}{% set age.missing = age.missing + row.total %}{% endif %}
+      {% endfor %}
+      {% set age_total = age.a0 + age.a1 + age.a2 %}
+      {% set age0_pct = (age.a0 / age_total * 100) if age_total else 0 %}
+      {% set age1_pct = (age.a1 / age_total * 100) if age_total else 0 %}
+      {% set age2_pct = (age.a2 / age_total * 100) if age_total else 0 %}
+      {% set age1_end = age0_pct %}
+      {% set age2_end = age0_pct + age1_pct %}
+
+      <div class="stats-grid">
+        <div class="stats-card stats-span-3">
+          <div class="card-title">Resumen por TIPO_PREST</div>
+          <div class="chart-top">IC {{ ic_pct|round(1) }}% || IQ {{ iq_pct|round(1) }}% ||Â· PROC {{ proc_pct|round(1) }}%</div>
+          <div class="chart-center">
+            {% if tipo_total %}
+              <div class="donut donut-sm" style="background: conic-gradient(#2563eb 0 {{ ic_end }}%, #22c55e {{ ic_end }}% {{ iq_end }}%, #f59e0b {{ iq_end }}% 100%);"></div>
+            {% else %}
+              <div class="donut donut-sm" style="background: conic-gradient(#e5e7eb 0 100%);"></div>
+            {% endif %}
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item"><span class="legend-dot" style="background:#2563eb;"></span> IC ({{ tipo_ns.ic }}) {{ ic_pct|round(1) }}%</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span> IQ ({{ tipo_ns.iq }}) {{ iq_pct|round(1) }}%</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> PROC ({{ tipo_ns.proc }}) {{ proc_pct|round(1) }}%</div>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-3">
+          <div class="card-title">Estado de casos</div>
+          <div class="chart-top">Abiertos {{ open_pct|round(1) }}% || Cerrados {{ closed_pct|round(1) }}%</div>
+          <div class="chart-center">
+            {% if total_all %}
+              <div class="donut donut-sm" style="--p-open: {{ open_pct }}; --p-closed: {{ closed_pct }};"></div>
+            {% else %}
+              <div class="donut donut-sm" style="background: conic-gradient(#e5e7eb 0 100%);"></div>
+            {% endif %}
+            <div class="donut-center">
+              <div class="donut-main">{{ total_all }}</div>
+              <div class="donut-sub">Total</div>
+            </div>
+          </div>
+          <div class="legend">
+            <span class="legend-item"><span class="legend-dot legend-open"></span> Abiertos {{ total_open }} ({{ open_pct|round(1) }}%)</span>
+            <span class="legend-item"><span class="legend-dot legend-closed"></span> Cerrados {{ total_closed }} ({{ closed_pct|round(1) }}%)</span>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-3">
+          <div class="card-title">Sexo</div>
+          <div class="chart-top">
+            {% for row in stats.kpi_sexo %}
+              {% set pct = (row.total / sexo_total * 100) if sexo_total else 0 %}
+              <span class="chart-top-item">{{ row.group }} {{ pct|round(1) }}%</span>
+            {% endfor %}
+          </div>
+          <div class="chart-center">
+            <div class="pie" style="background: conic-gradient({{ sexo.gradient }} #e5e7eb {{ sexo.start }}% 100%);"></div>
+          </div>
+          <div class="chart-legend">
+            {% for row in stats.kpi_sexo %}
+              {% set color = sexo_colors[loop.index0 % (sexo_colors|length)] %}
+              {% set pct = (row.total / sexo_total * 100) if sexo_total else 0 %}
+              <div class="legend-item"><span class="legend-dot" style="background: {{ color }};"></span> {{ row.group }} ({{ row.total }}) {{ pct|round(1) }}%</div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-3">
+          <div class="card-title">Rango Etario</div>
+          <div class="chart-top">0-17 {{ age0_pct|round(1) }}% || 18-64 {{ age1_pct|round(1) }}% || 65+ {{ age2_pct|round(1) }}%</div>
+          <div class="chart-center">
+            {% if age_total %}
+              <div class="donut donut-sm" style="background: conic-gradient(#2563eb 0 {{ age1_end }}%, #22c55e {{ age1_end }}% {{ age2_end }}%, #f59e0b {{ age2_end }}% 100%);"></div>
+            {% else %}
+              <div class="donut donut-sm" style="background: conic-gradient(#e5e7eb 0 100%);"></div>
+            {% endif %}
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item"><span class="legend-dot" style="background:#2563eb;"></span> 0-17 ({{ age.a0 }}) {{ age0_pct|round(1) }}%</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#22c55e;"></span> 18-64 ({{ age.a1 }}) {{ age1_pct|round(1) }}%</div>
+            <div class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> 65+ ({{ age.a2 }}) {{ age2_pct|round(1) }}%</div>
+            {% if age.missing > 0 %}
+              <div class="legend-item"><span class="legend-dot" style="background:#94a3b8;"></span> Sin edad ({{ age.missing }})</div>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-12">
+          <div class="card-title">Casos egresados - C_SALIDA</div>
+          {% if stats.kpi_csalida and stats.kpi_csalida|length > 0 %}
+            <div class="note">Total cerrados: {{ stats.kpi_csalida[0].total }}</div>
+          {% endif %}
+          <div class="csalida-bars">
+            {% for row in stats.kpi_csalida %}
+              {% if row.top %}
+                {% set bcolor = "#22c55e" %}
+              {% else %}
+                {% set bcolor = "#7c3aed" %}
+              {% endif %}
+              <div class="csalida-bar-row">
+                <div class="csalida-bar-label">{{ row.group }}</div>
+                <div class="csalida-bar-track">
+                  <div class="csalida-bar-fill" style="width: {{ row.pct }}%; background: {{ bcolor }};"></div>
+                </div>
+                <div class="csalida-bar-meta">{{ row.count }} ({{ row.pct }}%)</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">Tiempos de espera (Casos abiertos)</div>
+          <div class="semaforo-bar">
+            <span class="semaforo-seg sem-green" style="width: {{ stats.wait_sem.green_pct }}%;"></span>
+            <span class="semaforo-seg sem-yellow" style="width: {{ stats.wait_sem.yellow_pct }}%;"></span>
+            <span class="semaforo-seg sem-red" style="width: {{ stats.wait_sem.red_pct }}%;"></span>
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item"><span class="legend-dot sem-green"></span> &lt; 180 di­as: {{ stats.wait_sem.green }} ({{ stats.wait_sem.green_pct }}%)</div>
+            <div class="legend-item"><span class="legend-dot sem-yellow"></span> 181-364 di­as: {{ stats.wait_sem.yellow }} ({{ stats.wait_sem.yellow_pct }}%)</div>
+            <div class="legend-item"><span class="legend-dot sem-red"></span> Más de 365 di­as: {{ stats.wait_sem.red }} ({{ stats.wait_sem.red_pct }}%)</div>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-6">
+          <div class="card-title">Defunciones (Casos abiertos)</div>
+          <div class="semaforo-bar">
+            <span class="semaforo-seg sem-green" style="width: {{ stats.death_sem.alive_pct }}%;"></span>
+            <span class="semaforo-seg sem-red" style="width: {{ stats.death_sem.dead_pct }}%;"></span>
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item"><span class="legend-dot sem-green"></span> Vivos: {{ stats.death_sem.alive }} ({{ stats.death_sem.alive_pct }}%)</div>
+            <div class="legend-item"><span class="legend-dot sem-red"></span> Fallecidos: {{ stats.death_sem.dead }} ({{ stats.death_sem.dead_pct }}%)</div>
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-12">
+          <div class="card-title">Resumen de Cruces</div>
+          <div class="chip-grid">
+            {% for row in stats.filters %}
+              <div class="chip">
+                <div class="chip-title">{{ row.name }}</div>
+                <div class="chip-value">{{ row.count }}</div>
+                <div class="chip-sub">de {{ row.total }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="stats-card stats-span-12">
+          <div class="card-title">PRESTA_EST</div>
+          <div class="table-scroll">
+            <table class="table stats-table">
+              <thead>
+                <tr>
+                  <th>PRESTA_EST</th>
+                  <th>Abiertos</th>
+                  <th>Cerrados</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in stats.kpi_presta_est %}
+                <tr>
+                  <td>{{ row.group }}</td>
+                  <td>{{ row.open }}</td>
+                  <td>{{ row.closed }}</td>
+                  <td>{{ row.total }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+
+{% endblock %}
