@@ -44,9 +44,8 @@ Repositorio **tipo portafolio** para acompañar mi CV: aquí centralizo proyecto
 
 ## 🔒 Consideraciones de datos
 
-- Si un proyecto utiliza información clínica/administrativa:  
-  - evita subir RUT/identificadores, direcciones y cualquier dato sensible,
-  - usa *data masking* y datasets sintéticos para demostraciones cuando corresponda.
+- Para Aplicación Web HCVB se censuro parte del codigo que solicita validacion de usuario
+- Ademas de los datos utilizados debido a su sensibilidad
 
 ---
 
