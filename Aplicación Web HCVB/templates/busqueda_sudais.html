@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="stats-shell">
+  <div class="navline">
+    <a class="backlink" href="{{ url_for('home') }}">&larr; Volver al inicio</a>
+  </div>
+
+  <div class="stats-header">
+    <div>
+      <div class="stats-eyebrow">Búsqueda puntual</div>
+      <h2 class="stats-title">Búsqueda sudais</h2>
+      <div class="stats-subtitle">Consulta casos en histórico y nominas por RUT, ID_LOCAL o ambos.</div>
+    </div>
+  </div>
+
+  <div class="stats-card stats-form-card">
+    <form class="stats-form" method="post" action="{{ url_for('categoria', slug='busqueda-sudais') }}">
+      <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+      <div class="search-two-cols">
+        <div class="stats-form-block">
+          <label class="label" for="rut">RUT</label>
+          <input
+            id="rut"
+            class="search-input"
+            type="text"
+            name="rut"
+            value="{{ rut_input }}"
+            placeholder="Ej: 12345678-9"
+          >
+        </div>
+
+        <div class="stats-form-block">
+          <label class="label" for="id_local">ID_LOCAL</label>
+          <input
+            id="id_local"
+            class="search-input"
+            type="text"
+            name="id_local"
+            value="{{ id_local_input }}"
+            placeholder="Ej: 876543"
+          >
+        </div>
+      </div>
+      <div class="note">
+        Debes ingresar al menos un campo. Si ingresas ambos, se devuelven solo filas donde RUT e ID_LOCAL coinciden.
+      </div>
+      <button class="btn" type="submit">Buscar caso</button>
+    </form>
+  </div>
+
+  {% if searched %}
+    <div class="stats-kpi-grid">
+      <div class="stats-kpi">
+        <div class="kpi-label">Total encontrados</div>
+        <div class="kpi-value">{{ summary.total }}</div>
+      </div>
+      <div class="stats-kpi">
+        <div class="kpi-label">Historico</div>
+        <div class="kpi-value">{{ summary.historico }}</div>
+      </div>
+      <div class="stats-kpi">
+        <div class="kpi-label">Nóminas</div>
+        <div class="kpi-value">{{ summary.nominas }}</div>
+      </div>
+      <div class="stats-kpi">
+        <div class="kpi-label">Criterio</div>
+        <div class="kpi-value search-kpi-text">
+          {% if rut_input and id_local_input %}
+            RUT + ID
+          {% elif rut_input %}
+            RUT
+          {% else %}
+            ID_LOCAL
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% if summary.total > 0 %}
+      <div class="stats-actions">
+        <a
+          class="btn"
+          href="{{ url_for('busqueda_sudais_export', rut=rut_input, id_local=id_local_input) }}"
+        >
+          Descargar casos encontrados en Excel
+        </a>
+      </div>
+    {% endif %}
+
+    <div class="stats-card">
+      <div class="card-title">Resultados encontrados (histórico + nóminas)</div>
+      <div class="note">El Excel incluye toda la información disponible de cada caso encontrado.</div>
+      {% if rows_total > (results_rows | length) %}
+        <div class="note">Mostrando {{ results_rows | length }} de {{ rows_total }} registros.</div>
+      {% endif %}
+      {% if results_rows %}
+        <div class="table-scroll">
+          <table class="table stats-table">
+            <thead>
+              <tr>
+                <th>RUT</th>
+                <th>ID_LOCAL</th>
+                <th>SIGTE_ID</th>
+                <th>PRESTA_MIN</th>
+                <th>F_ENTRADA</th>
+                <th>F_SALIDA</th>
+                <th>EXTREMIDAD</th>
+                <th>ORIGEN</th>
+                <th>TABLA</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in results_rows %}
+                <tr>
+                  <td>{{ row.rut }}</td>
+                  <td>{{ row.id_local }}</td>
+                  <td>{{ row.sigte_id }}</td>
+                  <td>{{ row.presta_min }}</td>
+                  <td>{{ row.f_entrada }}</td>
+                  <td>{{ row.f_salida }}</td>
+                  <td>{{ row.extremidad }}</td>
+                  <td>{{ row.origen }}</td>
+                  <td>{{ row.tabla }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% else %}
+        <div class="note">Sin resultados para el criterio ingresado.</div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+
+{% endblock %}

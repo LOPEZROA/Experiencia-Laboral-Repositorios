@@ -1,0 +1,48 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<div class="subtitle">
+  Selecciona un modulo. Cada modulo te permitirá cargar tu Excel y ejecutar filtros según la opción.
+</div>
+
+{% set row_top = ["todos-los-cruces", "busqueda-sudais", "vacio"] %}
+{% set row_bottom = ["estadisticas-cruces", "estadisticas", "manuales-de-uso"] %}
+{% set module_descriptions = {
+  "todos-los-cruces": "Ejecuta todos los cruces de datos en una sola corrida.",
+  "busqueda-sudais": "Busca casos en historico y nominas por RUT, ID_LOCAL o ambos a la vez.",
+  "vacio": "Cálculo de mediana y tablas resumen.",
+  "estadisticas-cruces": "Panel gráfico y tablas de resultados para cada tipo de cruce.",
+  "estadisticas": "Genera indicadores generales y resúmenes por variables principales.",
+  "manuales-de-uso": "Descarga las guías PDF de uso para usuarios y administradores."
+} %}
+
+<div class="modules-board">
+  <div class="modules-grid">
+    {% for slug in row_top %}
+      <a class="module-tile module-{{ categories[slug].color }}" href="{{ url_for('categoria', slug=slug) }}">
+        <span class="module-title">{{ categories[slug].title }}</span>
+        <span class="module-desc">{{ module_descriptions[slug] }}</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="modules-grid modules-grid-bottom">
+    {% for slug in row_bottom %}
+      <a class="module-tile module-{{ categories[slug].color }}" href="{{ url_for('categoria', slug=slug) }}">
+        <span class="module-title">{{ categories[slug].title }}</span>
+        <span class="module-desc">{{ module_descriptions[slug] }}</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  {% if is_admin_user %}
+    <div class="modules-grid modules-grid-bottom">
+      <a class="module-tile module-cafe-claro" href="{{ url_for('admin_power') }}">
+        <span class="module-title">Salud App</span>
+        <span class="module-desc">Panel de salud, historial por usuario y auditoria de cargas admin.</span>
+      </a>
+    </div>
+  {% endif %}
+</div>
+
+{% endblock %}

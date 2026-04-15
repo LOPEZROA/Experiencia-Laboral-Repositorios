@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">&larr; Volver al inicio</a>
+</div>
+
+<h2 class="h2">Manuales de uso</h2>
+
+<div class="subtitle">
+  Selecciona el manual que deseas descargar. Ambos archivos se obtienen directamente desde la carpeta principal de la app.
+</div>
+
+<div class="manual-grid">
+  {% for item in manuals %}
+    <div class="panel manual-card">
+      <div class="manual-badge">PDF</div>
+      <div class="manual-title">{{ item.label }}</div>
+      <div class="note">{{ item.description }}</div>
+      <a class="btn" href="{{ url_for('manuales_uso_download', manual_key=item.key) }}">
+        Descargar {{ item.label }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

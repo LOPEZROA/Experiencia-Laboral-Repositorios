@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">&lt;- Volver al inicio</a>
+</div>
+
+<h2 class="h2">Actualización de Bases de datos</h2>
+
+<form class="panel" method="post" enctype="multipart/form-data" action="{{ url_for('admin_db_update') }}">
+  <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+  <div class="block">
+    <div class="label">Selecciona tablas RAW para actualizar</div>
+    <div class="note">Marca la tabla que deseas actualizar y adjunta su archivo en el formato permitido para cada tabla.</div>
+
+    <div class="admin-grid">
+      {% for item in admin_tables %}
+        <div class="admin-row">
+          <label class="check admin-check">
+            <input
+              type="checkbox"
+              name="use_{{ item.key }}"
+              data-admin-check="{{ item.key }}"
+              {% if selected.get(item.key) %}checked{% endif %}
+            >
+            <span>{{ item.label }}</span>
+          </label>
+          <div class="admin-file-wrap">
+            <input
+              class="file admin-file"
+              type="file"
+              name="file_{{ item.key }}"
+              accept="{{ item.accept }}"
+              data-admin-file="{{ item.key }}"
+            >
+            <small class="note">Formatos: {{ item.allowed_text }}</small>
+          </div>
+          <div class="admin-load-mode{% if not item.supports_append %} is-fixed{% endif %}">
+            {% if item.supports_append %}
+              <label class="admin-load-option">
+                <input
+                  type="radio"
+                  name="mode_{{ item.key }}"
+                  value="replace"
+                  data-admin-mode="{{ item.key }}"
+                  {% if load_modes.get(item.key, 'replace') != 'append' %}checked{% endif %}
+                >
+                <span>Limpiar base y cargar</span>
+              </label>
+              <label class="admin-load-option">
+                <input
+                  type="radio"
+                  name="mode_{{ item.key }}"
+                  value="append"
+                  data-admin-mode="{{ item.key }}"
+                  {% if load_modes.get(item.key, 'replace') == 'append' %}checked{% endif %}
+                >
+                <span>Sobreescribir datos nuevos</span>
+              </label>
+            {% else %}
+              <small class="note">Modo fijo: Limpiar base y cargar</small>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <button class="btn" type="submit">Cargar y actualizar</button>
+</form>
+
+<script>
+  (function () {
+    const checks = document.querySelectorAll("[data-admin-check]");
+    checks.forEach((checkbox) => {
+      const key = checkbox.getAttribute("data-admin-check");
+      const fileInput = document.querySelector('[data-admin-file="' + key + '"]');
+      const modeInputs = document.querySelectorAll('[data-admin-mode="' + key + '"]');
+      if (!fileInput) return;
+      const sync = () => {
+        fileInput.required = checkbox.checked;
+        modeInputs.forEach((input) => {
+          input.disabled = !checkbox.checked;
+        });
+      };
+      checkbox.addEventListener("change", sync);
+      sync();
+    });
+  })();
+</script>
+
+{% endblock %}

@@ -1,0 +1,5 @@
+Precargando bases al iniciar...
+Bases precargadas correctamente en 63.98s.
+Advertencia: Waitress no disponible, se usara servidor de desarrollo Flask.
+ * Serving Flask app 'mvp_app.app_factory'
+ * Debug mode: off

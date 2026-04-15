@@ -1,0 +1,44 @@
+C:\Users\nicol\OneDrive\Desktop\apps HCVB\App MVP SQL\mvp_app\core\services.py:421: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=params)
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.137.34.165:5000
+Press CTRL+C to quit
+10.137.34.165 - - [04/Mar/2026 13:01:38] "GET / HTTP/1.1" 302 -
+10.137.34.165 - - [04/Mar/2026 13:01:38] "GET /login HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:01:38] "GET /static/styles.css HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:01:39] "GET /ui-bg/img%201.png HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:01:39] "GET /favicon.ico HTTP/1.1" 404 -
+10.137.34.165 - - [04/Mar/2026 13:01:58] "POST /login HTTP/1.1" 302 -
+10.137.34.165 - - [04/Mar/2026 13:01:58] "GET / HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:01:58] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:01:58] "GET /ui-bg/img%202.png HTTP/1.1" 404 -
+10.137.34.165 - - [04/Mar/2026 13:02:01] "GET /categoria/todos-los-cruces HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:02:01] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:02:01] "GET /ui-bg/img%202.png HTTP/1.1" 404 -
+10.137.34.165 - - [04/Mar/2026 13:02:24] "POST /categoria/todos-los-cruces HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:02:24] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:02:24] "GET /progress/acd9bcd3eb03423e8fdb3f82f6246cc7 HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:02:24] "GET /ui-bg/img%202.png HTTP/1.1" 404 -
+10.137.34.165 - - [04/Mar/2026 13:02:29] "GET /progress/acd9bcd3eb03423e8fdb3f82f6246cc7 HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:02:34] "GET /progress/acd9bcd3eb03423e8fdb3f82f6246cc7 HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:02:39] "GET /progress/acd9bcd3eb03423e8fdb3f82f6246cc7 HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:02:40] "GET /result/acd9bcd3eb03423e8fdb3f82f6246cc7 HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:02:41] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:02:41] "GET /ui-bg/img%202.png HTTP/1.1" 404 -
+10.137.34.165 - - [04/Mar/2026 13:14:49] "GET /result/acd9bcd3eb03423e8fdb3f82f6246cc7 HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:14:49] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:14:49] "GET /ui-bg/img%202.png HTTP/1.1" 404 -
+10.137.34.165 - - [04/Mar/2026 13:14:50] "GET / HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:14:50] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:14:50] "GET /ui-bg/img%202.png HTTP/1.1" 404 -
+10.137.34.165 - - [04/Mar/2026 13:14:52] "GET /logout HTTP/1.1" 302 -
+10.137.34.165 - - [04/Mar/2026 13:14:52] "GET /login HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:14:52] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:14:52] "GET /ui-bg/img%201.png HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:15:19] "POST /login HTTP/1.1" 302 -
+10.137.34.165 - - [04/Mar/2026 13:15:19] "GET / HTTP/1.1" 200 -
+10.137.34.165 - - [04/Mar/2026 13:15:19] "GET /static/styles.css HTTP/1.1" 304 -
+10.137.34.165 - - [04/Mar/2026 13:15:19] "GET /ui-bg/img%202.png HTTP/1.1" 404 -

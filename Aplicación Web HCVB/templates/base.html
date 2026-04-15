@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body
+  class="{% if request.endpoint == 'login' %}page-login{% else %}page-app{% endif %}"
+  style="--login-bg-color: #e8f5e9;"
+>
+
+  <!-- Barra superior azul con el titulo enmarcado -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="title-box">{{ title }}</div>
+      {% if session.get("logged_in") %}
+        <div class="topbar-actions">
+          {% if is_admin_user %}
+            <a class="admin-toplink" href="{{ url_for('admin_db_update') }}">Modulo admin</a>
+          {% endif %}
+          <a class="admin-toplink" href="{{ url_for('change_password') }}">Cambiar contraseña</a>
+          <div class="logout-box">
+            <a class="backlink" href="{{ url_for('logout') }}">Cerrar sesión</a>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <main class="container">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">
+          {% for msg in messages %}
+            <div class="flash-item">{{ msg }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+</body>
+</html>

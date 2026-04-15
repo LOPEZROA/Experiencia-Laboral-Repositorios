@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="login-shell">
+  <div class="login-hero">
+    <div class="login-card">
+      <div class="login-head">
+        <div class="login-badge">Acceso</div>
+        <h2 class="login-title">Ingreso al sistema</h2>
+        <div class="login-subtitle">Lista de Espera NOGES - Plataforma de cruces y estadísticas</div>
+      </div>
+
+      <form class="login-form" method="post" action="{{ url_for('login') }}">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+        <div class="login-block">
+          <label class="login-label">usuario</label>
+          <input
+            class="login-input"
+            type="text"
+            name="rut"
+            required
+            placeholder="12345678-9"
+            title="Ingresa el RUT con guion y sin puntos."
+            autocomplete="username"
+            maxlength="24"
+          >
+        </div>
+
+        <div class="login-block">
+          <label class="login-label">Contraseña</label>
+          <input
+            id="login-password"
+            class="login-input"
+            type="password"
+            name="password"
+            required
+            autocomplete="current-password"
+          >
+          <label class="login-toggle">
+            <input id="toggle-login-password" type="checkbox">
+            <span>Mostrar contraseña</span>
+          </label>
+        </div>
+
+        <button class="login-btn" type="submit">Ingresar</button>
+        <div class="login-links">
+          <a class="backlink" href="{{ url_for('password_recovery_request') }}">Olvidé mi contraseña</a>
+          <a class="backlink" href="{{ url_for('password_recovery_reset') }}">Finalizar recuperación</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var pwd = document.getElementById("login-password");
+    var toggle = document.getElementById("toggle-login-password");
+    if (!pwd || !toggle) {
+      return;
+    }
+    toggle.addEventListener("change", function () {
+      pwd.type = toggle.checked ? "text" : "password";
+    });
+  })();
+</script>
+
+{% endblock %}

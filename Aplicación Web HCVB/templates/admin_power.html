@@ -1,0 +1,372 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="navline">
+  <a class="backlink" href="{{ url_for('home') }}">&lt;- Volver al inicio</a>
+</div>
+
+<h2 class="h2">Salud App</h2>
+
+<div class="panel block">
+  <div class="label">1) Panel de salud de la app</div>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-title">Estado DB</div>
+      <div class="kpi-value">{{ "Actualizando" if health.db_updating else "Operativa" }}</div>
+      <div class="kpi-sub">Cache SQL en memoria</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Backend jobs</div>
+      <div class="kpi-value">{{ health.jobs_backend }}</div>
+      <div class="kpi-sub">Almacen runtime de procesos</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Backend sesion</div>
+      <div class="kpi-value">{{ health.session_backend }}</div>
+      <div class="kpi-sub">Sesiones de usuario</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Límites de concurrente</div>
+      <div class="kpi-value">{{ health.max_concurrent_jobs }}</div>
+      <div class="kpi-sub">Máximo de jobs simultaneos</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Jobs activos</div>
+      <div class="kpi-value">{{ health.running_jobs }}</div>
+      <div class="kpi-sub">Estado en ejecución</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Jobs finalizados</div>
+      <div class="kpi-value">{{ health.done_jobs }}</div>
+      <div class="kpi-sub">Estado done</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Jobs con error</div>
+      <div class="kpi-value">{{ health.error_jobs }}</div>
+      <div class="kpi-sub">Estado error</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Jobs cancelados</div>
+      <div class="kpi-value">{{ health.canceled_jobs }}</div>
+      <div class="kpi-sub">Estado canceled</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Usuarios activos</div>
+      <div class="kpi-value">{{ health.active_users }}</div>
+      <div class="kpi-sub">Con historial en runtime</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Cargas admin</div>
+      <div class="kpi-value">{{ health.audit_jobs }}</div>
+      <div class="kpi-sub">Detectadas en auditoria</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Cuentas activas</div>
+      <div class="kpi-value">{{ health.auth_active_accounts }}</div>
+      <div class="kpi-sub">Usuarios habilitados para login</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Recuperaciones pendientes</div>
+      <div class="kpi-value">{{ health.auth_pending_recovery }}</div>
+      <div class="kpi-sub">Solicitudes por revisar</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Bloqueos activos</div>
+      <div class="kpi-value">{{ health.auth_active_lockouts }}</div>
+      <div class="kpi-sub">Límite de intentos aplicado</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Fallos login 24h</div>
+      <div class="kpi-value">{{ health.auth_failed_24h }}</div>
+      <div class="kpi-sub">Eventos de seguridad recientes</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Recuperaciones 24h</div>
+      <div class="kpi-value">{{ health.auth_recovery_24h }}</div>
+      <div class="kpi-sub">Solicitudes creadas en 24h</div>
+    </div>
+  </div>
+  {% if health.auth_alerts %}
+    <div class="block">
+      <div class="label">Alertas de seguridad</div>
+      {% for alert in health.auth_alerts %}
+        <div class="note">{{ alert }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+<div class="panel block">
+  <div class="label">1) Recuperación de clave: autorizaciones ADMIN pendientes</div>
+  <div class="note">
+    Solicitudes pendientes: <b>{{ health.auth_pending_recovery }}</b>
+    | Tiempo de espera de la mas antigua: <b>{{ health.auth_pending_oldest_wait }}</b>
+  </div>
+  {% if pending_recovery_rows %}
+    <div class="table-scroll">
+      <table class="table table-head-1">
+        <thead>
+          <tr>
+            <th>Solicitud</th>
+            <th>Usuario</th>
+            <th>Estado</th>
+            <th>Solicitada</th>
+            <th>Nota</th>
+            <th>Email</th>
+            <th>IP</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in pending_recovery_rows %}
+            <tr>
+              <td>{{ row.request_id }}</td>
+              <td>{{ row.login_id }}</td>
+              <td><span class="status-pill status-{{ row.status_class }}">{{ row.status_label }}</span></td>
+              <td>{{ row.requested_at }}</td>
+              <td>{{ row.request_note }}</td>
+              <td>{{ row.request_email }}</td>
+              <td>{{ row.request_ip }}</td>
+              <td>
+                <form method="post" action="{{ url_for('admin_review_recovery', request_id=row.request_id, action='approve') }}" class="inline-form">
+                  <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+                  <button type="submit" class="btn btn-sm">Aprobar</button>
+                </form>
+                <form method="post" action="{{ url_for('admin_review_recovery', request_id=row.request_id, action='reject') }}" class="inline-form">
+                  <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+                  <button type="submit" class="btn btn-kill btn-sm">Rechazar</button>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="note">No hay solicitudes pendientes de autorización ADMIN.</div>
+  {% endif %}
+</div>
+
+<div class="panel block">
+  <div class="label">2) Historial de procesos por usuario</div>
+  {% if user_rows %}
+    <div class="table-scroll">
+      <table class="table table-head-2">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Total</th>
+            <th>En ejecucion</th>
+            <th>Finalizados</th>
+            <th>Error</th>
+            <th>Cancelados</th>
+            <th>Ultimo proceso</th>
+            <th>Ultima actualizacion</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in user_rows %}
+            <tr>
+              <td>{{ row.owner_rut }}</td>
+              <td>{{ row.total }}</td>
+              <td>{{ row.running }}</td>
+              <td>{{ row.done }}</td>
+              <td>{{ row.error }}</td>
+              <td>{{ row.canceled }}</td>
+              <td>{{ row.last_process }}</td>
+              <td>{{ row.last_update }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="note">No hay historial de procesos para mostrar.</div>
+  {% endif %}
+
+  <div class="note">Procesos recientes (maximo {{ history_rows|length }})</div>
+  {% if history_rows %}
+    <div class="table-scroll">
+      <table class="table table-head-1">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Proceso</th>
+            <th>Estado</th>
+            <th>Progreso</th>
+            <th>Inicio</th>
+            <th>Fin</th>
+            <th>Duracion</th>
+            <th>Input</th>
+            <th>Output</th>
+            <th>Job ID</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in history_rows %}
+            <tr>
+              <td>{{ row.owner_rut }}</td>
+              <td>{{ row.process_label }}</td>
+              <td><span class="status-pill status-{{ row.status_class }}">{{ row.status }}</span></td>
+              <td>{{ row.progress }}%</td>
+              <td>{{ row.created_at }}</td>
+              <td>{{ row.finished_at }}</td>
+              <td>{{ row.elapsed_display }}</td>
+              <td>{{ row.input_file }}</td>
+              <td>{{ row.out_file }}</td>
+              <td>{{ row.job_id }}</td>
+              <td>
+                {% if row.can_kill %}
+                  <form method="post" action="{{ url_for('admin_kill_job', job_id=row.job_id) }}" class="inline-form">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+                    <button type="submit" class="btn btn-kill btn-sm">Kill job</button>
+                  </form>
+                {% else %}
+                  <span class="note">-</span>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+</div>
+
+<div class="panel block">
+  <div class="label">3) Auditoria de cargas admin</div>
+  {% if audit_rows %}
+    <div class="table-scroll">
+      <table class="table table-head-2">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Estado</th>
+            <th>Tablas</th>
+            <th>Archivos</th>
+            <th>Filas cargadas</th>
+            <th>Solicito cores</th>
+            <th>Cores ejecutados</th>
+            <th>Duracion</th>
+            <th>Ultima actualizacion</th>
+            <th>Job ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in audit_rows %}
+            <tr>
+              <td>{{ row.owner_rut }}</td>
+              <td><span class="status-pill status-{{ row.status_class }}">{{ row.status }}</span></td>
+              <td>{{ row.selected_tables }}</td>
+              <td>{{ row.files }}</td>
+              <td>{{ row.rows_loaded }}</td>
+              <td>{{ row.run_cores }}</td>
+              <td>{{ row.cores_updated }}</td>
+              <td>{{ row.elapsed_display }}</td>
+              <td>{{ row.updated_at }}</td>
+              <td>{{ row.job_id }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="note">No hay cargas admin registradas en el almacenamiento actual de jobs.</div>
+  {% endif %}
+</div>
+
+<div class="panel block">
+  <div class="label">4) Recuperación de contraseña</div>
+  {% if recovery_rows %}
+    <div class="table-scroll">
+      <table class="table table-head-1">
+        <thead>
+          <tr>
+            <th>Solicitud</th>
+            <th>Usuario</th>
+            <th>Estado</th>
+            <th>Solicitada</th>
+            <th>Revisada</th>
+            <th>Revisado por</th>
+            <th>Expira codigo</th>
+            <th>Nota</th>
+            <th>Email</th>
+            <th>IP</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in recovery_rows %}
+            <tr>
+              <td>{{ row.request_id }}</td>
+              <td>{{ row.login_id }}</td>
+              <td><span class="status-pill status-{{ row.status_class }}">{{ row.status_label }}</span></td>
+              <td>{{ row.requested_at }}</td>
+              <td>{{ row.reviewed_at }}</td>
+              <td>{{ row.reviewed_by }}</td>
+              <td>{{ row.expires_at }}</td>
+              <td>{{ row.request_note }}</td>
+              <td>{{ row.request_email }}</td>
+              <td>{{ row.request_ip }}</td>
+              <td>
+                {% if row.can_review %}
+                  <form method="post" action="{{ url_for('admin_review_recovery', request_id=row.request_id, action='approve') }}" class="inline-form">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+                    <button type="submit" class="btn btn-sm">Aprobar</button>
+                  </form>
+                  <form method="post" action="{{ url_for('admin_review_recovery', request_id=row.request_id, action='reject') }}" class="inline-form">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}">
+                    <button type="submit" class="btn btn-kill btn-sm">Rechazar</button>
+                  </form>
+                {% else %}
+                  <span class="note">-</span>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="note">No hay solicitudes de recuperacion registradas.</div>
+  {% endif %}
+</div>
+
+<div class="panel block">
+  <div class="label">5) Auditoria de seguridad</div>
+  {% if security_rows %}
+    <div class="table-scroll">
+      <table class="table table-head-2">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Evento</th>
+            <th>Usuario</th>
+            <th>Actor</th>
+            <th>Severidad</th>
+            <th>IP</th>
+            <th>Detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in security_rows %}
+            <tr>
+              <td>{{ row.created_at }}</td>
+              <td>{{ row.event_type }}</td>
+              <td>{{ row.login_id }}</td>
+              <td>{{ row.actor_login }}</td>
+              <td>{{ row.severity }}</td>
+              <td>{{ row.ip_address }}</td>
+              <td>{{ row.detail }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="note">No hay eventos de seguridad registrados.</div>
+  {% endif %}
+</div>
+
+{% endblock %}
