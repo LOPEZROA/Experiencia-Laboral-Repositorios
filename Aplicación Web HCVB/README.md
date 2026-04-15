@@ -204,37 +204,6 @@ pip install -r requirements.txt
 
 El proyecto carga automaticamente variables desde un archivo `.env` en la raiz.
 
-Ejemplo minimo:
-
-```dotenv
-APP_SECRET_KEY=tu_clave_secreta
-APP_HOST=127.0.0.1
-APP_PORT=5000
-APP_THREADS=2
-PRELOAD_ON_STARTUP=1
-
-POSTGRES_HOST=127.0.0.1
-POSTGRES_PORT=5432
-POSTGRES_DB=postgres
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=tu_password
-POSTGRES_SCHEMA=raw
-AUTH_SCHEMA=app
-
-SESSION_BACKEND=filesystem
-JOBS_BACKEND=memory
-# REDIS_URL=redis://127.0.0.1:6379/0
-```
-
-Variables especialmente importantes:
-
-- `APP_SECRET_KEY`: obligatoria, no debe quedar en `change-me`.
-- `POSTGRES_*`: conexion a la base principal.
-- `POSTGRES_PORT`: define explicitamente el puerto real de tu instancia PostgreSQL.
-- `SESSION_BACKEND`: `filesystem` o `redis`.
-- `JOBS_BACKEND`: `memory` o `redis`.
-- `PRELOAD_ON_STARTUP`: precarga indices de base al iniciar la app.
-
 ## Inicializacion de base de datos
 
 Los scripts SQL del proyecto estan en [`CODIGOS MIGRACION/`](./CODIGOS%20MIGRACION).
@@ -294,7 +263,7 @@ El archivo `web.config` permite reenviar trafico hacia una instancia local de la
 
 La aplicacion incorpora varias medidas operativas y de seguridad:
 
-- Login obligatorio para casi toda la plataforma.
+- Login obligatorio para la plataforma.
 - Sesiones con expiracion por inactividad.
 - Proteccion CSRF en operaciones mutantes.
 - Hash de contrasenas con PBKDF2-SHA256.
